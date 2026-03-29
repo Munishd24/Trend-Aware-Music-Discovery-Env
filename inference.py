@@ -1,8 +1,8 @@
 import os
 import json
+import re
 import requests
 from openai import OpenAI
-import time
 
 API_BASE_URL = os.environ.get("API_BASE_URL", "https://api.openai.com/v1")
 MODEL_NAME = os.environ.get("MODEL_NAME", "gpt-4o-mini")
@@ -15,6 +15,41 @@ client = OpenAI(
 )
 
 ENV_URL = "http://localhost:7860"
+
+SYSTEM_PROMPT = """You are an expert music recommendation agent optimizing for user engagement and trend discovery.
+
+Your task: Select the single best song to recommend to this user.
+
+Decision framework (apply in order):
+1. EXCLUDE any song in recommended_history - never repeat
+2. PRIORITIZE songs matching user's media_interests (strongest signal)
+3. PREFER songs matching user's mood and genre preferences
+4. FAVOR songs with trend_age_days < 5 (fresher trends = higher reward)
+5. Among equally good options, pick highest trend_velocity
+
+Output format - respond with ONLY this JSON, nothing else:
+{"song_id": "EXACT_ID_FROM_AVAILABLE_SONGS"}"""
+
+def extract_song_id(response_text: str) -> str:
+    # 1. Try direct json.loads()
+    try:
+        data = json.loads(response_text)
+        if "song_id" in data:
+            return data["song_id"]
+    except json.JSONDecodeError:
+        pass
+        
+    # 2. Try regex for exact JSON block
+    match = re.search(r'\{.*?"song_id"\s*:\s*"([^"]+)".*?\}', response_text, re.DOTALL)
+    if match:
+        return match.group(1)
+        
+    # 3. Extract any song_XX pattern
+    fallback_match = re.search(r'(song_\d{2,})', response_text)
+    if fallback_match:
+        return fallback_match.group(1)
+        
+    raise ValueError("Failed to extract song_id from response")
 
 def run_task(task_name):
     import random
@@ -34,46 +69,55 @@ def run_task(task_name):
         history = state.get('recommended_history', [])
         unplayed_trending = [s for s in trending if s['id'] not in history]
         
-        prompt = f"""You are a highly capable Music Recommender AI.
-User Profile:
-- Mood: {user_profile['mood']}
-- Genres: {', '.join(user_profile['taste_profile']['genres'])}
-- Media Interests: {', '.join(user_profile['taste_profile']['media_interests'])}
+        history_titles = []
+        for sid in history:
+            for t_song in trending:
+                if t_song['id'] == sid:
+                    history_titles.append(f"'{t_song['title']}' by {t_song['artist']}")
+                    break
+        
+        history_str = "\n- ".join(history_titles) if history_titles else "None"
+        
+        prompt = f"""=== USER PROFILE ===
+Mood: {user_profile['mood']}
+Favourite genres: {', '.join(user_profile['taste_profile']['genres'])}
+Media interests: {', '.join(user_profile['taste_profile']['media_interests'])}
+Discovery openness: {user_profile['discovery_openness']}
 
-Available Trending Songs:
+=== ALREADY RECOMMENDED (DO NOT PICK THESE) ===
+{history_str}
+
+=== AVAILABLE SONGS (choose exactly one) ===
 """
-        for s in unplayed_trending[:10]:
-            prompt += f"- ID: {s['id']} | '{s['title']}' by {s['artist']} (Trend Velocity: {s['trend_velocity']}, {s['trend_age_days']} days old, Genre: {s['genre']}, Vibe: {s['vibe']})\n"
+        for i, s in enumerate(unplayed_trending[:10], 1):
+            prompt += f"{i}. ID: {s['id']} | Title: {s['title']} | Artist: {s['artist']} | From: {s['source_media']} ({s['media_type']}) | Genre: {s['genre']} | Vibe: {s['vibe']} | Trend velocity: {s['trend_velocity']} | Days trending: {s['trend_age_days']}\n"
             
-        prompt += """\nRespond ONLY with a JSON object containing the song_id you recommend. Example: {"song_id": "song_01"}"""
+        prompt += """
+=== YOUR TASK ===
+Apply the decision framework above.
+Respond with ONLY: {"song_id": "song_XX"}"""
 
         try:
-            # Note: For hackathon offline/validation, mock or use minimal LLM call logic
             response = client.chat.completions.create(
                 model=MODEL_NAME,
                 messages=[
-                    {"role": "system", "content": "You are a direct JSON output agent. Recommend the best song for the user based on taste and trend age. Output ONLY JSON."},
+                    {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": prompt}
                 ],
-                response_format={"type": "json_object"},
                 temperature=0.1
             )
-            action_json = json.loads(response.choices[0].message.content)
-            song_id = action_json.get("song_id")
-            if not song_id:
-                raise ValueError("No song_id in response")
+            response_text = response.choices[0].message.content
+            song_id = extract_song_id(response_text)
+            
         except Exception as e:
             user_genres = user_profile['taste_profile']['genres']
-            history = state.get("recommended_history", [])
-            valid_songs = [s for s in trending if s["id"] not in history]
-            if not valid_songs: valid_songs = trending
-            
+            valid_songs = unplayed_trending if unplayed_trending else trending
             genre_songs = [s for s in valid_songs if s["genre"] in user_genres]
             if not genre_songs: genre_songs = valid_songs
             
             best_song = max(genre_songs, key=lambda s: s['trend_velocity'])
             song_id = best_song['id']
-            print(f"LLM request skipped ({e}). Fallback selected unplayed, genre-matched trend: {song_id}")
+            print(f"LLM request skipped/failed ({e}). Fallback selected unplayed, genre-matched trend: {song_id}")
             
         step_res = requests.post(f"{ENV_URL}/step", json={"song_id": song_id})
         step_res.raise_for_status()

@@ -7,11 +7,6 @@ sdk: docker
 app_port: 7860
 pinned: false
 ---
-
----
-title: Music Discovery Env
-app_port: 7860
----
 # 🎧 Trend-Aware Music Discovery Environment
 
 An OpenEnv-compliant RL environment where an LLM agent acts as a music recommender, optimizing for user engagement and trend freshness.
