@@ -1,0 +1,21 @@
+name: music-discovery-env
+version: "1.0"
+description: "Trend-aware music discovery environment where agents learn to recommend culturally-relevant songs tied to viral media moments, optimizing for user engagement and early trend discovery"
+action_schema:
+  song_id: string
+observation_schema:
+  user: object
+  trending_songs: array
+  step_count: integer
+  session_engagement: array
+  recommended_history: array
+tasks:
+  - name: easy
+    difficulty: 0.2
+    description: "User with strong anime interest, fresh trending songs"
+  - name: medium  
+    difficulty: 0.5
+    description: "Mixed sources, aging trends, shifting user mood"
+  - name: hard
+    difficulty: 0.8
+    description: "Cold start user, diverse catalogue, varied trend ages"
