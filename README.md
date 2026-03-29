@@ -1,5 +1,15 @@
 ---
 title: Music Discovery Env
+emoji: 🎵
+colorFrom: purple
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
+---
+title: Music Discovery Env
 app_port: 7860
 ---
 # 🎧 Trend-Aware Music Discovery Environment
