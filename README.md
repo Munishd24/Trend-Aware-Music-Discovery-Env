@@ -7,159 +7,289 @@ sdk: docker
 app_port: 7860
 pinned: false
 ---
+
 # 🎧 Trend-Aware Music Discovery Environment
 
-An OpenEnv-compliant RL environment where an LLM agent acts as a music recommender, optimizing for user engagement and trend freshness.
+> **Meta PyTorch OpenEnv Hackathon 2026** — An OpenEnv-compliant RL benchmark where LLM agents act as algorithmic music recommenders, optimizing engagement across viral cultural moments.
 
-![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg) ![License MIT](https://img.shields.io/badge/license-MIT-green.svg) ![OpenEnv Compliant](https://img.shields.io/badge/OpenEnv-Compliant-brightgreen.svg)
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)
+![OpenEnv Compliant](https://img.shields.io/badge/OpenEnv-Compliant-brightgreen.svg)
+![License MIT](https://img.shields.io/badge/license-MIT-green.svg)
 
 ---
 
 ## 📖 Overview
 
-The **Trend-Aware Music Discovery Environment** simulates a high-stakes, real-world recommendation engine where an LLM agent operates as a music discovery algorithm. At each step, the agent observes a user's static taste profile, transient mood, and historical engagement. It must select the optimal song from a catalog of trending tracks tied to viral cultural moments (e.g., gaming, anime, movies). The objective is to maximize user engagement by surfacing the right song at the exact right moment—before the cultural trend decays.
+The **Trend-Aware Music Discovery Environment** simulates a real-world music recommendation engine. An LLM agent observes a user's taste profile, session history, and a catalogue of trending songs (each tied to viral cultural moments — anime, games, movies, TikTok). At each step, the agent must pick the optimal song to maximize user engagement before the cultural trend decays.
 
-This benchmark grounds itself in a highly active area of machine learning research. Inspired by Spotify's ongoing research into Reinforcement Learning for user playlist recommendations, the environment reflects a reality where RL agents consistantly outperform standard collaborative filtering on sequential tasks. Every major streaming platform relies heavily on temporal recommendation ML at scale; however, this specific problem—assessing an LLM's capacity to simultaneously reason about taste, emotional state, and temporal trend decay—represents a novel domain currently unexplored in the OpenEnv ecosystem.
+The benchmark is designed around three authentic RL problems: **echo-chamber retrieval**, **POMDP mood inference**, and **cold-start exploration**. It is fully compliant with the [OpenEnv](https://github.com/huggingface/openenv-course) evaluation standard.
 
 ---
 
-## ⚙️ Environment Design
+## 🏗️ Architecture: Official OpenEnv 3-Component Pattern
 
-### Observation Space
-The state is represented as a JSON object capturing both the user context and the catalog of available trends:
+The project strictly follows the official OpenEnv framework layout:
 
-* **`user`**: Object defining the listener's constraints.
-  * `taste_profile`: Arrays of top `genres` and `media_interests`.
-  * `mood`: The user's current emotional state (hyped, relaxed, sad, etc.).
-  * `discovery_openness`: A float representing the user's willingness to step outside their known genres.
-  * `listening_history`: Array of `song_id`s already consumed during the session.
-* **`trending_songs`**: An array of candidate songs featuring metadata: `id`, `title`, `artist`, `source_media`, `media_type`, `trend_velocity` (0.0-1.0), `trend_age_days`, `genre`, and `vibe`.
-* **`step_count`**: Integer representing the current phase of the episode (max 10).
-* **`session_engagement`**: Historical array of user reactions in the current trajectory.
+```
+RL/
+├── Dockerfile                           # Root-level container definition
+├── README.md                            # This file (also HF Spaces metadata)
+├── openenv.yaml                         # OpenEnv spec: tasks, schemas, entrypoint
+├── requirements.txt                     # Python deps (openenv-core, gradio, openai…)
+│
+├── models.py                            # Action + Observation Pydantic types
+├── client.py                            # Typed WebSocket client (MusicDiscoveryEnvClient)
+├── __init__.py                          # Package exports
+│
+├── server/
+│   ├── __init__.py
+│   ├── app.py                           # FastAPI app via create_app() + custom endpoints
+│   └── music_discovery_env_environment.py  # Core RL logic (Environment subclass)
+│
+├── gradio_ui.py                         # Spotify-inspired Gradio Blocks UI
+├── inference.py                         # LLM agent evaluation script
+├── music_discovery_proto_v2.py          # Legacy prototype (reference only)
+└── main.py                              # Legacy standalone server (reference only)
+```
 
-### Action Space
-Agents must return a strictly formatted JSON object dictating the recommended track:
-```json
-{
-  "song_id": "song_14"
-}
+### Component Roles
+
+| File | Role |
+|---|---|
+| `models.py` | Defines `MusicDiscoveryAction` (inherits `Action`) and `MusicDiscoveryObservation` (inherits `Observation`) — the typed contract between agent and environment |
+| `server/music_discovery_env_environment.py` | The core RL environment — inherits from `openenv.core.env_server.interfaces.Environment`, implements `reset()`, `step()`, and `state` |
+| `server/app.py` | Creates the FastAPI app via `create_app()` which auto-generates `/reset`, `/step`, `/ws`, `/health`, `/web`. Custom `/tasks`, `/grader`, `/baseline` added on top |
+| `client.py` | `MusicDiscoveryEnvClient` — typed WebSocket client used by `inference.py` |
+| `gradio_ui.py` | The custom "Spotify-style" dashboard for manual demonstration |
+| `inference.py` | LLM agent script orchestrating the full eval loop across all 3 tasks |
+
+---
+
+## 🎮 Environment Design
+
+### Observation (what the agent sees)
+
+```python
+class MusicDiscoveryObservation(Observation):
+    user: UserProfile           # Taste (genres, media_interests), discovery_openness
+                                # NOTE: user.mood is HIDDEN (POMDP — infer from reactions)
+    trending_songs: List[Song]  # Catalogue with trend_velocity, trend_age_days, vibe…
+    step_count: int             # Current step (max 10)
+    session_engagement: List    # Full reaction history this episode
+    recommended_history: List   # IDs already recommended (never repeat)
+    last_3_reactions: List[str] # Last 3 reactions — the only mood signal available
+```
+
+### Action (what the agent returns)
+
+```python
+class MusicDiscoveryAction(Action):
+    song_id: str   # e.g. "song_03" — must be from trending_songs, not in recommended_history
 ```
 
 ### Reward Function
-Rewards are calculated via a composite function incorporating the raw engagement metric, a taste-match bonus, and an early-discovery decay multiplier.
 
-**Base Reaction Rewards:**
-* `shared` → `+1.0`
-* `saved` → `+0.8`
-* `added_to_playlist` → `+0.7`
-* `played_once` → `+0.3`
-* `skipped` → `-0.2`
+```
+final_reward = base_reaction × trend_freshness_multiplier + taste_bonus
 
-**Modifiers:**
-1. **Taste Match Bonus:** `+0.2` if the song's genre matches the user's profile, and `+0.2` if the song's vibe matches the user's current mood.
-2. **Early Discovery Bonus:** Rewards are multiplied by the freshness of the trend. Agents are penalized for recommending "dead" trends.
-   * `Multiplier = max(0.5, 1.0 - (trend_age_days * 0.05))`
+base_reaction:
+  shared            → +1.0
+  saved             → +0.8
+  added_to_playlist → +0.7
+  played_once       → +0.3
+  skipped / ignored → -0.2 / -0.3
 
----
+trend_freshness_multiplier = max(0.5, 1.0 − trend_age_days × 0.05)
+  (songs older than 10 days get a 0.5 cap)
 
-## 🎯 Tasks
-
-| Task Name | Difficulty | Description | Baseline Score |
-| :--- | :---: | :--- | :---: |
-| **Easy** | `0.2` | User has a strong anime interest, and all candidate songs are sourced from fresh anime trends (1-3 days old). | ~0.89 |
-| **Medium** | `0.5` | Features mixed media sources with aging trends (3-15 days old). The user's mood dynamically shifts every 3 steps. | ~0.60 |
-| **Hard** | `0.8` | Absolute cold-start user constraint with only 2 seed songs. Features 20 diverse tracks across all media types with highly varied trend ages (0-20 days). | ~0.16 |
-
----
-
-## 🚀 Quickstart
-
-**1. Install Dependencies**
-```bash
-pip install -r requirements.txt
+taste_bonus:
+  +0.2 if genre matches user's taste_profile.genres
+  +0.2 if song vibe matches hidden user mood
 ```
 
-**2. Docker Build & Run**
-The environment is fully containerized for Hugging Face Spaces deployment:
+### Grading Function (`/grader`)
+
+```
+score = (engagement_rate × 0.4) + (avg_reward × 0.4) + (discovery_bonus × 0.2)
+
+discovery_bonus = steps where trend_age_days < 3 AND reaction in {shared, saved}
+```
+
+---
+
+## 🎯 Task Difficulties
+
+### Easy — The Echo Chamber
+- **Scenario:** User has strong anime preferences. Catalog flooded with fresh (<3 days old) anime songs.
+- **RL Test:** Basic content filtering and genre matching.
+- **Noise level:** `±0.3` (highly predictable)
+- **Baseline target:** `0.80+`
+
+### Medium — Shifting Context + POMDP
+- **Scenario:** Mixed catalog with aging trends. User mood shifts randomly (**25% chance per step**). Mood is **hidden** — agent must infer from `last_3_reactions`.
+- **RL Test:** Temporal reasoning and context adaptation from partial information.
+- **Noise level:** `±0.8`
+- **Baseline target:** `0.45–0.65`
+
+### Hard — Cold Start
+- **Scenario:** New user with **no genre preferences**. Large diverse catalog (20 songs). Varied trend ages.
+- **RL Test:** Classic exploration vs. exploitation — probe with universally viral songs to discover user taste within 10 steps.
+- **Noise level:** `±0.5` (hard due to cold start, not noise)
+- **Baseline target:** `0.20–0.35`
+
+---
+
+## 🛡️ V3 Hardening (Anti-Exploit Features)
+
+All features implemented to prevent RL agents from reverse-engineering the environment:
+
+| Feature | Implementation |
+|---|---|
+| **Partial Observability (POMDP)** | `user.mood` fully hidden from observation — only inferable via `last_3_reactions` |
+| **Stochastic Rewards** | Probabilistic reaction thresholds (not hard cutoffs) with per-task noise bands |
+| **Random Mood Shifts** | Medium task: 25% chance of mood shift per step (not predictable every N steps) |
+| **Repeat Penalty** | Re-recommending any song gives `−0.3` and marks it as `ignored` immediately |
+| **Seed Isolation** | `/baseline` uses `random.seed(42)` — deterministic and reproducible |
+
+---
+
+## 🚀 Running the Project
+
+### Option 1: Docker (Recommended for HF Spaces)
+
 ```bash
+cd /home/munish/Projects/RL
+
+# Build
 docker build -t music-discovery-env .
-docker run -d -p 7860:7860 music-discovery-env
+
+# Run
+docker run -d --name music-env -p 7860:7860 music-discovery-env
+
+# Open Spotify-style web interface
+open http://localhost:7860/playground
 ```
 
-**3. Interact with the Environment**
-Reset the environment to grab the initial state:
+The Dockerfile sets `ENV ENABLE_WEB_INTERFACE=true` which activates the custom Gradio playground. All traffic to `/` is automatically redirected to the playground for convenience.
+
+### Option 2: Local uvicorn
+
 ```bash
-curl -X POST "http://localhost:7860/reset?task=medium"
+cd /home/munish/Projects/RL
+source .venv/bin/activate
+uvicorn server.app:app --port 7860 --reload
 ```
-Submit an action:
+
+### Option 3: Run inference (LLM agent)
+
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"song_id": "song_02"}' http://localhost:7860/step
+# With real OpenAI key (LLM agent):
+OPENAI_API_KEY=sk-... python3 inference.py
+
+# Without key (heuristic fallback — still works):
+python3 inference.py
+
+# Against HF Space instead of local:
+ENV_URL=https://your-username-music-discovery-env.hf.space python3 inference.py
 ```
+
+The inference script auto-falls back to the heuristic agent if the LLM API call fails.
 
 ---
 
 ## 📡 API Reference
 
-| Method | Path | Description | Example Request / Response |
-| :--- | :--- | :--- | :--- |
-| `POST` | `/reset?task={easy\|medium\|hard}` | Resets environment and generates the task config. | **Res:** `{"user": {...}, "trending_songs": [...]}` |
-| `POST` | `/step` | Submits an action to the environment. | **Req:** `{"song_id": "song_01"}`<br>**Res:** `StepResult` object with `reward`, `done`, `info`. |
-| `GET` | `/state` | Returns the current observation state. | **Res:** `Observation` JSON object. |
-| `GET` | `/tasks` | Lists task configurations and action schema. | **Res:** `{"tasks": [...], "action_schema": {...}}` |
-| `POST` | `/grader` | Evaluates a completed trajectory. | **Req:** `{"trajectory": [...]}`<br>**Res:** `{"score": 0.85}` |
-| `GET` | `/baseline` | Executes the baseline script across all tasks. | **Res:** `{"easy": 0.89, "medium": 0.60, "hard": 0.16}` |
+All endpoints auto-generated by `create_app()` unless marked **[Custom]**:
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/reset?task={easy\|medium\|hard}` | Start a new episode |
+| `POST` | `/step` | Submit action `{"action": {"song_id": "song_01"}}` |
+| `GET` | `/state` | Current observation state |
+| `WS` | `/ws` | WebSocket (used by `MusicDiscoveryEnvClient`) |
+| `GET` | `/health` | Health check |
+| `GET` | `/playground` | **[Custom]** Spotify-style interactive UI |
+| `GET` | `/web` | OpenEnv default Gradio playground |
+| `GET` | `/docs` | Swagger OpenAPI docs |
+| `GET` | `/tasks` | **[Custom]** List easy/medium/hard configs |
+| `POST` | `/grader` | **[Custom]** Grade trajectory `{"trajectory": [...]}` → `{"score": 0.85}` |
+| `GET` | `/baseline` | **[Custom]** Run deterministic baseline → `{"easy": 0.92, "medium": 0.58, "hard": 0.24}` |
+
+> ⚠️ **Note on Interfaces:** We provide two interfaces. `/web` is the standard OpenEnv auto-generated playground for developers. `/playground` is our custom **Spotify-inspired** dashboard designed for judges to intuitively understand the music discovery use case.
 
 ---
 
 ## 🤖 Baseline Agent
 
-Included in the environment is a deterministic `baseline_agent`. It evaluates the current `trending_songs` list and automatically selects the candidate with the highest recorded `trend_velocity` that matches the user's top genre. 
+The `baseline_agent()` function in `server/music_discovery_env_environment.py` is a deterministic heuristic:
+1. Filter songs to those matching user's genre preferences
+2. From those, pick unplayed songs not in `recommended_history`
+3. Among those, select the one with the highest `trend_velocity`
 
-Because it lacks the reasoning capacity to optimize for *both* decaying trend age and shifting moods simultaneously, it scores remarkably well on `Easy` tasks, but severely struggles when met with complex, cold-start `Hard` tasks.
+It scores well on **Easy** (predictable user, fresh songs) but collapses on **Hard** (no genre data to filter by). This creates the clear difficulty gradient needed for hackathon judging.
 
-**Run the Baseline LLM Inference:**
-*Note: A local `.venv` should be used to satisfy `PEP-668` restrictions.*
-```bash
-export OPENAI_API_KEY="your-api-key"
-# (Or set API_BASE_URL to an OpenAI-compatible local model like Ollama)
-python3 inference.py
+---
+
+## 🔑 Key Design Decisions (Knowledge Transfer)
+
+1. **Why `recommended_history` not `listening_history` for fallback?**
+   The environment tracks `recommended_history` (all songs ever recommended this episode, even if repeated). The `listening_history` is the user-profile level list. The fallback and LLM prompt must use `recommended_history` to avoid the "stuck on same song" bug.
+
+2. **Why WebSocket client in `inference.py`?**
+   OpenEnv's `create_app()` maintains session state via WebSocket, not plain HTTP. The HTTP `/reset` + `/step` endpoints don't share session state between calls. The `MusicDiscoveryEnvClient` handles this transparently.
+
+3. **Why is mood hidden?**
+   To create a genuine POMDP. If mood were visible, the task would be trivial: just match `song.vibe == user.mood`. Hiding it forces the agent to reason from `last_3_reactions` to infer the hidden state.
+
+4. **Why `/step` returns `{"observation": {...}, "reward": ..., "done": ...}`?**
+   OpenEnv `create_app()` wraps all responses in this envelope. When writing raw `requests` calls (not using the client), always extract `.get("observation", ...)`.
+
+5. **Why the Spotify-style UI?**
+   To make the benchmark's "real world" utility immediately obvious. By mimicking a global streaming platform, judges can instantly recognize the roles of "Curated Playlists" (Observations), "Skipped Tracks" (Negative Rewards), and "Cultural Velocity" (Trending data).
+
+---
+
+## 📦 Dependencies
+
+```
+openenv-core[core]>=0.2.2   # Core OpenEnv framework
+fastapi>=0.115.0              # Web framework (managed by openenv)
+uvicorn>=0.24.0               # ASGI server
+pydantic                      # Data validation
+openai                        # LLM inference client
+requests                      # HTTP calls in inference script
+python-dotenv                 # .env file support
+gradio                        # Web UI (activated by ENABLE_WEB_INTERFACE=true)
 ```
 
 ---
 
-## 📁 Project Structure
+## 🌍 OpenEnv Compliance Checklist
 
-```text
-.
-├── Dockerfile                  # Container instructions
-├── README.md                   # Environment documentation
-├── inference.py                # LLM execution testing script
-├── main.py                     # FastAPI wrapper and endpoints
-├── models.py                   # Strict Pydantic interface types
-├── music_discovery_proto_v2.py # Core environment logic and task generation
-├── openenv.yaml                # Standard OpenEnv metadata schema
-└── requirements.txt            # Python dependencies
-```
-
----
-
-## 🌍 Real-World Applications
-
-Predictive curation is the lifeblood of the modern attention economy. Platforms like **Spotify, Netflix, Apple Music, and YouTube Music** rely entirely on sequential recommendation to maintain active users. 
-
-Historically, collaborative filtering (CF) dominated this space. However, as demonstrated by Spotify's internal RL research, collaborative filtering fails gracefully when confronted with sequential nuances like temporal trend decay, abrupt mood shifts, and immediate cold-start environments. Reinforcement Learning actively outperforms standard CF paradigms by viewing recommendations as a multi-step trajectory rather than a static matrix completion problem.
+- [x] `openenv.yaml` with `spec_version: 1`, `action_schema`, `observation_schema`, `tasks`
+- [x] `Environment` subclass with `reset()`, `step()`, `state` property
+- [x] `Action` and `Observation` base class inheritance in `models.py`
+- [x] `EnvClient` subclass with `_step_payload`, `_parse_result`, `_parse_state`
+- [x] App created via `create_app()` — not hand-rolled FastAPI
+- [x] `/health`, `/ws`, `/web` auto-generated
+- [x] Custom `/grader` and `/baseline` endpoints for hackathon evaluation
+- [x] Root-level `Dockerfile` with `ENABLE_WEB_INTERFACE=true`
+- [x] `requirements.txt` with pinned `openenv-core`
+- [x] HF Spaces metadata in `README.md` YAML frontmatter
 
 ---
 
 ## 🔮 Future Work
 
-* **Live Data Integration:** Hooking the `_get_trending_songs()` generator into the Spotify Trending API and Google Trends for real-time validation.
-* **RL Agent Benchmarking:** Evaluating standard PPO/DQN trained agents against zero-shot LLM conversational agents.
-* **Cross-Session Memory:** Evolving the RL logic to dynamically learn and update the user's base `taste_profile` across long-term sequential episodes.
+- **Live Data:** Hook `_get_trending_songs()` into Spotify Trending API / Google Trends
+- **RL Agents:** Benchmark PPO/DQN trained agents vs zero-shot LLM agents
+- **Cross-Session Memory:** Evolve `MusicDiscoveryEnvironment` to persist and update `taste_profile` across episodes
+- **Multi-User Simulation:** Run concurrent episodes with different user archetypes
 
 ---
 
 ## 📜 Citation & Acknowledgements
 
-* Built for the **Meta PyTorch OpenEnv Hackathon 2026**.
-* Environment logic and scaling factors heavily inspired by **Spotify's RL recommendation research** for sequential playlist generation.
+- Built for the **Meta PyTorch OpenEnv Hackathon 2026** (Round 1: March 25 – April 8)
+- Framework: [OpenEnv Course / HuggingFace](https://github.com/huggingface/openenv-course)
+- RL recommendation research inspiration: Spotify's sequential playlist generation work

@@ -1,6 +1,10 @@
+spec_version: 1
 name: music-discovery-env
-version: "1.0"
-description: "Trend-aware music discovery environment where agents learn to recommend culturally-relevant songs tied to viral media moments, optimizing for user engagement and early trend discovery"
+type: space
+runtime: fastapi
+app: server.app:app
+port: 7860
+description: "Trend-aware music discovery environment where agents learn to recommend culturally-relevant songs tied to viral media moments"
 action_schema:
   song_id: string
 observation_schema:
@@ -9,11 +13,12 @@ observation_schema:
   step_count: integer
   session_engagement: array
   recommended_history: array
+  last_3_reactions: array
 tasks:
   - name: easy
     difficulty: 0.2
     description: "User with strong anime interest, fresh trending songs"
-  - name: medium  
+  - name: medium
     difficulty: 0.5
     description: "Mixed sources, aging trends, shifting user mood"
   - name: hard

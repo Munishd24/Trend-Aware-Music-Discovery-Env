@@ -6,9 +6,14 @@ ENV PATH="/home/user/.local/bin:$PATH"
 
 WORKDIR /app
 
+# Enable the OpenEnv Gradio web interface
+ENV ENABLE_WEB_INTERFACE=true
+
 COPY --chown=user ./requirements.txt requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY --chown=user . /app
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
+EXPOSE 7860
+
+CMD ["uvicorn", "server.app:app", "--host", "0.0.0.0", "--port", "7860"]
