@@ -33,10 +33,10 @@ Your task: Select the single best song to recommend to this user.
 
 Decision framework (apply in order):
 1. EXCLUDE any song in the "Already Recommended" list — never repeat
-2. PRIORITIZE songs matching user's media_interests (strongest signal)
-3. PREFER songs matching user's genre preferences
-4. FAVOR songs with trend_age_days < 5 (fresher trends = higher reward)
-5. Among equally good options, pick highest trend_velocity
+2. VIRAL SERENDIPITY: If you correctly infer the user's hidden mood from recent reactions and align it with a song matching the GLOBAL VIRAL MOOD, you win a massive retention multiplier!
+3. PRIORITIZE songs matching user's media_interests (strongest signal)
+4. PREFER songs matching user's genre preferences
+5. FAVOR songs with trend_age_days < 5 (fresher trends = higher reward)
 
 Output format — respond with ONLY valid JSON, nothing else:
 {"song_id": "EXACT_ID_FROM_AVAILABLE_SONGS"}"""
@@ -85,6 +85,9 @@ def build_prompt(state_dict: dict) -> str:
         f"Media interests: {', '.join(tp.get('media_interests', [])) or 'Unknown'}",
         f"Discovery openness: {user.get('discovery_openness', 0.5)}",
         "",
+        "=== GLOBAL VIRAL MOOD ===",
+        f"The current viral trend globally is: {state_dict.get('global_mood_trend', 'Unknown')}",
+        "",
         "=== RECENT REACTIONS (use to infer hidden mood) ===",
         (', '.join(last_3) if last_3 else 'None'),
         "",
@@ -126,17 +129,24 @@ def get_llm_action(state_dict: dict) -> str:
 
 
 def fallback_action(state_dict: dict) -> str:
-    """Heuristic baseline: pick unplayed, genre-matched, highest-velocity song."""
+    """Heuristic baseline: prioritize unplayed songs matching the global viral mood, then fallback to genre."""
     user    = state_dict.get("user", {})
     genres  = user.get("taste_profile", {}).get("genres", [])
     history = state_dict.get("recommended_history", [])
     songs   = state_dict.get("trending_songs", [])
+    viral_mood = state_dict.get("global_mood_trend", "")
 
     unplayed = [s for s in songs if s["id"] not in history]
     if not unplayed:
         unplayed = songs
-    genre_matched = [s for s in unplayed if s["genre"] in genres]
-    pool = genre_matched if genre_matched else unplayed
+        
+    viral_matches = [s for s in unplayed if s.get("vibe") == viral_mood]
+    if viral_matches:
+        pool = viral_matches
+    else:
+        genre_matched = [s for s in unplayed if s.get("genre") in genres]
+        pool = genre_matched if genre_matched else unplayed
+        
     return max(pool, key=lambda s: s.get("trend_velocity", 0))["id"]
 
 

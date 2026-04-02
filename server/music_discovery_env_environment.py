@@ -70,6 +70,7 @@ class MusicDiscoveryEnvironment(Environment):
         self._trending_songs = []
         self._session_engagement = []
         self._recommended_history = []
+        self._global_mood_trend = ""
 
     def _get_trending_songs(self, force_media=None, age_range=(0, 5), count=10):
         candidates = [s for s in REAL_SONGS_DB if not force_media or s["media_type"] == force_media]
@@ -80,6 +81,8 @@ class MusicDiscoveryEnvironment(Environment):
         for s in selected:
             s_copy = dict(s)
             s_copy["trend_velocity"] = round(random.uniform(0.1, 1.0), 2)
+            if s_copy["vibe"] == getattr(self, "_global_mood_trend", ""):
+                s_copy["trend_velocity"] = min(1.0, round(s_copy["trend_velocity"] + 0.5, 2))
             s_copy["trend_age_days"] = random.randint(*age_range)
             songs.append(s_copy)
         return songs
@@ -90,6 +93,7 @@ class MusicDiscoveryEnvironment(Environment):
         self._state = State(episode_id=str(uuid4()), step_count=0)
         self._session_engagement = []
         self._recommended_history = []
+        self._global_mood_trend = random.choice(MOOD_ROTATION)
 
         if self.task_config == "easy":
             self._user = {
@@ -147,6 +151,9 @@ class MusicDiscoveryEnvironment(Environment):
             taste_bonus += 0.2
         if song["vibe"] == self._user["mood"]:
             taste_bonus += 0.2
+            
+        if song["vibe"] == self._user["mood"] == getattr(self, "_global_mood_trend", ""):
+            taste_bonus += 1.0
 
         final_reward = round(base_reward * trend_age_bonus + taste_bonus, 2)
 
@@ -168,6 +175,11 @@ class MusicDiscoveryEnvironment(Environment):
             score += 3
         if song["vibe"] == self._user["mood"]:
             score += 2
+            
+        if song["vibe"] == self._user["mood"] == getattr(self, "_global_mood_trend", ""):
+            score += 4
+            self._user["discovery_openness"] = min(1.0, self._user["discovery_openness"] + 0.15)
+            
         score += max(0, 5 - song["trend_age_days"]) * 0.5
 
         if not self._user["taste_profile"]["genres"]:
@@ -213,6 +225,7 @@ class MusicDiscoveryEnvironment(Environment):
             session_engagement=self._session_engagement,
             recommended_history=self._recommended_history,
             last_3_reactions=last_3,
+            global_mood_trend=getattr(self, "_global_mood_trend", ""),
             done=done,
             reward=reward,
         )
@@ -252,6 +265,9 @@ def baseline_agent(state_dict):
             score_val += 3.0
         if s.get("media_type") in media:
             score_val += 3.0
+        if s.get("vibe") == state_dict.get("global_mood_trend", ""):
+            score_val += 2.0
+            
         # Age penalty
         score_val -= s.get("trend_age_days", 5) * 0.5
         # Velocity bonus

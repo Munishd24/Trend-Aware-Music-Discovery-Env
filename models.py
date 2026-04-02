@@ -52,3 +52,4 @@ class MusicDiscoveryObservation(Observation):
     session_engagement: List[Dict[str, Any]] = Field(default_factory=list)
     recommended_history: List[str] = Field(default_factory=list)
     last_3_reactions: List[str] = Field(default_factory=list)
+    global_mood_trend: str = ""

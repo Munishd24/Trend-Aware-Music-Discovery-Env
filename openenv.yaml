@@ -14,6 +14,7 @@ observation_schema:
   session_engagement: array
   recommended_history: array
   last_3_reactions: array
+  global_mood_trend: string
 tasks:
   - name: easy
     difficulty: 0.2

@@ -78,9 +78,15 @@ def _format_user_card(obs_dict: dict) -> str:
     last_3   = obs_dict.get("last_3_reactions", [])
     reactions_str = ", ".join(REACTION_EMOJI.get(r, r) for r in last_3) if last_3 else "None yet"
 
-    bar = "█" * int(openness * 10) + "░" * (10 - int(openness * 10))
+    global_mood = obs_dict.get("global_mood_trend", "Unknown")
+    mood_emoji = VIBE_EMOJI.get(global_mood, "🌐")
+
     return (
         f"<div style='display: flex; flex-direction: column; gap: 8px;'>"
+        f"  <div style='background: linear-gradient(135deg, rgba(29,185,84,0.15) 0%, rgba(0,0,0,0.5) 100%); padding: 12px; border-radius: 12px; border: 1px solid rgba(29,185,84,0.3); text-align: center; margin-bottom: 10px;'>"
+        f"    <div style='font-size: 0.8em; color: #1ed760; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;'>🌍 Global Viral Mood</div>"
+        f"    <div style='font-size: 1.5em; font-weight: 800; color: #fff; text-shadow: 0 0 10px rgba(29,185,84,0.6);'>{mood_emoji} {global_mood.capitalize()}</div>"
+        f"  </div>"
         f"  <h3 style='margin: 0 0 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;'>👤 User Profile</h3>"
         f"  <div style='display: flex; gap: 8px;'><span style='color: #9ca3af; min-width: 80px;'>Genres</span> <span style='font-weight: 600; color: #fff;'>{genres}</span></div>"
         f"  <div style='display: flex; gap: 8px;'><span style='color: #9ca3af; min-width: 80px;'>Media</span> <span style='font-weight: 600; color: #fff;'>{media}</span></div>"

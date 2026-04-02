@@ -50,6 +50,7 @@ class MusicDiscoveryEnvClient(
             session_engagement=obs_data.get("session_engagement", []),
             recommended_history=obs_data.get("recommended_history", []),
             last_3_reactions=obs_data.get("last_3_reactions", []),
+            global_mood_trend=obs_data.get("global_mood_trend", ""),
             done=payload.get("done", False),
             reward=payload.get("reward"),
         )
