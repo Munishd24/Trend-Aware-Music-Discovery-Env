@@ -233,14 +233,31 @@ def grade(trajectory):
 
 def baseline_agent(state_dict):
     user = state_dict if "taste_profile" in state_dict else state_dict.get("user", state_dict)
-    genres = user.get("taste_profile", {}).get("genres", [])
+    tp = user.get("taste_profile", {})
+    genres = tp.get("genres", [])
+    media = tp.get("media_interests", [])
     songs = state_dict.get("trending_songs", [])
-    matching = [s for s in songs if s["genre"] in genres] if genres else songs
-    if not matching:
-        matching = songs
-    history = user.get("listening_history", [])
-    unplayed = [s for s in matching if s["id"] not in history]
+    
+    history = state_dict.get("recommended_history", [])
+    if not history:
+        history = user.get("listening_history", [])
+        
+    unplayed = [s for s in songs if s["id"] not in history]
     if not unplayed:
         unplayed = songs
-    best = max(unplayed, key=lambda s: s["trend_velocity"])
+
+    def heuristic_score(s):
+        score_val = 0
+        if s.get("genre") in genres:
+            score_val += 3.0
+        if s.get("media_type") in media:
+            score_val += 3.0
+        # Age penalty
+        score_val -= s.get("trend_age_days", 5) * 0.5
+        # Velocity bonus
+        score_val += s.get("trend_velocity", 0.0) * 2.0
+        return score_val
+
+    best = max(unplayed, key=heuristic_score)
     return {"song_id": best["id"]}
+

@@ -80,12 +80,16 @@ def _format_user_card(obs_dict: dict) -> str:
 
     bar = "█" * int(openness * 10) + "░" * (10 - int(openness * 10))
     return (
-        f"### 👤 User Profile\n"
-        f"- **Genres:** {genres}\n"
-        f"- **Media interests:** {media}\n"
-        f"- **Discovery openness:** `[{bar}]` {openness:.1f}\n"
-        f"- **Recent reactions:** {reactions_str}\n"
-        f"- **Step:** {obs_dict.get('step_count', 0)} / 10\n"
+        f"<div style='display: flex; flex-direction: column; gap: 8px;'>"
+        f"  <h3 style='margin: 0 0 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;'>👤 User Profile</h3>"
+        f"  <div style='display: flex; gap: 8px;'><span style='color: #9ca3af; min-width: 80px;'>Genres</span> <span style='font-weight: 600; color: #fff;'>{genres}</span></div>"
+        f"  <div style='display: flex; gap: 8px;'><span style='color: #9ca3af; min-width: 80px;'>Media</span> <span style='font-weight: 600; color: #fff;'>{media}</span></div>"
+        f"  <div style='display: flex; gap: 8px; align-items: center;'><span style='color: #9ca3af; min-width: 80px;'>Openness</span> <div style='height: 6px; width: 100px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden;'><div style='height: 100%; width: {int(openness*100)}%; background: #1ed760; box-shadow: 0 0 8px #1ed760;'></div></div><span style='font-size: 0.85em; margin-left: 6px; color: #1ed760; font-weight: bold;'>{openness:.1f}</span></div>"
+        f"  <div style='display: flex; gap: 8px; margin-top: 5px;'><span style='color: #9ca3af; min-width: 80px;'>Reactions</span> <span style='font-size: 0.9em; background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 6px; color: #ccc;'>{reactions_str}</span></div>"
+        f"  <div style='margin-top: 15px; text-align: center; color: #fff; background: rgba(29,185,84,0.1); padding: 8px; border-radius: 12px; border: 1px solid rgba(29,185,84,0.3); font-weight: 600;'>"
+        f"    Step {obs_dict.get('step_count', 0)} / 10"
+        f"  </div>"
+        f"</div>"
     )
 
 
@@ -94,18 +98,25 @@ def _format_trajectory(traj: list) -> str:
     if not traj:
         return "*No history yet. Start recommending!*"
     
-    html = '<div style="display: flex; flex-direction: column; gap: 8px;">'
+    html = '<div style="display: flex; flex-direction: column; gap: 12px;">'
     for t in reversed(traj):
         emoji = REACTION_EMOJI.get(t.get("reaction", ""), t.get("reaction", ""))
         reward = t.get("reward", 0)
-        color = "#1DB954" if reward > 0.5 else ("#ffcc00" if reward > 0 else "#ff4444")
+        color = "#1ed760" if reward > 0.5 else ("#facc15" if reward > 0 else "#ef4444")
+        bg_rgb = "29, 185, 84" if reward > 0.5 else ("250, 204, 21" if reward > 0 else "239, 68, 68")
         html += f'''
-        <div style="background: #282828; padding: 12px; border-radius: 8px; border-left: 4px solid {color};">
+        <div style="background: rgba({bg_rgb}, 0.05); padding: 16px; border-radius: 12px; border: 1px solid rgba({bg_rgb}, 0.2); border-left: 4px solid {color}; transition: transform 0.2s, background 0.2s;" onmouseover="this.style.transform='translateX(4px)'; this.style.background='rgba({bg_rgb}, 0.08)';" onmouseout="this.style.transform='translateX(0)'; this.style.background='rgba({bg_rgb}, 0.05)';">
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-weight: bold; color: white;">Step {t.get("step","")} • {t.get("song_id","")}</span>
-                <span style="color: {color}; font-weight: bold;">{reward:+.2f}</span>
+                <span style="color: #fff; font-weight: 600; font-size: 1.05em; display: flex; align-items: center; gap: 8px;">
+                    <span style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 20px; font-size: 0.8em; color: #ccc;">{t.get("step","")}</span> 
+                    {t.get("song_id","")}
+                </span>
+                <span style="color: {color}; font-weight: 800; text-shadow: 0 0 10px rgba({bg_rgb}, 0.4);">{reward:+.2f}</span>
             </div>
-            <div style="color: #b3b3b3; font-size: 0.9em; margin-top: 4px;">{emoji} • {t.get("trend_age_days","")}d trend</div>
+            <div style="color: #a0a0a0; font-size: 0.9em; margin-top: 8px; display: flex; gap: 10px;">
+                <span style="background: rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">{emoji}</span>
+                <span style="background: rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">{t.get("trend_age_days","")}d trend</span>
+            </div>
         </div>
         '''
     html += '</div>'
@@ -233,19 +244,109 @@ def create_gradio_app():
             font=[gr.themes.GoogleFont("Inter"), "sans-serif"]
         ),
         css="""
-        .gradio-container { background-color: #121212 !important; color: white !important; }
-        .sidebar { background-color: #000000; padding: 20px; border-radius: 12px; border: 1px solid #282828; }
-        .main-content { background-color: #121212; padding: 10px; }
-        .card { background-color: #181818; padding: 15px; border-radius: 12px; border: 1px solid #282828; margin-bottom: 15px; }
-        .spotify-btn { background-color: #1DB954 !important; color: black !important; font-weight: bold !important; border-radius: 50px !important; }
-        .spotify-btn:hover { background-color: #1ed760 !important; }
-        .secondary-btn { background-color: transparent !important; color: white !important; border: 1px solid #b3b3b3 !important; border-radius: 50px !important; }
-        table { width: 100%; border-collapse: collapse; background: #181818; border-radius: 8px; overflow: hidden; }
-        th { background: #282828; color: #b3b3b3; text-align: left; padding: 12px; font-size: 0.8em; text-transform: uppercase; }
-        td { border-top: 1px solid #282828; padding: 12px; color: white; font-size: 0.9em; }
-        tr:hover td { background: #282828; }
-        h1, h2, h3 { color: white !important; }
-        .muted { color: #b3b3b3 !important; font-size: 0.9em; }
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+        
+        body, .gradio-container { 
+            background: linear-gradient(135deg, #09090b, #111116) !important; 
+            color: #ececec !important; 
+            font-family: 'Outfit', sans-serif !important;
+        }
+        
+        /* Glassmorphism sidebar */
+        .sidebar { 
+            background: rgba(255, 255, 255, 0.03) !important; 
+            backdrop-filter: blur(16px); 
+            -webkit-backdrop-filter: blur(16px);
+            padding: 24px; 
+            border-radius: 20px; 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .sidebar:hover { background: rgba(255, 255, 255, 0.05) !important; }
+        
+        .main-content { background: transparent !important; padding: 10px; }
+        
+        /* Cards */
+        .card { 
+            background: rgba(20, 20, 25, 0.5) !important; 
+            backdrop-filter: blur(12px);
+            padding: 24px; 
+            border-radius: 18px; 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            margin-bottom: 20px; 
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        .card:hover {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Buttons */
+        .spotify-btn { 
+            background: linear-gradient(90deg, #1DB954, #1ed760) !important; 
+            color: #000 !important; 
+            font-weight: 800 !important; 
+            border-radius: 50px !important; 
+            border: none !important;
+            box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3) !important;
+            transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .spotify-btn:hover { 
+            transform: translateY(-2px) scale(1.02) !important; 
+            box-shadow: 0 6px 20px rgba(29, 185, 84, 0.5) !important; 
+        }
+        .spotify-btn:active { transform: scale(0.98) !important; }
+        
+        .secondary-btn { 
+            background: rgba(255, 255, 255, 0.05) !important; 
+            color: #ececec !important; 
+            font-weight: 600 !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important; 
+            border-radius: 50px !important; 
+            transition: all 0.2s ease !important;
+        }
+        .secondary-btn:hover { 
+            background: rgba(255, 255, 255, 0.1) !important; 
+            border-color: rgba(255, 255, 255, 0.3) !important;
+            transform: scale(1.03) !important; 
+        }
+        
+        /* Tables */
+        table { 
+            width: 100%; border-collapse: collapse; 
+            background: rgba(0, 0, 0, 0.3); 
+            border-radius: 12px; overflow: hidden; 
+            backdrop-filter: blur(5px);
+        }
+        th { 
+            background: rgba(255, 255, 255, 0.03); 
+            color: #a0a0a0; text-align: left; 
+            padding: 16px 12px; font-size: 0.85em; 
+            text-transform: uppercase; letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        td { 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03); 
+            padding: 14px 12px; color: #ececec; font-size: 0.95em; 
+            transition: background 0.2s;
+        }
+        tr:hover td { background: rgba(255, 255, 255, 0.08); cursor: pointer; }
+        tr:last-child td { border-bottom: none; }
+        
+        /* Typography */
+        h1 { 
+            color: #fff !important; 
+            font-weight: 800 !important;
+            letter-spacing: -1px;
+            background: -webkit-linear-gradient(#fff, #b3b3b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2, h3 { color: #fff !important; font-weight: 600 !important; margin-bottom: 10px !important; }
+        .muted { color: #9ca3af !important; font-size: 0.95em; line-height: 1.5; }
         """
     ) as demo:
         with gr.Row():
