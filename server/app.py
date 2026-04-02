@@ -95,23 +95,19 @@ if os.environ.get("ENABLE_WEB_INTERFACE", "").lower() == "true":
         print(f"⚠️  Gradio UI not loaded: {e}")
 
 
+from fastapi.responses import RedirectResponse
+
+# Remove OpenEnv's default root route if it exists, so our custom root works
+for i, route in enumerate(app.routes):
+    if getattr(route, "path", None) == "/":
+        app.routes.pop(i)
+        break
+
 @app.get("/")
 def root():
-    """Root endpoint — returns HTTP 200 to pass automated validations, and auto-redirects browsers."""
-    from fastapi.responses import HTMLResponse
+    """Root endpoint — auto-redirects browsers to the Spotify playground."""
     if os.environ.get("ENABLE_WEB_INTERFACE", "").lower() == "true":
-        return HTMLResponse(
-            content='''
-            <html>
-                <head><meta http-equiv="refresh" content="0; url=/playground" /></head>
-                <body>
-                    <p>Redirecting to <a href="/playground">/playground</a>...</p>
-                    <p>Status: Healthy</p>
-                </body>
-            </html>
-            ''',
-            status_code=200
-        )
+        return RedirectResponse(url="/playground")
     return {
         "status": "ok",
         "name": "Trend-Aware Music Discovery Environment",
