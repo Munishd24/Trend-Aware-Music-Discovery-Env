@@ -89,32 +89,10 @@ if os.environ.get("ENABLE_WEB_INTERFACE", "").lower() == "true":
         import gradio as gr
         from gradio_ui import create_gradio_app
         gradio_demo = create_gradio_app()
-        app = gr.mount_gradio_app(app, gradio_demo, path="/playground")
-        print("✅ Gradio playground mounted at /playground")
+        app = gr.mount_gradio_app(app, gradio_demo, path="/")
+        print("✅ Gradio playground mounted at /")
     except Exception as e:
         print(f"⚠️  Gradio UI not loaded: {e}")
-
-
-from fastapi.responses import RedirectResponse
-
-# Remove OpenEnv's default root route if it exists, so our custom root works
-for i, route in enumerate(app.routes):
-    if getattr(route, "path", None) == "/":
-        app.routes.pop(i)
-        break
-
-@app.get("/")
-def root():
-    """Root endpoint — auto-redirects browsers to the Spotify playground."""
-    if os.environ.get("ENABLE_WEB_INTERFACE", "").lower() == "true":
-        return RedirectResponse(url="/playground")
-    return {
-        "status": "ok",
-        "name": "Trend-Aware Music Discovery Environment",
-        "docs": "/docs",
-        "tasks": "/tasks",
-        "baseline": "/baseline",
-    }
 
 
 def main(host: str = "0.0.0.0", port: int = 7860):
