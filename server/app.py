@@ -88,6 +88,15 @@ if os.environ.get("ENABLE_WEB_INTERFACE", "").lower() == "true":
     try:
         import gradio as gr
         from gradio_ui import create_gradio_app
+        
+        to_remove = []
+        for r in app.routes:
+            if getattr(r, "path", None) == "/":
+                to_remove.append(r)
+        for r in to_remove:
+            if r in app.routes:
+                app.routes.remove(r)
+                
         gradio_demo = create_gradio_app()
         app = gr.mount_gradio_app(app, gradio_demo, path="/")
         print("✅ Gradio playground mounted at /")
