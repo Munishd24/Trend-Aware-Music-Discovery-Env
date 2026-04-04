@@ -139,17 +139,16 @@ discovery_bonus = steps where trend_age_days < 3 AND reaction in {shared, saved}
 
 ---
 
-## 🛡️ V3 Hardening (Anti-Exploit Features)
+## ✨ Key Features & Technical Highlights
 
-All features implemented to prevent RL agents from reverse-engineering the environment:
+This environment was purpose-built to evaluate state-of-the-art LLMs against authentic recommendation challenges, eliminating reward-hacking vectors through strict protocols.
 
-| Feature | Implementation |
-|---|---|
-| **Partial Observability (POMDP)** | `user.mood` fully hidden from observation — only inferable via `last_3_reactions` |
-| **Stochastic Rewards** | Probabilistic reaction thresholds (not hard cutoffs) with per-task noise bands |
-| **Random Mood Shifts** | Medium task: 25% chance of mood shift per step (not predictable every N steps) |
-| **Repeat Penalty** | Re-recommending any song gives `−0.3` and marks it as `ignored` immediately |
-| **Seed Isolation** | `/baseline` uses `random.seed(42)` — deterministic and reproducible |
+- **Real Spotify Dataset Engine:** Powered by a high-performance 1,000-track JSON catalog derived from official Hugging Face user datasets, mapping real track metadata (energy, valence) to dynamic simulation variables.
+- **Hidden User Moods (POMDP):** The target user's mood is entirely hidden from the observation schema and shifts randomly. Agents are forced to actively reason and infer states strictly through trailing interaction logs (`last_3_reactions`).
+- **Global Viral Thresholds (Serendipity):** Introduces a dynamic `global_mood_trend` representing wider cultural velocity. If an LLM successfully recommends a track that aligns with both the user's hidden POMDP mood AND the global viral trend, it acquires a massive retention multiplier!
+- **Success-Gated Diversity (Exploration Budget):** Features an advanced anti-reward-hacking protocol. Agents are strictly bound by a multi-attempt `exploration_budget` to test new unseen genres. A massive `+1.0` bounty is awarded *only* if the user positively engages with the genre leap; otherwise, the attempt is wasted.
+- **Premium Interactive Dashboard:** Features a stunning, zero-click auto-loading Gradio Blocks interface modeled after Spotify. The UI organically visualizes the environment state via `💎` Serendipity logging, `🔥` share trackers, formatted catalog outputs, and strict POMDP warning modules limit visibility.
+- **Isolated, Robust Autograder (`inference.py`):** Ships with a fully autonomous evaluation script ensuring absolute compliance with Hackathon standards. Validates LLM responses via a robust failure cascade (JSON parse -> Regex -> Epsilon-Greedy Baseline) perfectly rendering `[START]`, `[STEP]`, and `[END]` evaluation logs.
 
 ---
 
@@ -162,7 +161,7 @@ cd /home/munish/Projects/RL
 
 # Build
 docker build -t music-discovery-env .
-
+   
 # Run
 docker run -d --name music-env -p 7860:7860 music-discovery-env
 
