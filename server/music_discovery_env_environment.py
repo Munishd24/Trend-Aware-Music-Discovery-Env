@@ -11,7 +11,9 @@ An RL environment where an LLM agent acts as a music recommender,
 optimizing for user engagement and trend freshness across 3 difficulty levels.
 """
 
+import json
 import random
+from pathlib import Path
 from uuid import uuid4
 
 from openenv.core.env_server.interfaces import Environment
@@ -61,8 +63,18 @@ class MusicDiscoveryEnvironment(Environment):
     """
 
     SUPPORTS_CONCURRENT_SESSIONS: bool = True
+    full_catalog = None
 
     def __init__(self):
+        super().__init__()
+        if MusicDiscoveryEnvironment.full_catalog is None:
+            catalog_path = Path(__file__).parent / "catalog.json"
+            if catalog_path.exists():
+                with open(catalog_path, "r", encoding="utf-8") as f:
+                    MusicDiscoveryEnvironment.full_catalog = json.load(f)
+            else:
+                MusicDiscoveryEnvironment.full_catalog = REAL_SONGS_DB
+                
         self._state = State(episode_id=str(uuid4()), step_count=0)
         self.task_config = "easy"
         self.max_steps = 10
@@ -73,16 +85,25 @@ class MusicDiscoveryEnvironment(Environment):
         self._global_mood_trend = ""
 
     def _get_trending_songs(self, force_media=None, age_range=(0, 5), count=10):
-        candidates = [s for s in REAL_SONGS_DB if not force_media or s["media_type"] == force_media]
-        if len(candidates) < count:
-            candidates = REAL_SONGS_DB
-        selected = random.sample(candidates, count)
+        catalog = self.full_catalog if self.full_catalog else REAL_SONGS_DB
+        selected = random.sample(catalog, count)
         songs = []
         for s in selected:
             s_copy = dict(s)
-            s_copy["trend_velocity"] = round(random.uniform(0.1, 1.0), 2)
-            if s_copy["vibe"] == getattr(self, "_global_mood_trend", ""):
+            
+            if force_media:
+                s_copy["media_type"] = force_media
+                s_copy["source_media"] = "Anime" if force_media == "anime" else force_media.title()
+            else:
+                s_copy["source_media"] = random.choice(["TikTok", "Anime", "Movie", "Game", "TV Show"])
+                s_copy["media_type"] = s_copy["source_media"].lower().replace(" ", "_")
+                
+            if "trend_velocity" not in s_copy:
+                s_copy["trend_velocity"] = round(random.uniform(0.1, 1.0), 2)
+                
+            if s_copy.get("vibe") == getattr(self, "_global_mood_trend", ""):
                 s_copy["trend_velocity"] = min(1.0, round(s_copy["trend_velocity"] + 0.5, 2))
+                
             s_copy["trend_age_days"] = random.randint(*age_range)
             songs.append(s_copy)
         return songs
@@ -108,7 +129,8 @@ class MusicDiscoveryEnvironment(Environment):
             }
             self._trending_songs = self._get_trending_songs(age_range=(3, 15), count=15)
         elif self.task_config == "hard":
-            seed_songs = random.sample([s["id"] for s in REAL_SONGS_DB], 2)
+            catalog = self.full_catalog if self.full_catalog else REAL_SONGS_DB
+            seed_songs = random.sample([s["id"] for s in catalog], 2)
             self._user = {
                 "taste_profile": {"genres": [], "media_interests": []},
                 "mood": random.choice(MOOD_ROTATION), "discovery_openness": 0.45,

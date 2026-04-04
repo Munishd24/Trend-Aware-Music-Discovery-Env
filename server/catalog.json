@@ -1,0 +1,8002 @@
+[
+  {
+    "id": "1tDWVeCR9oWGX8d5J9rswk",
+    "title": "Eclipse",
+    "artist": "Pink Floyd",
+    "genre": "psych-rock",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "6IBcOGPsniK3Pso1wHIhew",
+    "title": "Forever After All",
+    "artist": "Luke Combs",
+    "genre": "country",
+    "trend_velocity": 0.79,
+    "vibe": "focus"
+  },
+  {
+    "id": "0AUyNF6iFxMNQsNx2nhtrw",
+    "title": "Blood // Water",
+    "artist": "grandson",
+    "genre": "alternative",
+    "trend_velocity": 0.75,
+    "vibe": "party"
+  },
+  {
+    "id": "5imShWWzwqfAJ9gXFpGAQh",
+    "title": "Waiting On the World to Change",
+    "artist": "John Mayer",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "1a8tAQAzHIPQ00OPBXGWPz",
+    "title": "No Eyes - Radio Edit",
+    "artist": "Claptone;JAW",
+    "genre": "german",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6nXIYClvJAfi6ujLiKqEq8",
+    "title": "Sky's Still Blue",
+    "artist": "Andrew Belle",
+    "genre": "folk",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2SabxRgV7VMc1LRHgw0HIo",
+    "title": "nuts (feat. rainy bear)",
+    "artist": "Lil Peep;rainy bear",
+    "genre": "emo",
+    "trend_velocity": 0.8,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6txvQu0zUbiqG24A8XMLnK",
+    "title": "Miracle Maker",
+    "artist": "Dom Dolla;Clementine Douglas",
+    "genre": "deep-house",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5GbVzc6Ex5LYlLJqzRQhuy",
+    "title": "Mystery of Love",
+    "artist": "Sufjan Stevens",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.71,
+    "vibe": "sad"
+  },
+  {
+    "id": "43IYnqZj6slsFqPTmBNS4E",
+    "title": "Left Back - Remix",
+    "artist": "Ronzo;COMFY",
+    "genre": "chill",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "7ojJ4XvqBhBcteM0zjMebT",
+    "title": "(I Can't Help) Falling In Love With You",
+    "artist": "UB40",
+    "genre": "reggae",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "70C4NyhjD5OZUMzvWZ3njJ",
+    "title": "Piano Man",
+    "artist": "Billy Joel",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.77,
+    "vibe": "focus"
+  },
+  {
+    "id": "7dOeiXeTSfA1ixaYmQcWu7",
+    "title": "Rich Love (with Seeb)",
+    "artist": "OneRepublic;Seeb",
+    "genre": "piano",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5HsSsEeP3hU9QSfHZrzbtA",
+    "title": "3:00 AM",
+    "artist": "Finding Hope",
+    "genre": "chill",
+    "trend_velocity": 0.68,
+    "vibe": "sad"
+  },
+  {
+    "id": "2VrSkfinwUSNc7uAXiL0FA",
+    "title": "Let Me Down Slowly / Mai Dhoondhne Ko Zamaney / Kabhi Jo Badal Barsey (Medley)",
+    "artist": "ShaSings;Xtreeemit",
+    "genre": "pop",
+    "trend_velocity": 0.71,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6HTVZeVQ9J6Uiq6tHESxU9",
+    "title": "Welcome Home, Son",
+    "artist": "Radical Face",
+    "genre": "indie",
+    "trend_velocity": 0.71,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "26kVXR9aQXzDiKggPGnUQR",
+    "title": "What If I Love You",
+    "artist": "Gatlin",
+    "genre": "alternative",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "3CrsuTJomWZmeXIvKhV45l",
+    "title": "Stronger",
+    "artist": "The Score",
+    "genre": "alternative",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "0BCUve4b3KySD9Sk8CMZ2i",
+    "title": "Older",
+    "artist": "Conor Matthews",
+    "genre": "chill",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "2MZSXhq4XDJWu6coGoXX1V",
+    "title": "Avril 14th",
+    "artist": "Aphex Twin",
+    "genre": "electronic",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "2D27mEHstGhdGONAhcEU6q",
+    "title": "the song they played (when i crashed into the wall)",
+    "artist": "Lil Peep;Lil Tracy",
+    "genre": "emo",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "6Wx88Mv6b9ofjKMKkdwOJd",
+    "title": "New Divide",
+    "artist": "Linkin Park",
+    "genre": "metal",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7wW9scVNLYFLsmBb1yAUmS",
+    "title": "Blue Eyes",
+    "artist": "Yo Yo Honey Singh",
+    "genre": "pop",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "5cRKj1kynNFqiliT2ndZ3y",
+    "title": "Akuma no Ko",
+    "artist": "Higuchi Ai",
+    "genre": "alternative",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "4IGfpRPTnhzZyL74Ilubrb",
+    "title": "Tu Hi Meri Shab Hai",
+    "artist": "KK",
+    "genre": "pop-film",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3aUD2nXnCYiGd9V1UhfyRz",
+    "title": "Stranger",
+    "artist": "Lauv",
+    "genre": "electro",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "50RwvvEKX5Q7AZt8FTAwIF",
+    "title": "That'll Be The Day",
+    "artist": "Buddy Holly",
+    "genre": "rockabilly",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "2i0AUcEnsDm3dsqLrFWUCq",
+    "title": "Tonight Tonight",
+    "artist": "Hot Chelle Rae",
+    "genre": "punk-rock",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "7o2CTH4ctstm8TNelqjb51",
+    "title": "Sweet Child O' Mine",
+    "artist": "Guns N' Roses",
+    "genre": "rock",
+    "trend_velocity": 0.84,
+    "vibe": "party"
+  },
+  {
+    "id": "3gdewACMIVMEWVbyb8O9sY",
+    "title": "Rocket Man (I Think It's Going To Be A Long, Long Time)",
+    "artist": "Elton John",
+    "genre": "piano",
+    "trend_velocity": 0.81,
+    "vibe": "focus"
+  },
+  {
+    "id": "3JiaA3hvuKu4Fjf6AWwVMX",
+    "title": "Difficult",
+    "artist": "Gracie Abrams",
+    "genre": "indie",
+    "trend_velocity": 0.72,
+    "vibe": "focus"
+  },
+  {
+    "id": "7AQim7LbvFVZJE3O8TYgf2",
+    "title": "Fuck Love (feat. Trippie Redd)",
+    "artist": "XXXTENTACION;Trippie Redd",
+    "genre": "emo",
+    "trend_velocity": 0.83,
+    "vibe": "focus"
+  },
+  {
+    "id": "4Hhv2vrOTy89HFRcjU3QOx",
+    "title": "At Last",
+    "artist": "Etta James",
+    "genre": "jazz",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "6I3mqTwhRpn34SLVafSH7G",
+    "title": "Ghost",
+    "artist": "Justin Bieber",
+    "genre": "pop",
+    "trend_velocity": 0.88,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4eGHEHqoDMMejzPhRFTc7p",
+    "title": "I Don't Wanna Be Me",
+    "artist": "Type O Negative",
+    "genre": "goth",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4S1VYqwfkLit9mKVY3MXoo",
+    "title": "Forever Young",
+    "artist": "Alphaville",
+    "genre": "synth-pop",
+    "trend_velocity": 0.72,
+    "vibe": "sad"
+  },
+  {
+    "id": "2Y0iGXY6m6immVb2ktbseM",
+    "title": "Little Dark Age",
+    "artist": "MGMT",
+    "genre": "alt-rock",
+    "trend_velocity": 0.83,
+    "vibe": "party"
+  },
+  {
+    "id": "5iCY0TXNImK4hyKfcplQsg",
+    "title": "Baarishein",
+    "artist": "Anuv Jain",
+    "genre": "songwriter",
+    "trend_velocity": 0.76,
+    "vibe": "sad"
+  },
+  {
+    "id": "3VZQshi4COChhXaz7cLP02",
+    "title": "I Love It (feat. Charli XCX)",
+    "artist": "Icona Pop;Charli XCX",
+    "genre": "swedish",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "0D1OY0M5A0qD5HGBvFmFid",
+    "title": "Go the Distance",
+    "artist": "Roger Bart;Disney",
+    "genre": "disney",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "3Z4ZuDrY684IFTBz2ze708",
+    "title": "Gimme Some Lovin' - Single Mix",
+    "artist": "The Spencer Davis Group",
+    "genre": "rock-n-roll",
+    "trend_velocity": 0.64,
+    "vibe": "focus"
+  },
+  {
+    "id": "11iIikXxC6NP0Ma8vMD27x",
+    "title": "Alien Blues",
+    "artist": "Vundabar",
+    "genre": "indie",
+    "trend_velocity": 0.82,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1pW5BQT2ltq0NPSlbkev0v",
+    "title": "Pablo",
+    "artist": "King",
+    "genre": "hip-hop",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "11X4Gw3T4hoktVruLgTnm1",
+    "title": "Heartbeats",
+    "artist": "Jos\u00e9 Gonz\u00e1lez",
+    "genre": "goth",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "3ZI3sK9ZJB3LOiZtCs9l3p",
+    "title": "Every Time You Go Away",
+    "artist": "Paul Young",
+    "genre": "disco",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "0AzD1FEuvkXP1verWfaZdv",
+    "title": "Cbat",
+    "artist": "Hudson Mohawke",
+    "genre": "electronic",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "6hjh2phISvfR1Ib6S0FK7b",
+    "title": "Trying My Best",
+    "artist": "Anson Seabra",
+    "genre": "songwriter",
+    "trend_velocity": 0.67,
+    "vibe": "sad"
+  },
+  {
+    "id": "3iICKiDTyIK5qoVl2hXB2f",
+    "title": "Summer High",
+    "artist": "AP Dhillon",
+    "genre": "hip-hop",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "1N4WFXhgmkrTRxK0X7R90u",
+    "title": "Hunnids",
+    "artist": "Sainte",
+    "genre": "chill",
+    "trend_velocity": 0.63,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0zHm0VIyI9N86mfNXKcoIw",
+    "title": "Blossom",
+    "artist": "b/t;Matthew Ifield",
+    "genre": "chill",
+    "trend_velocity": 0.63,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "7eQl3Yqv35ioqUfveKHitE",
+    "title": "Tum Se Hi",
+    "artist": "Pritam;Mohit Chauhan",
+    "genre": "indian",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "3A7Etq2wGE9cYqLIma97Tt",
+    "title": "Aphrodite",
+    "artist": "RINI",
+    "genre": "chill",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "0b18g3G5spr4ZCkz7Y6Q0Q",
+    "title": "Rasputin",
+    "artist": "Majestic;Boney M.",
+    "genre": "house",
+    "trend_velocity": 0.8,
+    "vibe": "party"
+  },
+  {
+    "id": "3Ofmpyhv5UAQ70mENzB277",
+    "title": "Astronaut In The Ocean",
+    "artist": "Masked Wolf",
+    "genre": "hip-hop",
+    "trend_velocity": 0.79,
+    "vibe": "focus"
+  },
+  {
+    "id": "1TQXIltqoZ5XXyfCbAeSQQ",
+    "title": "Dancing With Your Ghost",
+    "artist": "Sasha Alex Sloan",
+    "genre": "pop",
+    "trend_velocity": 0.8,
+    "vibe": "sad"
+  },
+  {
+    "id": "6wNUBZNWFxdUGof6vkaykE",
+    "title": "One For The Road",
+    "artist": "Arctic Monkeys",
+    "genre": "garage",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "4ByEFOBuLXpCqvO1kw8Wdm",
+    "title": "(I Just) Died In Your Arms",
+    "artist": "Cutting Crew",
+    "genre": "synth-pop",
+    "trend_velocity": 0.77,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7i1DkDc2j0yVsSt3jjDvk3",
+    "title": "Weather",
+    "artist": "Novo Amor",
+    "genre": "ambient",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "5rWIO1uP0GwAoU45RTBJ2F",
+    "title": "Gotta Go My Own Way",
+    "artist": "Zac Efron;Vanessa Hudgens;Disney",
+    "genre": "show-tunes",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "133ocfbXXG4HTk76qgSeUb",
+    "title": "We are Bulletproof : the Eternal",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "5yDJpu0xh0d1w13gXaE3lS",
+    "title": "The Heart from Your Hate",
+    "artist": "Trivium",
+    "genre": "metalcore",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "72gv4zhNvRVdQA0eOenCal",
+    "title": "Symphony (feat. Zara Larsson)",
+    "artist": "Clean Bandit;Zara Larsson",
+    "genre": "dance",
+    "trend_velocity": 0.76,
+    "vibe": "focus"
+  },
+  {
+    "id": "6UbfuPifNmblRiaE8vQ08U",
+    "title": "Love & War - Yellow Claw G-Funk Remix",
+    "artist": "Yellow Claw;Yade Lauren",
+    "genre": "house",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "1h04XMpzGzmAudoI6VHBgA",
+    "title": "Penny Lane - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "british",
+    "trend_velocity": 0.63,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6a2LtHG5EH3GSjkkFVFFNK",
+    "title": "Raconteur",
+    "artist": "Dean Demir",
+    "genre": "piano",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "3jJZVeExYzVYiV6Y9Fl3DX",
+    "title": "Plush",
+    "artist": "Stone Temple Pilots",
+    "genre": "grunge",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6LHXb1sGs72iTmpSr0603b",
+    "title": "Something",
+    "artist": "Martin Garrix;Breathe Carolina",
+    "genre": "progressive-house",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7AHKnQ6XB5l7GL4pTJWLZn",
+    "title": "Kutty Pattas",
+    "artist": "Santhosh Dhayanidhi;Rakshita Suresh",
+    "genre": "pop",
+    "trend_velocity": 0.65,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5K6Ssv4Z3zRvxt0P6EKUAP",
+    "title": "Heartbreak Anthem (with David Guetta & Little Mix)",
+    "artist": "Galantis;David Guetta;Little Mix",
+    "genre": "house",
+    "trend_velocity": 0.79,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5iyNH1Dmxif1k4Nl1gMeuh",
+    "title": "Masakali",
+    "artist": "Mohit Chauhan",
+    "genre": "pop-film",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "5v6qYImm5k36GHlFxdEZyv",
+    "title": "Moral of the Story (feat. Niall Horan) - Bonus Track",
+    "artist": "Ashe;Niall Horan",
+    "genre": "electro",
+    "trend_velocity": 0.74,
+    "vibe": "sad"
+  },
+  {
+    "id": "7zwn1eykZtZ5LODrf7c0tS",
+    "title": "You Get Me So High",
+    "artist": "The Neighbourhood",
+    "genre": "rock",
+    "trend_velocity": 0.83,
+    "vibe": "hyped"
+  },
+  {
+    "id": "62ke5zFUJN6RvtXZgVH0F8",
+    "title": "Only Love Can Hurt Like This",
+    "artist": "Paloma Faith",
+    "genre": "british",
+    "trend_velocity": 0.87,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7AkPusgKsrTqbOcTTbRnFr",
+    "title": "Halloween",
+    "artist": "Novo Amor",
+    "genre": "ambient",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "7LZgdL0MxiElfaKZbuuE4l",
+    "title": "Asleep - 2011 Remaster",
+    "artist": "The Smiths",
+    "genre": "punk",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "2JfV8E7wsD7eVY5wr69teC",
+    "title": "worlds away",
+    "artist": "Lil Peep",
+    "genre": "emo",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "6cx5CvFhqN19efStehJqoW",
+    "title": "Valentine",
+    "artist": "Laufey",
+    "genre": "songwriter",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "5NeIONQWJ25uPylJBJiO4c",
+    "title": "Through Glass",
+    "artist": "Stone Sour",
+    "genre": "grunge",
+    "trend_velocity": 0.71,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1Dg4dFJr3HW7sbA7vPejre",
+    "title": "Eight Days A Week - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "british",
+    "trend_velocity": 0.64,
+    "vibe": "focus"
+  },
+  {
+    "id": "42rF3FLOvTSXRpVowkwTGY",
+    "title": "North Star",
+    "artist": "Mackned",
+    "genre": "emo",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "6tgfPk01WoB2cK78rDEq2m",
+    "title": "Don\u2019t Lie (feat. Nemzzz)",
+    "artist": "A1 x J1;Nemzzz",
+    "genre": "chill",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "18YHbIhrleUkKKj2DvEp79",
+    "title": "Zara Sa",
+    "artist": "Pritam;KK",
+    "genre": "indian",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "0JBQnLKfLXmlkquabLtAgd",
+    "title": "Only for the Weak",
+    "artist": "In Flames",
+    "genre": "goth",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "58SIEtTjWErr0yEXVBKxvd",
+    "title": "Shri Krishna Govind Hare Murari",
+    "artist": "Jubin Nautiyal",
+    "genre": "k-pop",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "5d3Wbdgw3zIf8B5eGXznLL",
+    "title": "Pyramids",
+    "artist": "Otto Knows;Alex Aris",
+    "genre": "progressive-house",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "27a1mYSG5tYg7dmEjWBcmL",
+    "title": "CAN'T SAY",
+    "artist": "Travis Scott",
+    "genre": "house",
+    "trend_velocity": 0.76,
+    "vibe": "party"
+  },
+  {
+    "id": "4s9eMbBfWUDtBEFHC7sNp7",
+    "title": "First Time",
+    "artist": "ILLENIUM;iann dior",
+    "genre": "dubstep",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "73ucpKq91TuejrLHgzDNHK",
+    "title": "Poison",
+    "artist": "Rita Ora",
+    "genre": "house",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1v7L65Lzy0j0vdpRjJewt1",
+    "title": "Lose Yourself - From \"8 Mile\" Soundtrack",
+    "artist": "Eminem",
+    "genre": "hip-hop",
+    "trend_velocity": 0.79,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6VrCmhRBFnuGKmtNfk4jDs",
+    "title": "Spotlight",
+    "artist": "Marshmello;Lil Peep",
+    "genre": "electro",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "0QGwOFQChzflLAmPq5NwKo",
+    "title": "A Teenager In Love",
+    "artist": "Dion & The Belmonts",
+    "genre": "r-n-b",
+    "trend_velocity": 0.61,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5CE0k1VmTXgCtaa5L288LP",
+    "title": "KILL DEM",
+    "artist": "Jamie xx",
+    "genre": "garage",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "44AyOl4qVkzS48vBsbNXaC",
+    "title": "Can't Help Falling in Love",
+    "artist": "Elvis Presley",
+    "genre": "rock",
+    "trend_velocity": 0.8,
+    "vibe": "sad"
+  },
+  {
+    "id": "5PgBTczNS4lpNmHVaPPqoU",
+    "title": "D\u00edas y Meses",
+    "artist": "Ozuna",
+    "genre": "reggaeton",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "3LQPTJEqOfljGBxmpgUnoC",
+    "title": "American Woman",
+    "artist": "The Guess Who",
+    "genre": "psych-rock",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3jDdpx9PMlfMBS5tOBHFm9",
+    "title": "Return of the Mack",
+    "artist": "Mark Morrison",
+    "genre": "british",
+    "trend_velocity": 0.75,
+    "vibe": "party"
+  },
+  {
+    "id": "1wIfq9Zul77qAtokyLTlXr",
+    "title": "Ava Enna",
+    "artist": "Harris Jayaraj;Karthik;VV Prassanna",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0sMA4yM4virFpGKst2Pt1N",
+    "title": "No Scrubs",
+    "artist": "MOTi",
+    "genre": "progressive-house",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7K5tOFxje8nlunmexOmWgo",
+    "title": "SG (with Ozuna, Megan Thee Stallion & LISA of BLACKPINK)",
+    "artist": "DJ Snake;Ozuna;Megan Thee Stallion;LISA",
+    "genre": "edm",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "4UhMvTR5tHf2ecfoz0KV92",
+    "title": "Self-Destruction",
+    "artist": "I Prevail",
+    "genre": "metalcore",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4ylWMuGbMXNDgDd8lErEle",
+    "title": "The Greatest Show",
+    "artist": "Hugh Jackman;Keala Settle;Zac Efron;Zendaya;The Greatest Showman Ensemble",
+    "genre": "show-tunes",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7pJ8EpupQvfomVNPtfneql",
+    "title": "Cinnamon",
+    "artist": "Jome",
+    "genre": "folk",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "0Cy7wt6IlRfBPHXXjmZbcP",
+    "title": "Love Me Like You Do",
+    "artist": "Ellie Goulding",
+    "genre": "edm",
+    "trend_velocity": 0.79,
+    "vibe": "focus"
+  },
+  {
+    "id": "00J8yszzb5PR6ZIvSBtg0Y",
+    "title": "You Never Know",
+    "artist": "BLACKPINK",
+    "genre": "k-pop",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "6uTCim4OGFZOauCqHWIpu9",
+    "title": "Heaven (feat. Sofia Quinn) - Club Mix",
+    "artist": "Fedde Le Grand;Robert Falcon;Sofia Quinn",
+    "genre": "house",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2pcwmk8c1pTYwX0COSVX52",
+    "title": "Woman",
+    "artist": "Wolfmother",
+    "genre": "garage",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1UKobFsdqNXQb8OthimCKe",
+    "title": "Helplessly Hoping - 2005 Remaster",
+    "artist": "Crosby, Stills & Nash",
+    "genre": "psych-rock",
+    "trend_velocity": 0.68,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4Xtlw8oXkIOvzV7crUBKeZ",
+    "title": "Rompe",
+    "artist": "Daddy Yankee",
+    "genre": "reggaeton",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1O5mTSQa0sCce9ghhDqIZl",
+    "title": "Jashn-E-Bahaaraa",
+    "artist": "A.R. Rahman;Javed Ali",
+    "genre": "pop-film",
+    "trend_velocity": 0.7,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4YIoQqE50AdyG4BQafCi3u",
+    "title": "High You Are (Branchez Remix)",
+    "artist": "What So Not;Branchez",
+    "genre": "electronic",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2JPLbjOn0wPCngEot2STUS",
+    "title": "Yonaguni",
+    "artist": "Bad Bunny",
+    "genre": "reggaeton",
+    "trend_velocity": 0.87,
+    "vibe": "focus"
+  },
+  {
+    "id": "6iBL6TOzsO75Yz0cG1MO0o",
+    "title": "Wanna Play?",
+    "artist": "The Prophet",
+    "genre": "hardcore",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4yugZvBYaoREkJKtbG08Qr",
+    "title": "Take It Easy - 2013 Remaster",
+    "artist": "Eagles",
+    "genre": "songwriter",
+    "trend_velocity": 0.77,
+    "vibe": "focus"
+  },
+  {
+    "id": "48CKzGWOC65n8a8kdANJV8",
+    "title": "Only Love Can Hurt Like This - Slowed Down Version",
+    "artist": "Paloma Faith",
+    "genre": "soul",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6zC0mpGYwbNTpk9SKwh08f",
+    "title": "Wonderful Tonight",
+    "artist": "Eric Clapton",
+    "genre": "blues",
+    "trend_velocity": 0.76,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "1tlrTC3x7viJ1U30oOFGdF",
+    "title": "Better Off (Dying)",
+    "artist": "Lil Peep",
+    "genre": "emo",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0XMl0fVTh3PyPlwyJTn33n",
+    "title": "Be Someone",
+    "artist": "KVSH;Schillist;Ray X Ben",
+    "genre": "trance",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7omxuGYsym1n2RlVf86OF9",
+    "title": "The 1975",
+    "artist": "The 1975",
+    "genre": "alternative",
+    "trend_velocity": 0.71,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3lKN03PDeBnXZS7sDukRBt",
+    "title": "Money, Money, Money",
+    "artist": "ABBA",
+    "genre": "swedish",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "6xq5DxZWGgdStAxGAil0yw",
+    "title": "Since You Been Gone",
+    "artist": "Rainbow",
+    "genre": "hard-rock",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "1v3Ozpbcx2B926aVW0UuXk",
+    "title": "A-O-K",
+    "artist": "Tai Verdes",
+    "genre": "indie-pop",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "2mDYYGaGd9uXKkK2YhDA3i",
+    "title": "Brooklyn Bridge To Chorus",
+    "artist": "The Strokes",
+    "genre": "garage",
+    "trend_velocity": 0.64,
+    "vibe": "focus"
+  },
+  {
+    "id": "1BfR5GMOgW0peHkPxrwf11",
+    "title": "Safari Song",
+    "artist": "Greta Van Fleet",
+    "genre": "blues",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "1YlulsUKDduOmC7WxvXYPW",
+    "title": "Painkiller",
+    "artist": "Ruel",
+    "genre": "electro",
+    "trend_velocity": 0.71,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "73y649QhnXdcm6fRdvfraO",
+    "title": "Abhi Mujh Mein Kahin",
+    "artist": "Ajay-Atul;Sonu Nigam",
+    "genre": "pop-film",
+    "trend_velocity": 0.65,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2egLcqqD1fz44PKq28fsKQ",
+    "title": "I'm Only a Fool for You",
+    "artist": "Dybbukk",
+    "genre": "sad",
+    "trend_velocity": 0.7,
+    "vibe": "sad"
+  },
+  {
+    "id": "77NNZQSqzLNqh2A9JhLRkg",
+    "title": "Don't Stop Believin'",
+    "artist": "Journey",
+    "genre": "hard-rock",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1S7ca5mJlpHn7GCE88jejz",
+    "title": "Shootout (Slowed + Reverb)",
+    "artist": "Izzamuzzic;Julien Marchal",
+    "genre": "electronic",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "6eFahAdQgABBj1XOM99cBG",
+    "title": "I Like It Like That (feat. New Boyz)",
+    "artist": "Hot Chelle Rae;New Boyz",
+    "genre": "punk-rock",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "5RubKOuDoPn5Kj5TLVxSxY",
+    "title": "TE MUDASTE",
+    "artist": "Bad Bunny",
+    "genre": "latino",
+    "trend_velocity": 0.81,
+    "vibe": "focus"
+  },
+  {
+    "id": "23KVefoON2iEz1dh940quQ",
+    "title": "911",
+    "artist": "Ellise",
+    "genre": "indie-pop",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "6nEkxYIEnrbYH7h1hJ8Xn6",
+    "title": "She Loves You - Mono / Remastered",
+    "artist": "The Beatles",
+    "genre": "psych-rock",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "308Ir17KlNdlrbVLHWhlLe",
+    "title": "The Feels",
+    "artist": "TWICE",
+    "genre": "k-pop",
+    "trend_velocity": 0.78,
+    "vibe": "party"
+  },
+  {
+    "id": "7IabOF0F1Cx4eWe7FjdpzN",
+    "title": "Under the Sun",
+    "artist": "Fini;Francis Skyes",
+    "genre": "deep-house",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "0S6CXA5LpRDX6b4akgrOot",
+    "title": "Love is a Laserquest",
+    "artist": "Arctic Monkeys",
+    "genre": "garage",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "4ASOMWcJUrwEpjJy4GEijz",
+    "title": "California Dreamin' (feat. High Jinx)",
+    "artist": "Chris Lorenzo;High Jinx",
+    "genre": "deep-house",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2hFDO1f9t96wZZdQnn5ejI",
+    "title": "Kiss Me",
+    "artist": "Dermot Kennedy",
+    "genre": "folk",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7p9dd71JR2ucoAuO1Sy0VZ",
+    "title": "When You're Gone",
+    "artist": "Bryan Adams;Melanie C",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "1OEmd2iXU8pWG7CrKNpGUg",
+    "title": "Humdard",
+    "artist": "Arijit Singh",
+    "genre": "pop-film",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "1KF6uW84ksAUlTMy08gP1R",
+    "title": "Somebody Told Me",
+    "artist": "Motionless In White",
+    "genre": "metalcore",
+    "trend_velocity": 0.61,
+    "vibe": "party"
+  },
+  {
+    "id": "5XeFesFbtLpXzIVDNQP22n",
+    "title": "I Wanna Be Yours",
+    "artist": "Arctic Monkeys",
+    "genre": "garage",
+    "trend_velocity": 0.92,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "31H6au3jhblhr6MMJiXnCq",
+    "title": "Hungry Eyes - From \"Dirty Dancing\" Soundtrack",
+    "artist": "Eric Carmen",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "7qiZfU4dY1lWllzX7mPBI3",
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "genre": "pop",
+    "trend_velocity": 0.86,
+    "vibe": "focus"
+  },
+  {
+    "id": "52XYwQKlXp7scE7KrBBCID",
+    "title": "Links 2 3 4",
+    "artist": "Rammstein",
+    "genre": "industrial",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "58f4twRnbZOOVUhMUpplJ4",
+    "title": "Brown Munde",
+    "artist": "AP Dhillon;Gminxr;Gurinder Gill;Shinda Kahlon",
+    "genre": "pop",
+    "trend_velocity": 0.76,
+    "vibe": "focus"
+  },
+  {
+    "id": "7s8VgA8OjvwBUuigKzEGBx",
+    "title": "This Is Home",
+    "artist": "Cavetown",
+    "genre": "indie-pop",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "2tnVG71enUj33Ic2nFN6kZ",
+    "title": "Ride It",
+    "artist": "Regard",
+    "genre": "house",
+    "trend_velocity": 0.81,
+    "vibe": "party"
+  },
+  {
+    "id": "4ygRdvjxDYngbgddCtXDjT",
+    "title": "In a Manner of Speaking",
+    "artist": "Nouvelle Vague;Camille",
+    "genre": "electronic",
+    "trend_velocity": 0.61,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5tf1VVWniHgryyumXyJM7w",
+    "title": "Sugar (feat. Francesco Yates)",
+    "artist": "Robin Schulz;Francesco Yates",
+    "genre": "deep-house",
+    "trend_velocity": 0.76,
+    "vibe": "party"
+  },
+  {
+    "id": "7AB0cUXnzuSlAnyHOqmrZr",
+    "title": "Faint",
+    "artist": "Linkin Park",
+    "genre": "metal",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "48AJSd42lXpicsGqcgopof",
+    "title": "X \u00daLTIMA VEZ",
+    "artist": "Daddy Yankee;Bad Bunny",
+    "genre": "latino",
+    "trend_velocity": 0.85,
+    "vibe": "hyped"
+  },
+  {
+    "id": "38umMmZQdeoOG7Zojor4g3",
+    "title": "ANGOSTURA",
+    "artist": "keshi",
+    "genre": "chill",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "5bKOctkwgdfCktzgabUPne",
+    "title": "Butterfly",
+    "artist": "Penny Layn",
+    "genre": "sleep",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "5YvY66JItF2jFFKeB27pmO",
+    "title": "pt. 1 Owl Light",
+    "artist": "Stephan Moccio",
+    "genre": "ambient",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "1brnLTvarI9D1hLP6z2Ar8",
+    "title": "Thank God",
+    "artist": "Kane Brown;Katelyn Brown",
+    "genre": "country",
+    "trend_velocity": 0.78,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5CI1FP2Volc9wjz2MBZsGx",
+    "title": "Fame",
+    "artist": "Irene Cara",
+    "genre": "disco",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "02shCNmb6IvgB5jLqKjtkK",
+    "title": "Nevada",
+    "artist": "Vicetone;Cozi Zuehlsdorff",
+    "genre": "progressive-house",
+    "trend_velocity": 0.71,
+    "vibe": "hyped"
+  },
+  {
+    "id": "04OxTCLGgDKfO0MMA2lcxv",
+    "title": "Blind Faith",
+    "artist": "Chase & Status;Liam Bailey",
+    "genre": "drum-and-bass",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2sMxswHr9wX7kTUHULvJBJ",
+    "title": "Destino o casualidad",
+    "artist": "Melendi;Ha*Ash",
+    "genre": "spanish",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "3Y7fpFZbHLpAvWJJYGehz0",
+    "title": "Follow The Sun",
+    "artist": "Xavier Rudd",
+    "genre": "reggae",
+    "trend_velocity": 0.71,
+    "vibe": "sad"
+  },
+  {
+    "id": "5naar7XewEOAjOywIp6Jjq",
+    "title": "Remember When",
+    "artist": "Wallows",
+    "genre": "indie",
+    "trend_velocity": 0.75,
+    "vibe": "hyped"
+  },
+  {
+    "id": "08kTa3SL9sV6Iy8KLKtGql",
+    "title": "Kasoor",
+    "artist": "Prateek Kuhad",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4nmne9J3YCEdhvjTzwiAgu",
+    "title": "Black Magic Woman",
+    "artist": "Santana",
+    "genre": "blues",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "6E6BCsQHXDAdXsrL7zV71N",
+    "title": "Roz Roz",
+    "artist": "The Yellow Diary;Shilpa Rao",
+    "genre": "indian",
+    "trend_velocity": 0.63,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2qgXrzJsry4KgYoJCpuaul",
+    "title": "Choo Lo",
+    "artist": "The Local Train",
+    "genre": "indian",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "6nZiYSBwPQ7fYnVWkkkj4g",
+    "title": "Kho Gaye Hum Kahan",
+    "artist": "Jasleen Royal;Prateek Kuhad",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "sad"
+  },
+  {
+    "id": "7HYJqAMbKDJYRyEfUGOCBB",
+    "title": "I'm Fine",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3X0K6fII7VIwL1URPrp8Ko",
+    "title": "Ich will",
+    "artist": "Rammstein",
+    "genre": "metal",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5G0oVoL309pqsvGDzhMOwx",
+    "title": "Diamond Veins (feat. Sarah Rebecca)",
+    "artist": "French 79;Sarah Rebecca",
+    "genre": "french",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "2ACs0dJwkSsvNZvEbvFurK",
+    "title": "Better Than Me",
+    "artist": "The Brobecks",
+    "genre": "piano",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "5M5TD1Tlpcgq0Fj1l6Mz6Z",
+    "title": "When We Are Together",
+    "artist": "The 1975",
+    "genre": "alt-rock",
+    "trend_velocity": 0.69,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5CzixCxDkRXX9mScCmah8O",
+    "title": "Un Ratito",
+    "artist": "Bad Bunny",
+    "genre": "reggae",
+    "trend_velocity": 0.87,
+    "vibe": "focus"
+  },
+  {
+    "id": "0lVp0ajGZ2huxjV0LjnLI4",
+    "title": "Naruto Bluebird Freestyle",
+    "artist": "Khantrast",
+    "genre": "sad",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3I4WFddKpe2PGZWFh7f10J",
+    "title": "Yours",
+    "artist": "Russell Dickerson",
+    "genre": "country",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5ww2BF9slyYgNOk37BlC4u",
+    "title": "La Bachata",
+    "artist": "Manuel Turizo",
+    "genre": "reggaeton",
+    "trend_velocity": 0.98,
+    "vibe": "focus"
+  },
+  {
+    "id": "69P1IEJ9OHNBQtTQf9YRrM",
+    "title": "CONCRETE JUNGLE",
+    "artist": "Bad Omens",
+    "genre": "metalcore",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0Ti2dlF2xLjXblvdU5fCxM",
+    "title": "Miss Murder",
+    "artist": "AFI",
+    "genre": "ska",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "36Owb6DDJbBFXi86x3X61z",
+    "title": "Yellow",
+    "artist": "Pity Party (Girls Club)",
+    "genre": "garage",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "2DjWsDGgL1xNbhnr7f6t5F",
+    "title": "Baby Can I Hold You",
+    "artist": "Tracy Chapman",
+    "genre": "songwriter",
+    "trend_velocity": 0.74,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2RnPATK99oGOZygnD2GTO6",
+    "title": "With A Little Help From My Friends - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "psych-rock",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "3X3BiiDYiPVIn5gEpO9HiF",
+    "title": "Gustakhiyan",
+    "artist": "The Landers",
+    "genre": "hip-hop",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "4w3tQBXhn5345eUXDGBWZG",
+    "title": "9 to 5",
+    "artist": "Dolly Parton",
+    "genre": "country",
+    "trend_velocity": 0.77,
+    "vibe": "party"
+  },
+  {
+    "id": "7FRfYOql61DGDp9VPPe2qA",
+    "title": "Down In A Hole (2022 Remaster)",
+    "artist": "Alice In Chains",
+    "genre": "grunge",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3k64vNcgYPkETG7TNgpW4o",
+    "title": "\u88f8\u306e\u52c7\u8005",
+    "artist": "Vaundy",
+    "genre": "j-pop",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7tUSJY4nsDBJTjd1UXKRsT",
+    "title": "Part of Your World",
+    "artist": "Jodi Benson;Disney",
+    "genre": "disney",
+    "trend_velocity": 0.7,
+    "vibe": "sad"
+  },
+  {
+    "id": "69xohKu8C1fsflYAiSNbwM",
+    "title": "Run BTS",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.84,
+    "vibe": "party"
+  },
+  {
+    "id": "12niARgkwxGsklcEwh6GlG",
+    "title": "Portland, Maine",
+    "artist": "Donovan Woods",
+    "genre": "acoustic",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "3wn5Rw7VBqwP0vAQtjMhOS",
+    "title": "Anime Thighs",
+    "artist": "MC Virgins;wonder",
+    "genre": "sad",
+    "trend_velocity": 0.65,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0K4gxQ2u3545b0GAu85ObO",
+    "title": "You Don't Want Me Anymore",
+    "artist": "Sn\u00f8w;Teqkoi",
+    "genre": "sad",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "3jfZ9M23l0L7RxzYMTgBTv",
+    "title": "Looking Out for You",
+    "artist": "Joy Again",
+    "genre": "garage",
+    "trend_velocity": 0.8,
+    "vibe": "party"
+  },
+  {
+    "id": "0MHiYjjcHNYM9KURa6NveF",
+    "title": "Manavaalan Thug - From \"Thallumaala\"",
+    "artist": "Dabzee;SA",
+    "genre": "malay",
+    "trend_velocity": 0.72,
+    "vibe": "focus"
+  },
+  {
+    "id": "3yMC1KsTwh0ceXdIe4QQAQ",
+    "title": "Fingers Crossed",
+    "artist": "Lauren Spencer Smith",
+    "genre": "songwriter",
+    "trend_velocity": 0.81,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "47OVNnZJzIkrsEiZ4n187p",
+    "title": "Mama",
+    "artist": "Jonas Blue;William Singe",
+    "genre": "edm",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4aYLAF6ckQ5ooGGGM7sWAa",
+    "title": "The Unforgiven",
+    "artist": "Metallica",
+    "genre": "metal",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "2odJRoZ0Bx3aHvNa8hpNrD",
+    "title": "BLOOD",
+    "artist": "KLOUD",
+    "genre": "club",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "10xV5l9nhLvFpR8mqzs0bL",
+    "title": "Numb",
+    "artist": "Marshmello;Khalid",
+    "genre": "progressive-house",
+    "trend_velocity": 0.87,
+    "vibe": "party"
+  },
+  {
+    "id": "6CHENx8iqzMwavTIz8s0gm",
+    "title": "Violet",
+    "artist": "Hole",
+    "genre": "grunge",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3ieDOGcOqVxScs2VZBzidt",
+    "title": "Learning to Fly",
+    "artist": "Pink Floyd",
+    "genre": "psych-rock",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "5cH3LTsDSGNdHMwWsY7gJ6",
+    "title": "Raanjhana Ve",
+    "artist": "Soham Naik;Antara Mitra;Uddipan Sharma",
+    "genre": "pop",
+    "trend_velocity": 0.64,
+    "vibe": "party"
+  },
+  {
+    "id": "0E9ZjEAyAwOXZ7wJC0PD33",
+    "title": "In My Mind",
+    "artist": "Dynoro;Gigi D'Agostino",
+    "genre": "electro",
+    "trend_velocity": 0.79,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1SN1vSPsr4V4tIUTR3s8YW",
+    "title": "Fast Car",
+    "artist": "Jonas Blue;Dakota",
+    "genre": "house",
+    "trend_velocity": 0.73,
+    "vibe": "focus"
+  },
+  {
+    "id": "4tI1u9uQXYLnswRzcysxDo",
+    "title": "life, i'm over you",
+    "artist": "Zevia",
+    "genre": "songwriter",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "5bFuHlXKw66Uu2cHKn5bf8",
+    "title": "Alive",
+    "artist": "Zeds Dead;MKLA",
+    "genre": "dub",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2ZiJidFdQ30nVJEP4u44l3",
+    "title": "Blank Space",
+    "artist": "I Prevail",
+    "genre": "metalcore",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0PXp9QxBfSKGGpWUNaws2X",
+    "title": "Drama (feat. Drake)",
+    "artist": "Roy Woods;Drake",
+    "genre": "soul",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "5jeh4hwbQJnnAJHZV9fqeo",
+    "title": "The Chapeltown Rag",
+    "artist": "Slipknot",
+    "genre": "metal",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2qLMf6TuEC3ruGJg4SMMN6",
+    "title": "Lucky",
+    "artist": "Jason Mraz;Colbie Caillat",
+    "genre": "acoustic",
+    "trend_velocity": 0.68,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "7rlulUEMn27TLbdHpNPugE",
+    "title": "Freestyle",
+    "artist": "Jordan Sandhu",
+    "genre": "pop",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6Tsu3OsuMz4KEGKbOYd6A0",
+    "title": "Hypnotize - 2007 Remaster",
+    "artist": "The Notorious B.I.G.",
+    "genre": "hardcore",
+    "trend_velocity": 0.72,
+    "vibe": "focus"
+  },
+  {
+    "id": "6Rpbzk2LC8xWZI93RyodAq",
+    "title": "Hey Mor",
+    "artist": "Ozuna;Feid",
+    "genre": "latino",
+    "trend_velocity": 0.75,
+    "vibe": "focus"
+  },
+  {
+    "id": "1FHNctV68GUNLgXclG2DtR",
+    "title": "Dancing in the Moonlight",
+    "artist": "Toploader",
+    "genre": "alt-rock",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "63OFKbMaZSDZ4wtesuuq6f",
+    "title": "Born To Be Wild",
+    "artist": "Steppenwolf",
+    "genre": "country",
+    "trend_velocity": 0.73,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2cGxRwrMyEAp8dEbuZaVv6",
+    "title": "Instant Crush (feat. Julian Casablancas)",
+    "artist": "Daft Punk;Julian Casablancas",
+    "genre": "house",
+    "trend_velocity": 0.76,
+    "vibe": "focus"
+  },
+  {
+    "id": "5u3l2TONYacJgmRPQVaF9y",
+    "title": "Twilight Of The Thunder God",
+    "artist": "Amon Amarth",
+    "genre": "swedish",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1Eolhana7nKHYpcYpdVcT5",
+    "title": "Little Wing",
+    "artist": "Jimi Hendrix",
+    "genre": "hard-rock",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "5eXnC2B5RU5fAhfwvV2ABD",
+    "title": "Oceans",
+    "artist": "Seafret",
+    "genre": "folk",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "0cKk8BKEi7zXbdrYdyqBP5",
+    "title": "Behind Blue Eyes",
+    "artist": "The Who",
+    "genre": "blues",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "1qRA5BS78u3gME0loMl9AA",
+    "title": "For What It's Worth",
+    "artist": "Buffalo Springfield",
+    "genre": "folk",
+    "trend_velocity": 0.78,
+    "vibe": "focus"
+  },
+  {
+    "id": "3t3wsY5IdLVzB9WidegJSU",
+    "title": "Jeene Laga Hoon",
+    "artist": "Atif Aslam;Shreya Ghoshal",
+    "genre": "pop-film",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7CZiDzGVjUssMSOXrDNYHL",
+    "title": "Ticket To Ride - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "british",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "1Z7tsmCvV0QboBo37Iykri",
+    "title": "She'll Be Coming Round the Mountain",
+    "artist": "CoComelon",
+    "genre": "children",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "1CzeuSrm71wHP9qsjg7p3F",
+    "title": "The Story of Tonight - Reprise",
+    "artist": "Okieriete Onaodowan;Daveed Diggs;Lin-Manuel Miranda;Leslie Odom Jr.;Anthony Ramos",
+    "genre": "show-tunes",
+    "trend_velocity": 0.63,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "7qCAVkHWZkF44OzOUKf8Cr",
+    "title": "El Perd\u00f3n (with Enrique Iglesias)",
+    "artist": "Nicky Jam;Enrique Iglesias",
+    "genre": "latin",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "65YtzNpiPhGVzg6GPzkotn",
+    "title": "I Won't Let The Sun Go Down On Me",
+    "artist": "Nik Kershaw",
+    "genre": "synth-pop",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "4OSBTYWVwsQhGLF9NHvIbR",
+    "title": "Rolling in the Deep",
+    "artist": "Adele",
+    "genre": "british",
+    "trend_velocity": 0.81,
+    "vibe": "hyped"
+  },
+  {
+    "id": "40riOy7x9W7GXjyGp4pjAv",
+    "title": "Hotel California - 2013 Remaster",
+    "artist": "Eagles",
+    "genre": "songwriter",
+    "trend_velocity": 0.84,
+    "vibe": "focus"
+  },
+  {
+    "id": "0YZEYxd1oiqZRFhnnmTKKi",
+    "title": "Another Life",
+    "artist": "Motionless In White",
+    "genre": "metalcore",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5vTSnZTmS1gMiWuA9kDE19",
+    "title": "Futile Devices (Doveman Remix)",
+    "artist": "Sufjan Stevens",
+    "genre": "songwriter",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "3ebXMykcMXOcLeJ9xZ17XH",
+    "title": "Scared to Be Lonely",
+    "artist": "Martin Garrix;Dua Lipa",
+    "genre": "dance",
+    "trend_velocity": 0.78,
+    "vibe": "focus"
+  },
+  {
+    "id": "4zN21mbAuaD0WqtmaTZZeP",
+    "title": "Ferrari",
+    "artist": "James Hype;Miggy Dela Rosa",
+    "genre": "dance",
+    "trend_velocity": 0.9,
+    "vibe": "focus"
+  },
+  {
+    "id": "1MaqkdFNIKPdpQGDzme5ss",
+    "title": "Two Is Better Than One (feat. Taylor Swift)",
+    "artist": "Boys Like Girls;Taylor Swift",
+    "genre": "punk",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2Ygw4CPjg1lg4zxTITYY2V",
+    "title": "DNA",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "1sINJB2tVaHV5r3iKCACHv",
+    "title": "Reframe",
+    "artist": "Norman D\u00fcck",
+    "genre": "piano",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "2xy57NLEmzuQQeBRORdaOq",
+    "title": "Kosandra - Remix",
+    "artist": "Maikkis",
+    "genre": "edm",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1aOxOpH4AkGAd8OMrKjyNY",
+    "title": "Why Are Sundays So Depressing",
+    "artist": "The Strokes",
+    "genre": "garage",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0hAIs32U2SmJcXymlcyF8h",
+    "title": "Alone In A Room",
+    "artist": "Asking Alexandria",
+    "genre": "metal",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7sJQv0LRPgM2xCkkdWOlyj",
+    "title": "Mere Sohneya",
+    "artist": "Sachet Tandon;Parampara Tandon",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "31AOj9sFz2gM0O3hMARRBx",
+    "title": "Losing My Religion",
+    "artist": "R.E.M.",
+    "genre": "indie",
+    "trend_velocity": 0.84,
+    "vibe": "party"
+  },
+  {
+    "id": "26kVXR9aQXzDiKggPGnUQR",
+    "title": "What If I Love You",
+    "artist": "Gatlin",
+    "genre": "electro",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "44M12pkcMqqdbNNooHCZ6C",
+    "title": "Come And Get It",
+    "artist": "I Prevail",
+    "genre": "metalcore",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6ijjVhsdUDrHWTkciKq0nD",
+    "title": "Rituals",
+    "artist": "Lorelle Paredes",
+    "genre": "sleep",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "716eVtciaJCtTcaknS3QXr",
+    "title": "imagine",
+    "artist": "Ben Platt",
+    "genre": "show-tunes",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "6ylDpki1VpIsc525KC1ojF",
+    "title": "Tacones Rojos",
+    "artist": "Sebastian Yatra",
+    "genre": "reggaeton",
+    "trend_velocity": 0.78,
+    "vibe": "party"
+  },
+  {
+    "id": "6Se3x9ANMLv0dCDsjGmEjh",
+    "title": "do re mi",
+    "artist": "blackbear",
+    "genre": "electro",
+    "trend_velocity": 0.73,
+    "vibe": "focus"
+  },
+  {
+    "id": "4hAUynwghvrqDXs1ejKNEq",
+    "title": "Can't Help Falling In Love",
+    "artist": "Elvis Presley",
+    "genre": "rockabilly",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "4KfSdst7rW39C0sfhArdrz",
+    "title": "Barracuda",
+    "artist": "Heart",
+    "genre": "hard-rock",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "77o1HdXHm1hLd7Ebe9ygd0",
+    "title": "THAT BITCH",
+    "artist": "Bea Miller",
+    "genre": "indie-pop",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "3DmW6y7wTEYHJZlLo1r6XJ",
+    "title": "Shower",
+    "artist": "Becky G",
+    "genre": "reggae",
+    "trend_velocity": 0.78,
+    "vibe": "focus"
+  },
+  {
+    "id": "4qtdkdTY1t3RmlmSbWykzR",
+    "title": "Stay the Night",
+    "artist": "Sigala;Talia Mar",
+    "genre": "house",
+    "trend_velocity": 0.77,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7HneEBTvTra2CRYsxgMOAi",
+    "title": "\u30cf\u30eb\u30b8\u30aa\u30f3",
+    "artist": "YOASOBI",
+    "genre": "j-pop",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "70L6nHORQsblY813yNqUR3",
+    "title": "Cherry Waves",
+    "artist": "Deftones",
+    "genre": "metal",
+    "trend_velocity": 0.75,
+    "vibe": "hyped"
+  },
+  {
+    "id": "06henIQqvVk2vAKj1yQtTp",
+    "title": "Maze of Tranquility",
+    "artist": "Martin Landstr\u00f6m",
+    "genre": "jazz",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "1BCXUbnU0486n4eeTyyVIj",
+    "title": "Loser",
+    "artist": "Charlie Puth",
+    "genre": "dance",
+    "trend_velocity": 0.75,
+    "vibe": "focus"
+  },
+  {
+    "id": "6UqRGwjwYL0stXbaodTxwo",
+    "title": "Seve - Radio Edit",
+    "artist": "Tez Cadey",
+    "genre": "french",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1B3TX5FbmcVROMv2riOwyE",
+    "title": "Looking for a Star",
+    "artist": "XXXTENTACION",
+    "genre": "emo",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "0zlaa4AmbFE7MVDijsyD9Q",
+    "title": "Heat Above",
+    "artist": "Greta Van Fleet",
+    "genre": "blues",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3k9PtGmPNnQtt32TKWm6f3",
+    "title": "Basti Ka Hasti",
+    "artist": "MC STAN",
+    "genre": "hip-hop",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "51c94ac31swyDQj9B3Lzs3",
+    "title": "Change (In the House of Flies)",
+    "artist": "Deftones",
+    "genre": "alt-rock",
+    "trend_velocity": 0.77,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3eH3HTKPBmxvbT7OgxjNit",
+    "title": "Kaanunna Kalyanam (From \"Sita Ramam (Telugu)\")",
+    "artist": "Vishal Chandrashekhar;Anurag Kulkarni;Sinduri Vishal",
+    "genre": "pop",
+    "trend_velocity": 0.72,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2u6fRGcaBhpI4uNBHpGv0b",
+    "title": "Hallelujah",
+    "artist": "Rufus Wainwright",
+    "genre": "piano",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "1biGLgU3ws2Z9S4iCMLoDx",
+    "title": "SittingInTheCar",
+    "artist": "surrenderdorothy",
+    "genre": "emo",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "1cKHdTo9u0ZymJdPGSh6nq",
+    "title": "I Was Never There",
+    "artist": "The Weeknd;Gesaffelstein",
+    "genre": "pop",
+    "trend_velocity": 0.9,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4Egb5xP6cniUx0kgZd5zLB",
+    "title": "Soy Yo",
+    "artist": "Bomba Est\u00e9reo",
+    "genre": "electronic",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "7uCBGNn991AM68fR4tSDco",
+    "title": "Born For This",
+    "artist": "The Score",
+    "genre": "alt-rock",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "2PzU4IB8Dr6mxV3lHuaG34",
+    "title": "(I Can't Get No) Satisfaction - Mono Version",
+    "artist": "The Rolling Stones",
+    "genre": "british",
+    "trend_velocity": 0.77,
+    "vibe": "party"
+  },
+  {
+    "id": "3A4FRzgve9BjfKbvVXRIFO",
+    "title": "Sparkle - movie ver.",
+    "artist": "RADWIMPS",
+    "genre": "rock",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "5KC7ginqShi7mhDQLttQh0",
+    "title": "Get in Trouble (So What)",
+    "artist": "Dimitri Vegas & Like Mike;Vini Vici;Dimitri Vegas",
+    "genre": "progressive-house",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5QTxFnGygVM4jFQiBovmRo",
+    "title": "(Don't Fear) The Reaper",
+    "artist": "Blue \u00d6yster Cult",
+    "genre": "blues",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5vJMWciCIDG0R5gLZLF8DC",
+    "title": "walk away as the door slams",
+    "artist": "Lil Peep;Lil Tracy",
+    "genre": "emo",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "3Ye5icBka8ODjcaEQakPvZ",
+    "title": "Oblivion",
+    "artist": "Royal Blood",
+    "genre": "blues",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "4se25yP3bMpaMAlcxvyJ5Q",
+    "title": "Violin",
+    "artist": "Cookiee Kawaii;Dear Silas",
+    "genre": "alternative",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "6dRj771QZr0KOQVwaB6ykM",
+    "title": "Grown Man Sport",
+    "artist": "Pete Rock;InI",
+    "genre": "hardcore",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "2Iyfw8YfKruAagJwGc4G07",
+    "title": "It's Ok",
+    "artist": "Tom Rosenthal",
+    "genre": "british",
+    "trend_velocity": 0.7,
+    "vibe": "sad"
+  },
+  {
+    "id": "54yLLvpezvPO1lA3GspiZj",
+    "title": "Holy Diver",
+    "artist": "Dio",
+    "genre": "metal",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0cBPuDA3xUjR4Vh9o7CKy8",
+    "title": "Home",
+    "artist": "Edward Sharpe & The Magnetic Zeros",
+    "genre": "folk",
+    "trend_velocity": 0.73,
+    "vibe": "focus"
+  },
+  {
+    "id": "44xO8889yUQHn70P73NILS",
+    "title": "Believe Me",
+    "artist": "Navos",
+    "genre": "groove",
+    "trend_velocity": 0.71,
+    "vibe": "party"
+  },
+  {
+    "id": "7jmHyHMEqm9MJWiMAneF05",
+    "title": "Stand by Me",
+    "artist": "Ben E. King",
+    "genre": "r-n-b",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "1IavuiWnbbts36JWozObGE",
+    "title": "Un Reel",
+    "artist": "Ozuna;TINI",
+    "genre": "latin",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "251aCFbFK1f4Jkil96E5g1",
+    "title": "Don\u2019t Let Me Let Go (with ILLENIUM & EVAN GIIA)",
+    "artist": "Dillon Francis;ILLENIUM;EVAN GIIA",
+    "genre": "electronic",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1tBghD5Z8rBeN7eHDXLamy",
+    "title": "Hip To Be Scared [Feat. Jacoby Shaddix]",
+    "artist": "Ice Nine Kills;Jacoby Shaddix",
+    "genre": "metalcore",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0HaRLPnr887lcQM2YQzkff",
+    "title": "For My Hand (feat. Ed Sheeran)",
+    "artist": "Burna Boy;Ed Sheeran",
+    "genre": "dancehall",
+    "trend_velocity": 0.83,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0Hfah746oDkvCS7ySP3k1c",
+    "title": "dream girl",
+    "artist": "8percent",
+    "genre": "sad",
+    "trend_velocity": 0.66,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5mp7og60TpyNiKi2p9Morw",
+    "title": "Tenu Na Bol Pawaan",
+    "artist": "Yasser Desai;Jyotica Tangri",
+    "genre": "pop-film",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "5s9Kd33ExIhpe1JJSj5zLZ",
+    "title": "Nagada Sang Dhol",
+    "artist": "Shreya Ghoshal;Osman Mir",
+    "genre": "pop-film",
+    "trend_velocity": 0.61,
+    "vibe": "party"
+  },
+  {
+    "id": "37YoRLUu1qId0ewavgvnkG",
+    "title": "Blue Flame",
+    "artist": "LE SSERAFIM",
+    "genre": "k-pop",
+    "trend_velocity": 0.75,
+    "vibe": "party"
+  },
+  {
+    "id": "3D8dwH690MXQRhtIZTSS9c",
+    "title": "Leaving, On a Jet Plane - \"Greatest Hits\" Version",
+    "artist": "John Denver",
+    "genre": "folk",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2dje3ZBu1j1r0QfR7mtS0l",
+    "title": "Burning Hour",
+    "artist": "Jadu Heart",
+    "genre": "soul",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3BPoSr2pO34Aan6alFfVto",
+    "title": "BBoom BBoom",
+    "artist": "MOMOLAND",
+    "genre": "k-pop",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "2aEuA8PSqLa17Y4hKPj5rr",
+    "title": "Cheri Cheri Lady",
+    "artist": "Modern Talking",
+    "genre": "synth-pop",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "52Bg6oaos7twR7IUtEpqcE",
+    "title": "Between The Bars",
+    "artist": "Elliott Smith",
+    "genre": "indie-pop",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "0KoiMHhqKLoL4xM54rcWYY",
+    "title": "Taki Taki (feat. Selena Gomez, Ozuna & Cardi B)",
+    "artist": "DJ Snake;Selena Gomez;Ozuna;Cardi B",
+    "genre": "electro",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "3x1edFtdUWSV6bFmAdHO3u",
+    "title": "disappear",
+    "artist": "demxntia",
+    "genre": "chill",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "4dRb7kdtBVBFzSiCqsY7wP",
+    "title": "Forget About You",
+    "artist": "Devin Kennedy",
+    "genre": "chill",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "7JIuqL4ZqkpfGKQhYlrirs",
+    "title": "The Only Exception",
+    "artist": "Paramore",
+    "genre": "punk",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "5vc9YsAEBWbRVvgKUcA5vs",
+    "title": "Party Animal",
+    "artist": "Charly Black;Luis Fonsi",
+    "genre": "j-dance",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "0fX4oNGBWO3dSGUZcVdVV2",
+    "title": "N95",
+    "artist": "Kendrick Lamar",
+    "genre": "hip-hop",
+    "trend_velocity": 0.83,
+    "vibe": "focus"
+  },
+  {
+    "id": "0JjM9bKm4wrwohMslcm892",
+    "title": "Still Be Friends (feat. Tory Lanez & Tyga)",
+    "artist": "G-Eazy;Tory Lanez;Tyga",
+    "genre": "indie",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0RSGPiykniIg8m7JhiAVv7",
+    "title": "Aisi Raaton",
+    "artist": "Anupam Roy",
+    "genre": "indie",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6TBJkXHPhu3EsMk1bshwuI",
+    "title": "ONLY",
+    "artist": "LeeHi",
+    "genre": "k-pop",
+    "trend_velocity": 0.77,
+    "vibe": "sad"
+  },
+  {
+    "id": "45aBsnKRWUzhwbcqOJLwfe",
+    "title": "This Is Me",
+    "artist": "Keala Settle;The Greatest Showman Ensemble",
+    "genre": "show-tunes",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3Lsdp3mbD27MjxvTeFm0v3",
+    "title": "You're in Love",
+    "artist": "Joe Hisaishi",
+    "genre": "anime",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "4sCSUQnWQ6HJsOMjfPicdn",
+    "title": "Danza Kuduro",
+    "artist": "Don Omar;Lucenzo",
+    "genre": "reggae",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "34iOH7LY3vme5rQxsVILZ4",
+    "title": "Love Will Tear Us Apart - 2020 Remaster",
+    "artist": "Joy Division",
+    "genre": "punk-rock",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "1ntxpzIUbSsizvuAy6lTYY",
+    "title": "Crosstown Traffic",
+    "artist": "Jimi Hendrix",
+    "genre": "psych-rock",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0W1jDXkALMfPqheeSEEk5x",
+    "title": "juice",
+    "artist": "brb.",
+    "genre": "chill",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "33jt3kYWjQzqn3xyYQ5ZEh",
+    "title": "Cheek To Cheek",
+    "artist": "Ella Fitzgerald;Louis Armstrong",
+    "genre": "blues",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "1OQ3PoRZRtE7RH0NIh3p1O",
+    "title": "Drawer",
+    "artist": "10cm",
+    "genre": "indie-pop",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "2XP7Is6c69WaPgX2Kr65l7",
+    "title": "Problem\u00e3o - Ao Vivo",
+    "artist": "Hugo & Vitor;Clayton & Rom\u00e1rio",
+    "genre": "sertanejo",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "6zdikHQs2PBFgGIZBxqOeV",
+    "title": "Po Nee Po - The Pain of Love",
+    "artist": "Anirudh Ravichander;Mohit Chauhan",
+    "genre": "hip-hop",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "0343bYQtSfznf6v90jRLRK",
+    "title": "Forever Young",
+    "artist": "John De Sohn;LIAMOO",
+    "genre": "swedish",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "7bJSiwLFnhoO7g83bWkCtA",
+    "title": "Love Will Keep Us Alive",
+    "artist": "Eagles",
+    "genre": "country",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "6eFlqtmgYckrLelrV4oc9C",
+    "title": "Let You Know - Summer Edit",
+    "artist": "Y.V.E. 48",
+    "genre": "french",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "3mRLHiSHYtC8Hk7bzZdUs1",
+    "title": "River",
+    "artist": "Bishop Briggs",
+    "genre": "electro",
+    "trend_velocity": 0.75,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6ATgDc6e4sPn84hvJsAmPt",
+    "title": "hate u love u",
+    "artist": "Olivia O'Brien",
+    "genre": "electro",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "0Koh9yED8UuaXvg9p5lQdB",
+    "title": "Go to Hell, for Heaven's Sake",
+    "artist": "Bring Me The Horizon",
+    "genre": "metalcore",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "30QD4VRP9yEneOh0eGTrtJ",
+    "title": "Solitude",
+    "artist": "Billie Holiday",
+    "genre": "jazz",
+    "trend_velocity": 0.67,
+    "vibe": "sad"
+  },
+  {
+    "id": "4skbQNtyjy8A7mo8oqe2oD",
+    "title": "A Drug From God",
+    "artist": "Chris Lake;NPC",
+    "genre": "deep-house",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "6LHXb1sGs72iTmpSr0603b",
+    "title": "Something",
+    "artist": "Martin Garrix;Breathe Carolina",
+    "genre": "edm",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3MK2rvp7XjarzRKFrPGMOb",
+    "title": "Disconnected",
+    "artist": "James Hype;Tita Lau",
+    "genre": "groove",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5mdWIwsJAzR97ShGkt8gcR",
+    "title": "New thing (Prod. ZICO) (Feat. Homies)",
+    "artist": "ZICO;HOMIES",
+    "genre": "k-pop",
+    "trend_velocity": 0.78,
+    "vibe": "party"
+  },
+  {
+    "id": "0nS2xf6yooLnSAthClLCDi",
+    "title": "If You Had My Love (Kav Verhouzer Remix)",
+    "artist": "TWOPILOTS;De Hofnar;Kav Verhouzer",
+    "genre": "french",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "3pHpV3pa96s4vuBP7sQq0V",
+    "title": "Is This Love - 2018 Remaster",
+    "artist": "Whitesnake",
+    "genre": "british",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0NlM3asfhPzhDwm5frXquS",
+    "title": "life hack",
+    "artist": "Vaundy",
+    "genre": "j-pop",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "6JNJERZGJwDVgkmbohBw7u",
+    "title": "Self Control",
+    "artist": "Laura Branigan",
+    "genre": "synth-pop",
+    "trend_velocity": 0.73,
+    "vibe": "focus"
+  },
+  {
+    "id": "2lFlveK1y13WWp3vnQtrr3",
+    "title": "100 Years",
+    "artist": "Five For Fighting",
+    "genre": "piano",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "6mCljAhAwsKTCsdaA0tIYF",
+    "title": "Butterflies",
+    "artist": "ASTN",
+    "genre": "chill",
+    "trend_velocity": 0.61,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6ilTR3RpLCAHDt3Z6YuQGx",
+    "title": "\u30b7\u30f3\u30c7\u30ec\u30e9",
+    "artist": "Cidergirl",
+    "genre": "anime",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "3MOKBkpsarb0AfAABcLAsn",
+    "title": "FUCK ABOUT IT (feat. blackbear)",
+    "artist": "Waterparks;blackbear",
+    "genre": "punk-rock",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5NSdMmd2LnvgDcpLiKeKeD",
+    "title": "Bad Girls Club",
+    "artist": "Falling In Reverse",
+    "genre": "metalcore",
+    "trend_velocity": 0.61,
+    "vibe": "party"
+  },
+  {
+    "id": "3G9l0CsH7HCkr0SqDE1juj",
+    "title": "Happiness",
+    "artist": "The 1975",
+    "genre": "alt-rock",
+    "trend_velocity": 0.71,
+    "vibe": "party"
+  },
+  {
+    "id": "2K2Fn8vJzgGUG9JMmPFYC3",
+    "title": "Crash",
+    "artist": "Mokita;Charlotte Sands",
+    "genre": "chill",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "6FGF4Cx7hxKHwSCojfGSAT",
+    "title": "Maglovito",
+    "artist": "Nadia Bulic",
+    "genre": "sleep",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "5xYpEeGFXmkGMBQ22NfKfO",
+    "title": "Keep Me",
+    "artist": "Novo Amor",
+    "genre": "folk",
+    "trend_velocity": 0.69,
+    "vibe": "sad"
+  },
+  {
+    "id": "3uUuGVFu1V7jTQL60S1r8z",
+    "title": "Where Are You Now",
+    "artist": "Lost Frequencies;Calum Scott",
+    "genre": "edm",
+    "trend_velocity": 0.88,
+    "vibe": "focus"
+  },
+  {
+    "id": "42H6GeQfrBkT3vTUTdpB1M",
+    "title": "Please Never Fall in Love Again",
+    "artist": "Ollie MN",
+    "genre": "indie-pop",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "58gqyeFXhOttZW3yetJGPN",
+    "title": "Reggaet\u00f3n Lento (Remix)",
+    "artist": "CNCO;Little Mix",
+    "genre": "latin",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "42tFTth2jcF7iSo0RBjfJF",
+    "title": "Peek-A-Boo",
+    "artist": "Red Velvet",
+    "genre": "k-pop",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "0tAFy8LVdMQgW6A6Nq7olS",
+    "title": "Do You?",
+    "artist": "TroyBoi",
+    "genre": "electronic",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "4blPH3Uy89WnOnYlIv7Ev4",
+    "title": "R\u00e4t",
+    "artist": "Penelope Scott",
+    "genre": "indie-pop",
+    "trend_velocity": 0.76,
+    "vibe": "sad"
+  },
+  {
+    "id": "5G1sTBGbZT5o4PNRc75RKI",
+    "title": "Lonely Boy",
+    "artist": "The Black Keys",
+    "genre": "blues",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "4w8niZpiMy6qz1mntFA5uM",
+    "title": "Taki Taki (with Selena Gomez, Ozuna & Cardi B)",
+    "artist": "DJ Snake;Selena Gomez;Ozuna;Cardi B",
+    "genre": "edm",
+    "trend_velocity": 0.76,
+    "vibe": "party"
+  },
+  {
+    "id": "5XPo15e5ICs6NvSMn44pTF",
+    "title": "Malibu",
+    "artist": "Virginia To Vegas;NOTD",
+    "genre": "house",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "2RFt6ZWQbr9mPhsft9u9eX",
+    "title": "Losing Me",
+    "artist": "Gabrielle Aplin;JP Cooper",
+    "genre": "acoustic",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "6kxaaIeowajN7w21PfMLbu",
+    "title": "So Good",
+    "artist": "Halsey",
+    "genre": "indie-pop",
+    "trend_velocity": 0.77,
+    "vibe": "focus"
+  },
+  {
+    "id": "2vQQfWTanvD99OeHLAoyhW",
+    "title": "From The Ritz To The Rubble",
+    "artist": "Arctic Monkeys",
+    "genre": "garage",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "3A7Etq2wGE9cYqLIma97Tt",
+    "title": "Aphrodite",
+    "artist": "RINI",
+    "genre": "soul",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "5dUMh0ugelpKfoFp3qChuK",
+    "title": "Hit the Road Jack",
+    "artist": "Ray Charles",
+    "genre": "soul",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "0RDqNCRBGrSegk16Avfzuq",
+    "title": "Talk that Talk",
+    "artist": "TWICE",
+    "genre": "k-pop",
+    "trend_velocity": 0.86,
+    "vibe": "party"
+  },
+  {
+    "id": "15VRO9CQwMpbqUYA7e6Hwg",
+    "title": "The Man Who Sold The World",
+    "artist": "Nirvana",
+    "genre": "grunge",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3nwd2gUT7l10HDUAOKXrhs",
+    "title": "Easy Lover (feat. Big Sean)",
+    "artist": "Ellie Goulding;Big Sean",
+    "genre": "indie",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6r20M5DWYdIoCDmDViBxuz",
+    "title": "You Got It",
+    "artist": "Roy Orbison",
+    "genre": "rock-n-roll",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "6OG1S805gIrH5nAQbEOPY3",
+    "title": "You'll Be Back",
+    "artist": "Jonathan Groff;Original Broadway Cast of Hamilton",
+    "genre": "show-tunes",
+    "trend_velocity": 0.7,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3Q5cLvkKsHJvYltf8k7HkO",
+    "title": "Ego Death (feat. Kanye West, FKA twigs & Skrillex)",
+    "artist": "Ty Dolla $ign;FKA twigs;Skrillex;Kanye West",
+    "genre": "soul",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "2Fv2injs4qAm8mJBGaxVKU",
+    "title": "Tujhe Kitna Chahne Lage (From \"Kabir Singh\")",
+    "artist": "Arijit Singh;Mithoon",
+    "genre": "pop-film",
+    "trend_velocity": 0.72,
+    "vibe": "sad"
+  },
+  {
+    "id": "5619Ojc6t9evEEs3B7Drhe",
+    "title": "Shake It",
+    "artist": "Metro Station",
+    "genre": "punk",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "4l2soLCGAoYvSKGyqFtsbJ",
+    "title": "Nobody Cares",
+    "artist": "Kina",
+    "genre": "sad",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "2B4GHvToeLTOBB4QLzW3Ni",
+    "title": "Pepas",
+    "artist": "Farruko",
+    "genre": "latin",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1mMYaXpT65iZDtvfRA9EkE",
+    "title": "Fresh",
+    "artist": "Kool & The Gang",
+    "genre": "disco",
+    "trend_velocity": 0.63,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "09AvsbivV1FQBRAEBJh7UL",
+    "title": "High",
+    "artist": "The Chainsmokers",
+    "genre": "electro",
+    "trend_velocity": 0.75,
+    "vibe": "hyped"
+  },
+  {
+    "id": "60rHc4AkLlP4XVSATvBb6K",
+    "title": "I Miss the Misery",
+    "artist": "Halestorm",
+    "genre": "grunge",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2k5SEAK05D29ZkqbnFgIVL",
+    "title": "Satisfied (Ambient Reprise)",
+    "artist": "Catching Flies",
+    "genre": "electronic",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "1ju7EsSGvRybSNEsRvc7qY",
+    "title": "Simple Man",
+    "artist": "Lynyrd Skynyrd",
+    "genre": "blues",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7rMqbvNImA6wy8lxlNUMmj",
+    "title": "Bolo Har Har Har (feat. Mohit Chauhan, Sukhwinder Singh, Badshah, Megha Sriram Dalton, Anugrah, Sandeep Shrivastava)",
+    "artist": "Mithoon;Mohit Chauhan;Sukhwinder Singh;Badshah;Megha Sriram Dalton;Anugrah;Sandeep Shrivastava",
+    "genre": "pop-film",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1Hu42ZLWG9dHaVOPiWyEmE",
+    "title": "Beautiful Scars",
+    "artist": "Maximillian",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.7,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5MfQgdHlFrSNMCbOJG7SwE",
+    "title": "Sem Vest\u00edgios - Ao Vivo",
+    "artist": "Mumuzinho",
+    "genre": "pagode",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "6y20BV5L33R8YXM0YuI38N",
+    "title": "No One Knows",
+    "artist": "Queens of the Stone Age",
+    "genre": "blues",
+    "trend_velocity": 0.72,
+    "vibe": "focus"
+  },
+  {
+    "id": "2kkvB3RNRzwjFdGhaUA0tz",
+    "title": "Layla",
+    "artist": "Derek & The Dominos",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6L5BZEcZmD6RBJnimzlyKr",
+    "title": "Nights In White Satin - Single Version / Mono",
+    "artist": "The Moody Blues",
+    "genre": "hard-rock",
+    "trend_velocity": 0.68,
+    "vibe": "sad"
+  },
+  {
+    "id": "2aoo2jlRnM3A0NyLQqMN2f",
+    "title": "All Along the Watchtower",
+    "artist": "Jimi Hendrix",
+    "genre": "blues",
+    "trend_velocity": 0.77,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0zoGVO4bQXG8U6ChKwNgeg",
+    "title": "4:00A.M.",
+    "artist": "Taeko Onuki",
+    "genre": "anime",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "3ZGJhN4unVspOqpwGvUL2W",
+    "title": "Lemonade",
+    "artist": "Diljit Dosanjh",
+    "genre": "pop",
+    "trend_velocity": 0.74,
+    "vibe": "party"
+  },
+  {
+    "id": "5quFr5s5PXYfUX5jV2EBZ1",
+    "title": "GANADARA (Feat. IU)",
+    "artist": "Jay Park;IU",
+    "genre": "k-pop",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "6whxKQ0Ocn1FmzpDc7lTHq",
+    "title": "\u60f3\u77e5\u9053\u4f60\u5728\u60f3\u4ec0\u9ebc - \u300a\u6211\u5403\u4e86\u90a3\u7537\u5b69\u4e00\u6574\u5e74\u7684\u65e9\u9910\u300b\u96fb\u5f71\u4e3b\u984c\u66f2",
+    "artist": "Eric Chou",
+    "genre": "mandopop",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "5nxcR7W60CU3cvmGX1jBzQ",
+    "title": "Drowned in Emotion",
+    "artist": "Caskets",
+    "genre": "metal",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "58r4JuwHhXLAkttkaUZfLw",
+    "title": "Got to Be Real",
+    "artist": "Cheryl Lynn",
+    "genre": "disco",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "0gaMmmhGi5buPXpquSAfxg",
+    "title": "The Temple Of The King",
+    "artist": "Rainbow",
+    "genre": "blues",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "7nAfXgeHfDO50upcOjJOaq",
+    "title": "Talking to Myself",
+    "artist": "Linkin Park",
+    "genre": "metal",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4OTw5splgMdlYklwHMHxLK",
+    "title": "Long Cool Woman (In a Black Dress) - 1999 Remaster",
+    "artist": "The Hollies",
+    "genre": "british",
+    "trend_velocity": 0.71,
+    "vibe": "party"
+  },
+  {
+    "id": "5p7ujcrUXASCNwRaWNHR1C",
+    "title": "Without Me",
+    "artist": "Halsey",
+    "genre": "electro",
+    "trend_velocity": 0.78,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6cYJBIE9FC1QAoPw5EhdLA",
+    "title": "Out of Space",
+    "artist": "The Prodigy",
+    "genre": "breakbeat",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3H3x4NhR3wJh6IvRHmPvkd",
+    "title": "Tum Tum (From \"Enemy - Tamil\")",
+    "artist": "Thaman S;Srivardhini;Aditi Bhavaraju;Satya Yamini;Roshini JKV;Tejaswini",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "5GCz9BOkt17aI6ZOR3EiUl",
+    "title": "Desabafo / Deixa Eu Dizer",
+    "artist": "Marcelo D2;Claudia",
+    "genre": "brazil",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "7qUv2Tq895aJc6g4O1F6Zs",
+    "title": "Vida",
+    "artist": "Ozuna",
+    "genre": "reggae",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "2pUpNOgJBIBCcjyQZQ00qU",
+    "title": "Let Her Go",
+    "artist": "Passenger",
+    "genre": "folk",
+    "trend_velocity": 0.75,
+    "vibe": "focus"
+  },
+  {
+    "id": "4vHNeBWDQpVCmGbaccrRzi",
+    "title": "Goodie Bag",
+    "artist": "Still Woozy",
+    "genre": "indie-pop",
+    "trend_velocity": 0.76,
+    "vibe": "focus"
+  },
+  {
+    "id": "23L5CiUhw2jV1OIMwthR3S",
+    "title": "In the Name of Love",
+    "artist": "Martin Garrix;Bebe Rexha",
+    "genre": "dance",
+    "trend_velocity": 0.79,
+    "vibe": "focus"
+  },
+  {
+    "id": "0YCPCY9WhQFMFtoSpj6dhL",
+    "title": "Kiya Kiya",
+    "artist": "Anand Raj Anand;Shweta Pandit",
+    "genre": "pop-film",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "38zwkK6TtTjIW9tpYBfZ3D",
+    "title": "Paradise",
+    "artist": "George Ezra",
+    "genre": "folk",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "42WGQxg2lPIFBt8ZRHQ4Q4",
+    "title": "Romantic Mashup 2",
+    "artist": "Mithoon;Atif Aslam;Armaan Malik;Arijit Singh;Amaal Mallik;Salman Khan;Mohit Chauhan;Yo Yo Honey Singh;Ankit Tiwari;Sonu Nigam;Neeti Mohan;Sabri Brothers;Tulsi Kumar;Rashmi Virag;Dj Chetas",
+    "genre": "pop-film",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6E9UwSfT80age2xknoMS7Y",
+    "title": "Tum Hi Aana (From \"Marjaavaan\")",
+    "artist": "Payal Dev;Jubin Nautiyal",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "sad"
+  },
+  {
+    "id": "3zwmW1gM4E8FlHXV5nE16u",
+    "title": "Be Yourself",
+    "artist": "Audioslave",
+    "genre": "alternative",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2tGvwE8GcFKwNdAXMnlbfl",
+    "title": "happier",
+    "artist": "Olivia Rodrigo",
+    "genre": "pop",
+    "trend_velocity": 0.86,
+    "vibe": "sad"
+  },
+  {
+    "id": "4u9f8hqstB7iITDJNzKhQx",
+    "title": "My Generation - Stereo Version",
+    "artist": "The Who",
+    "genre": "british",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "64Ds8EuwkeGSOeXDzXLRZz",
+    "title": "sheluvme",
+    "artist": "Tai Verdes",
+    "genre": "indie",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "4sebUbjqbcgDSwG6PbSGI0",
+    "title": "Come a Little Closer",
+    "artist": "Cage The Elephant",
+    "genre": "punk",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3mZLiEDAHIjZ8ms5Lxq33F",
+    "title": "Peaches",
+    "artist": "Diljit Dosanjh",
+    "genre": "pop",
+    "trend_velocity": 0.74,
+    "vibe": "sad"
+  },
+  {
+    "id": "6qrb4ganbSTzcDDOo1pzMT",
+    "title": "Sweetheart",
+    "artist": "Dev Negi",
+    "genre": "pop-film",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "68osIGtVjM7QWVe6pazLHj",
+    "title": "Shadow Moses",
+    "artist": "Bring Me The Horizon",
+    "genre": "metal",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2AmEv442DGwSxMGZ9XEvBA",
+    "title": "Rock Of Ages",
+    "artist": "Def Leppard",
+    "genre": "hard-rock",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "1OUPXna2MCgAt3VNmXJBtg",
+    "title": "Bola Rebola",
+    "artist": "Tropkillaz;J Balvin;Anitta;ZAAC",
+    "genre": "funk",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "73ucpKq91TuejrLHgzDNHK",
+    "title": "Poison",
+    "artist": "Rita Ora",
+    "genre": "electro",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "74CkeJ0vYYTdQImnaLy759",
+    "title": "Ride With Me (feat. Kid Ink) - Brennan Heart Remix",
+    "artist": "Tungevaag;Kid Ink;Brennan Heart",
+    "genre": "r-n-b",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4IYyGIbMS5ZkxDXGfPIrXr",
+    "title": "Come Go With Me",
+    "artist": "The Del-Vikings",
+    "genre": "rockabilly",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "7Ar4G7Ci11gpt6sfH9Cgz5",
+    "title": "Listen to the Music",
+    "artist": "The Doobie Brothers",
+    "genre": "hard-rock",
+    "trend_velocity": 0.76,
+    "vibe": "focus"
+  },
+  {
+    "id": "6lOWoTqVnAWXchddtTH31W",
+    "title": "Leave a Light On",
+    "artist": "Tom Walker",
+    "genre": "folk",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "1BLOVHYYlH4JUHQGcpt75R",
+    "title": "Ode To The Mets",
+    "artist": "The Strokes",
+    "genre": "garage",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "6Zc5f20q7sOe1IC1c1jQvZ",
+    "title": "Without Me (with Juice WRLD)",
+    "artist": "Halsey;Juice WRLD",
+    "genre": "indie-pop",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "3P3pw6C19j31Rnzgo3JG7o",
+    "title": "Perfect Strangers",
+    "artist": "Jonas Blue;JP Cooper",
+    "genre": "dance",
+    "trend_velocity": 0.76,
+    "vibe": "party"
+  },
+  {
+    "id": "67HxeUADW4H3ERfaPW59ma",
+    "title": "Love Me Two Times",
+    "artist": "The Doors",
+    "genre": "psych-rock",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "4VwPsMcRt1HPVKIdcwY9Uj",
+    "title": "Outshined - Remastered",
+    "artist": "Soundgarden",
+    "genre": "grunge",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3c1tJAYgROZEdqRfm7Wsny",
+    "title": "Yedho Ondru Ennai",
+    "artist": "Yuvan Shankar Raja",
+    "genre": "k-pop",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "5IVA7WzOlWrmZh8EqZqMaw",
+    "title": "Looking Down the Barrel of Today",
+    "artist": "Hatebreed",
+    "genre": "hard-rock",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2HBNfSLfBwKWiaSL5bg5jF",
+    "title": "Lull",
+    "artist": "Sleepless Eye",
+    "genre": "sleep",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "0DnGfA1r8pAssJCuq4ojla",
+    "title": "Still Got The Blues",
+    "artist": "Gary Moore",
+    "genre": "british",
+    "trend_velocity": 0.68,
+    "vibe": "sad"
+  },
+  {
+    "id": "2iUmqdfGZcHIhS3b9E9EWq",
+    "title": "Everybody Talks",
+    "artist": "Neon Trees",
+    "genre": "alt-rock",
+    "trend_velocity": 0.8,
+    "vibe": "party"
+  },
+  {
+    "id": "01380RE6UfsPSdiUIwrCoH",
+    "title": "MIC Drop (Steve Aoki Remix) - Full Length Edition",
+    "artist": "BTS;Steve Aoki",
+    "genre": "k-pop",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6m1TWFMeon7ai9XLOzdbiR",
+    "title": "FAKE LOVE",
+    "artist": "BTS",
+    "genre": "pop",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1n1IDjxVczGQoNg4GMl670",
+    "title": "Ponni Nadhi",
+    "artist": "A.R. Rahman;A. R. Reihana;Bamba Bakya",
+    "genre": "pop-film",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "19JzJOMs4wkuKxY8WEOMea",
+    "title": "this girl",
+    "artist": "Elijah Who",
+    "genre": "chill",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "496vIKS2INz840xZaKncvR",
+    "title": "All Night Parking (with Erroll Garner) Interlude",
+    "artist": "Adele",
+    "genre": "british",
+    "trend_velocity": 0.68,
+    "vibe": "sad"
+  },
+  {
+    "id": "5aeIj88MLdekYvObw5Yisk",
+    "title": "Is There Anybody Out There?",
+    "artist": "Machine Head",
+    "genre": "metalcore",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4w8niZpiMy6qz1mntFA5uM",
+    "title": "Taki Taki (with Selena Gomez, Ozuna & Cardi B)",
+    "artist": "DJ Snake;Selena Gomez;Ozuna;Cardi B",
+    "genre": "electronic",
+    "trend_velocity": 0.76,
+    "vibe": "party"
+  },
+  {
+    "id": "0rmGAIH9LNJewFw7nKzZnc",
+    "title": "You Give Love A Bad Name",
+    "artist": "Bon Jovi",
+    "genre": "metal",
+    "trend_velocity": 0.82,
+    "vibe": "party"
+  },
+  {
+    "id": "4dSoDnmR9opAQ8KxUc9SbC",
+    "title": "Mad Love",
+    "artist": "Sean Paul;David Guetta;Becky G",
+    "genre": "dancehall",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "4ngIVcfL0Pm564bTpDIS8H",
+    "title": "Po Ve Po - The Pain of Love",
+    "artist": "Anirudh Ravichander;Mohit Chauhan",
+    "genre": "hip-hop",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "6DEMMeWXfmFAXgDUMMzeg6",
+    "title": "All I Ask",
+    "artist": "Adele",
+    "genre": "british",
+    "trend_velocity": 0.74,
+    "vibe": "sad"
+  },
+  {
+    "id": "4CiqKccFFYGmFPz7HVTjfW",
+    "title": "Euphor",
+    "artist": "Novo Amor;Ed Tullett;Lowswimmer",
+    "genre": "folk",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "7arsXR8AtExnOFN3v3HiJI",
+    "title": "Going Dumb",
+    "artist": "Alesso;CORSAK",
+    "genre": "house",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "3fjmSxt0PskST13CSdBUFx",
+    "title": "Somewhere I Belong",
+    "artist": "Linkin Park",
+    "genre": "grunge",
+    "trend_velocity": 0.73,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2TQaMcc3BEAF5Srn7FCipl",
+    "title": "Always",
+    "artist": "Atlantic Starr",
+    "genre": "disco",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "4BE1OloRc9xwjyqA4wFFuN",
+    "title": "\u3042\u306e\u5922\u3092\u306a\u305e\u3063\u3066",
+    "artist": "YOASOBI",
+    "genre": "j-pop",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "4h9wh7iOZ0GGn8QVp4RAOB",
+    "title": "I Ain't Worried",
+    "artist": "OneRepublic",
+    "genre": "piano",
+    "trend_velocity": 0.96,
+    "vibe": "party"
+  },
+  {
+    "id": "3UEnF6y5tyHVtMzldS3svp",
+    "title": "Everything Black",
+    "artist": "Unlike Pluto;Mike Taylor",
+    "genre": "rock",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2zhGnnDewN4kBsVzbqjBtX",
+    "title": "Nessaja",
+    "artist": "Scooter",
+    "genre": "happy",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7gFzBppKTiKAs38SWOjbO6",
+    "title": "Kyun Dhunde",
+    "artist": "Vilen",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "1mB7dCUM7sPyNab6R43nlj",
+    "title": "The Drug In Me Is You",
+    "artist": "Falling In Reverse",
+    "genre": "punk-rock",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "6Nm8h73ycDG2saCnZV8poF",
+    "title": "Dragula",
+    "artist": "Rob Zombie",
+    "genre": "metal",
+    "trend_velocity": 0.76,
+    "vibe": "party"
+  },
+  {
+    "id": "0VF7YLIxSQKyNiFL3X6MmN",
+    "title": "Stargazing",
+    "artist": "The Neighbourhood",
+    "genre": "alt-rock",
+    "trend_velocity": 0.76,
+    "vibe": "sad"
+  },
+  {
+    "id": "57iDDD9N9tTWe75x6qhStw",
+    "title": "Bitter Sweet Symphony",
+    "artist": "The Verve",
+    "genre": "r-n-b",
+    "trend_velocity": 0.8,
+    "vibe": "hyped"
+  },
+  {
+    "id": "60wwxj6Dd9NJlirf84wr2c",
+    "title": "Clarity",
+    "artist": "Zedd;Foxes",
+    "genre": "techno",
+    "trend_velocity": 0.75,
+    "vibe": "hyped"
+  },
+  {
+    "id": "11FcfHd3SOmmrWJPGe7Y30",
+    "title": "Don't Let The Sun Go Down On Me",
+    "artist": "Elton John",
+    "genre": "piano",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "1euszbbvkUzQzIhZUWFmXG",
+    "title": "My Name Is Human",
+    "artist": "Highly Suspect",
+    "genre": "grunge",
+    "trend_velocity": 0.64,
+    "vibe": "focus"
+  },
+  {
+    "id": "0YwqJeTUyviMJw70jRt9ET",
+    "title": "A Little Faster",
+    "artist": "There For Tomorrow",
+    "genre": "punk",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "6sv7ZmasB6qSiF8hWJNpDG",
+    "title": "Still",
+    "artist": "Jeff Bernat",
+    "genre": "chill",
+    "trend_velocity": 0.65,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3kv0lHXKrW8oltTe7fYbBq",
+    "title": "Peru - R3HAB Remix",
+    "artist": "Fireboy DML;Ed Sheeran;R3HAB",
+    "genre": "dancehall",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0lYBSQXN6rCTvUZvg9S0lU",
+    "title": "Let Me Love You",
+    "artist": "DJ Snake;Justin Bieber",
+    "genre": "dance",
+    "trend_velocity": 0.84,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2wrJq5XKLnmhRXHIAf9xBa",
+    "title": "10,000 Hours (with Justin Bieber)",
+    "artist": "Dan + Shay;Justin Bieber",
+    "genre": "country",
+    "trend_velocity": 0.78,
+    "vibe": "focus"
+  },
+  {
+    "id": "28iWca1I2wjlrkfiMMP0aL",
+    "title": "Love Story",
+    "artist": "Sarah Cothran",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "7M13FwBAKWNa2jqcZeUhL6",
+    "title": "Love Generation - Radio Edit",
+    "artist": "Bob Sinclar;Gary Pine",
+    "genre": "disco",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5YaskwnGDZFDRipaqzbwQx",
+    "title": "Your Love (9PM)",
+    "artist": "ATB;Topic;A7S",
+    "genre": "german",
+    "trend_velocity": 0.79,
+    "vibe": "hyped"
+  },
+  {
+    "id": "412luShbmlgqqgYFStIB1s",
+    "title": "Wish You Were Mine - Radio Edit",
+    "artist": "Philip George",
+    "genre": "groove",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1K2RnVhm3eauKnA8PAcPu1",
+    "title": "Heat Waves - Slowed",
+    "artist": "Glass Animals",
+    "genre": "pop",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "2Xy1UIVfOlukyye6Fd0wrI",
+    "title": "Follow Me",
+    "artist": "Sam Feldt;Rita Ora",
+    "genre": "electro",
+    "trend_velocity": 0.74,
+    "vibe": "party"
+  },
+  {
+    "id": "7BdlyzVvOqmwPH9dYtZfsx",
+    "title": "Dead Eyes",
+    "artist": "Promoting Sounds;Powfu;Ouse",
+    "genre": "sad",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "1v8NfOckFEnck9gp7iyetm",
+    "title": "Bachalo",
+    "artist": "Akhil",
+    "genre": "hip-hop",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "0uLPKDuIhkIhttiwezNdiG",
+    "title": "Jesus in LA",
+    "artist": "Alec Benjamin",
+    "genre": "electro",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "2z9YkcLojiOE7Eu2p9lPZR",
+    "title": "Normal",
+    "artist": "Feid",
+    "genre": "reggaeton",
+    "trend_velocity": 0.85,
+    "vibe": "focus"
+  },
+  {
+    "id": "5D1zGVDJTOqwaGSzYw5TtP",
+    "title": "Red Light Green Light - For Club Play Only, Pt. 6",
+    "artist": "Duke Dumont;Shaun Ross",
+    "genre": "progressive-house",
+    "trend_velocity": 0.64,
+    "vibe": "party"
+  },
+  {
+    "id": "7DPhusadsTZ2VrXOGcuX2y",
+    "title": "I Ain\u2019t Quite Where I Think I Am",
+    "artist": "Arctic Monkeys",
+    "genre": "garage",
+    "trend_velocity": 0.63,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "48UPSzbZjgc449aqz8bxox",
+    "title": "Californication",
+    "artist": "Red Hot Chili Peppers",
+    "genre": "metal",
+    "trend_velocity": 0.82,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2OrgdmsWkqPiC4MNDnPHx0",
+    "title": "Ma\u00f1ana",
+    "artist": "Ozuna",
+    "genre": "latino",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "0HDO6JFfplYPrSWuufUosZ",
+    "title": "Amour plastique",
+    "artist": "Videoclub",
+    "genre": "french",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "4dHOnPucB5VBYq3gjRtYy9",
+    "title": "You See Big Girl / T:T",
+    "artist": "Hiroyuki Sawano",
+    "genre": "anime",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "7F6PtLP6fJPVtA1FWVkl8K",
+    "title": "Shouldn't Be",
+    "artist": "Luke Chiang",
+    "genre": "chill",
+    "trend_velocity": 0.71,
+    "vibe": "sad"
+  },
+  {
+    "id": "483XiZ5o13Cc1zoWV7jGml",
+    "title": "Gecko (Overdrive) - Radio Edit",
+    "artist": "Oliver Heldens;Becky Hill",
+    "genre": "progressive-house",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "27ooJRSmsdwshBQGoUZE3p",
+    "title": "Rockstar Baby (feat. Mougleta)",
+    "artist": "Robin Schulz;Mougleta",
+    "genre": "german",
+    "trend_velocity": 0.64,
+    "vibe": "party"
+  },
+  {
+    "id": "56oReVXIfUO9xkX7pHmEU0",
+    "title": "On the Nature of Daylight",
+    "artist": "Max Richter;Louisa Fuller;Natalia Bonner;John Metcalfe;Philip Sheppard;Chris Worsey",
+    "genre": "ambient",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "6dwkFmLUz6hx2CZG2EqLol",
+    "title": "Collide",
+    "artist": "Howie Day",
+    "genre": "acoustic",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "5HCyWlXZPP0y6Gqq8TgA20",
+    "title": "STAY (with Justin Bieber)",
+    "artist": "The Kid LAROI;Justin Bieber",
+    "genre": "hip-hop",
+    "trend_velocity": 0.89,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6S3JlDAGk3uu3NtZbPnuhS",
+    "title": "Baby Blue - Remastered 2010",
+    "artist": "Badfinger",
+    "genre": "songwriter",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0HaRLPnr887lcQM2YQzkff",
+    "title": "For My Hand (feat. Ed Sheeran)",
+    "artist": "Burna Boy;Ed Sheeran",
+    "genre": "dance",
+    "trend_velocity": 0.83,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "14XWXWv5FoCbFzLksawpEe",
+    "title": "Riders on the Storm",
+    "artist": "The Doors",
+    "genre": "psych-rock",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "6lYY2HktYKpV1pUamfRlU1",
+    "title": "Messages from the Stars",
+    "artist": "The Rah Band",
+    "genre": "funk",
+    "trend_velocity": 0.74,
+    "vibe": "party"
+  },
+  {
+    "id": "10Q3ASy9okYt85040yV46c",
+    "title": "Shivering (feat. Spiritbox)",
+    "artist": "ILLENIUM;Spiritbox",
+    "genre": "dub",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "45HHTHXv7gQ5q2r89ui2Fy",
+    "title": "lead me on",
+    "artist": "sammy rash",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0J0P8iSE6l3pYHbUdNFYdS",
+    "title": "\u30ab\u30e1\u30ec\u30aa\u30f3",
+    "artist": "King Gnu",
+    "genre": "j-pop",
+    "trend_velocity": 0.73,
+    "vibe": "focus"
+  },
+  {
+    "id": "0CMjjw0RYpNfQ1VkkL6Bwf",
+    "title": "Fleurs de cerisier",
+    "artist": "Chlo\u00e9 Czans",
+    "genre": "piano",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "73PAbYaVbnFG0tQ4aBfxeN",
+    "title": "I Ain't Worried",
+    "artist": "OneRepublic",
+    "genre": "rock",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "0ZeKQudydO2uQJpfr6gNC8",
+    "title": "Tainted Love",
+    "artist": "Marilyn Manson",
+    "genre": "industrial",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4r8JqkhpTb5tzSKKHnVJIJ",
+    "title": "Tujhe Bhula Diya",
+    "artist": "Mohit Chauhan;Shekhar Ravjiani;Shruti Pathak",
+    "genre": "pop-film",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "77KnJc8o5G1eKVwX5ywMeZ",
+    "title": "Mind Over Matter (Reprise)",
+    "artist": "Young the Giant",
+    "genre": "alt-rock",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "2mxByJWOajjiVsLWjNXvDJ",
+    "title": "Oh! Darling - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "british",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "2gdBsRfuWGwJwe3X5XwZuI",
+    "title": "La Copa",
+    "artist": "Ozuna",
+    "genre": "reggaeton",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "2d8D7uk3tbAThjRkdfrx9c",
+    "title": "Voyage voyage",
+    "artist": "Desireless",
+    "genre": "disco",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "70C4NyhjD5OZUMzvWZ3njJ",
+    "title": "Piano Man",
+    "artist": "Billy Joel",
+    "genre": "piano",
+    "trend_velocity": 0.77,
+    "vibe": "focus"
+  },
+  {
+    "id": "305WCRhhS10XUcH6AEwZk6",
+    "title": "Are You Gonna Be My Girl",
+    "artist": "Jet",
+    "genre": "alternative",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4kWO6O1BUXcZmaxitpVUwp",
+    "title": "Jackie Chan",
+    "artist": "Ti\u00ebsto;Dzeko;Preme;Post Malone",
+    "genre": "house",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "6oloWgrErtc8dG2WiV55gn",
+    "title": "Sawan Mein Lag Gayi Aag",
+    "artist": "Mika Singh;Payal Dev;Neha Kakkar;Badshah",
+    "genre": "pop-film",
+    "trend_velocity": 0.61,
+    "vibe": "party"
+  },
+  {
+    "id": "058YoEqihKwmd8ipTOEWse",
+    "title": "Reverence",
+    "artist": "Andrea Monet",
+    "genre": "piano",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "1JQ6Xm1JrvHfvAqhl5pwaA",
+    "title": "Easy",
+    "artist": "Commodores",
+    "genre": "disco",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "3ENHpbTuY72FukZbwGP6bc",
+    "title": "Tear Away",
+    "artist": "Drowning Pool",
+    "genre": "industrial",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "21TcDbGosp7w9YhTjOszgA",
+    "title": "Imagination",
+    "artist": "Shawn Mendes",
+    "genre": "dance",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "4WfV1CNg91SBp8oG0VY0VB",
+    "title": "Crush",
+    "artist": "Cigarettes After Sex",
+    "genre": "ambient",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "469rBLYJUZHMJLtq2Wch3h",
+    "title": "Hallowed Be Thy Name - 2015 Remaster",
+    "artist": "Iron Maiden",
+    "genre": "hard-rock",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5g1BARk25uUJtEPSUwcjnU",
+    "title": "Hero (feat. Christina Perri)",
+    "artist": "Cash Cash;Christina Perri",
+    "genre": "house",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5KGgrDNF3C5vXwgSPaYASE",
+    "title": "360",
+    "artist": "Marc Segu\u00ed",
+    "genre": "spanish",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "2ph6BRhGcUzc2W9wIulG5k",
+    "title": "White Flag",
+    "artist": "Bishop Briggs",
+    "genre": "alternative",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0zzVTGyRrWpQu8Fr28NRAv",
+    "title": "OK Not To Be OK",
+    "artist": "Marshmello;Demi Lovato",
+    "genre": "house",
+    "trend_velocity": 0.75,
+    "vibe": "hyped"
+  },
+  {
+    "id": "13QIjo2iGBgl56mNDjJOet",
+    "title": "I Choose - From The Netflix Original Film \"The Willoughbys\"",
+    "artist": "Alessia Cara",
+    "genre": "electro",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "7COfe3P7KgfwDwIRB8LIDw",
+    "title": "Mi Gente",
+    "artist": "J Balvin;Willy William",
+    "genre": "reggaeton",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2OKfbCxQZ9ylJpulyG0iBj",
+    "title": "R\u00eave sans fin",
+    "artist": "PL\u00dcM",
+    "genre": "french",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "5oQcOu1omDykbIPSdSQQNJ",
+    "title": "1985",
+    "artist": "Bowling For Soup",
+    "genre": "punk",
+    "trend_velocity": 0.71,
+    "vibe": "party"
+  },
+  {
+    "id": "0wCWfjqo0FV1CDseDGD0cV",
+    "title": "Two Years Clear",
+    "artist": "Idi Akz",
+    "genre": "chill",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "79blZUG11a6vtTL3Nt9J78",
+    "title": "Punjabi Mashup",
+    "artist": "Arjun;Badshah;Bohemia;Diljit Dosanjh;Fateh;Gippy Grewal;Girik Aman;Gupz Sehra;Guru Randhawa;Hans Raj Hans;Harjit Harman;Harrdy Sandhu;Labh Janjua;Neha Kakkar;Ranjit Bawa;Sharry Mann;Sukhbir;Surjit Bindrakhia;Yo Yo Honey Singh;Amit Trivedi;Anand Raj Anand;Atul Sharma;B Praak;Beat Minister;Dr Zeus;Intense;Manj Musik;Mista Baaz;Preet Hundal;Vee;DJ Yogii",
+    "genre": "hip-hop",
+    "trend_velocity": 0.61,
+    "vibe": "party"
+  },
+  {
+    "id": "19YKaevk2bce4odJkP5L22",
+    "title": "Nikes",
+    "artist": "Frank Ocean",
+    "genre": "soul",
+    "trend_velocity": 0.72,
+    "vibe": "sad"
+  },
+  {
+    "id": "3H3x4NhR3wJh6IvRHmPvkd",
+    "title": "Tum Tum (From \"Enemy - Tamil\")",
+    "artist": "Thaman S;Srivardhini;Aditi Bhavaraju;Satya Yamini;Roshini JKV;Tejaswini",
+    "genre": "pop-film",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "1rfofaqEpACxVEHIZBJe6W",
+    "title": "Havana (feat. Young Thug)",
+    "artist": "Camila Cabello;Young Thug",
+    "genre": "pop",
+    "trend_velocity": 0.8,
+    "vibe": "focus"
+  },
+  {
+    "id": "1FzXRK8g8TxVdL8UjSWaRC",
+    "title": "Finish Line",
+    "artist": "Delaney Bailey",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "2W2ieVidLIx9TDvxu0ZT6F",
+    "title": "The Best - Edit",
+    "artist": "Tina Turner",
+    "genre": "disco",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "73W5aXorr5vxrySFcoZqIN",
+    "title": "Renegade (feat. Taylor Swift)",
+    "artist": "Big Red Machine;Taylor Swift",
+    "genre": "folk",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1g7j5AxiNKTGjryhFIlAsA",
+    "title": "Story Of My Life (feat. Trippie Redd)",
+    "artist": "ILLENIUM;Sueco;Trippie Redd",
+    "genre": "dubstep",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4nyY8oVjbX2d4qzlpiVM5n",
+    "title": "Ruin My Life",
+    "artist": "Zara Larsson",
+    "genre": "swedish",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "1Jwc3ODLQxtbnS8M9TflSP",
+    "title": "Walk Like an Egyptian",
+    "artist": "The Bangles",
+    "genre": "synth-pop",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "4QwNKEWMM7dyLB7Ew9DHHg",
+    "title": "Lonely Together - (feat. Rita Ora) Alan Walker Remix",
+    "artist": "Avicii;Rita Ora;Alan Walker",
+    "genre": "edm",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6kls8cSlUyHW2BUOkDJIZE",
+    "title": "Hate Me (with Juice WRLD)",
+    "artist": "Ellie Goulding;Juice WRLD",
+    "genre": "indie",
+    "trend_velocity": 0.74,
+    "vibe": "party"
+  },
+  {
+    "id": "0eu4C55hL6x29mmeAjytzC",
+    "title": "Life Goes On",
+    "artist": "Oliver Tree",
+    "genre": "alternative",
+    "trend_velocity": 0.79,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6VrCmhRBFnuGKmtNfk4jDs",
+    "title": "Spotlight",
+    "artist": "Marshmello;Lil Peep",
+    "genre": "edm",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "5SuOikwiRyPMVoIQDJUgSV",
+    "title": "Comedy",
+    "artist": "Gen Hoshino",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.73,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "67mtN6BlsJR0LVyzvNZnGt",
+    "title": "Tonight's Da Night",
+    "artist": "Redman",
+    "genre": "hardcore",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "5Z8YgNhAqCmTZObiM59Ods",
+    "title": "Let It Play",
+    "artist": "Lil Cobaine",
+    "genre": "soul",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "6CDzDgIUqeDY5g8ujExx2f",
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "genre": "indie",
+    "trend_velocity": 0.85,
+    "vibe": "focus"
+  },
+  {
+    "id": "6Thn8AOHIwPCkf2O4ZgfC2",
+    "title": "Song for Zula",
+    "artist": "Phosphorescent",
+    "genre": "swedish",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "3Ddny34bFoYBb8dIGq5lwp",
+    "title": "Zoo York (feat. Fivio Foreign & Pop Smoke)",
+    "artist": "Lil Tjay;Fivio Foreign;Pop Smoke",
+    "genre": "r-n-b",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "1xtkLqZcGPQZP9549WlmfH",
+    "title": "Mishri",
+    "artist": "Anuv Jain",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "6eOc4UyJok1C0t3mur8GYD",
+    "title": "I See You",
+    "artist": "PL\u00dcM",
+    "genre": "french",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "1nrXPF5szKZhHr0iANiPcS",
+    "title": "Mother Knows Best (Reprise) - From \"Tangled\"/Soundtrack Version",
+    "artist": "Donna Murphy",
+    "genre": "disney",
+    "trend_velocity": 0.64,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4YZbVct8l9MnAVIROnLQdx",
+    "title": "Forrest Gump",
+    "artist": "Frank Ocean",
+    "genre": "soul",
+    "trend_velocity": 0.69,
+    "vibe": "sad"
+  },
+  {
+    "id": "62yJjFtgkhUrXktIoSjgP2",
+    "title": "Radioactive",
+    "artist": "Imagine Dragons",
+    "genre": "rock",
+    "trend_velocity": 0.8,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3GJ4hzg4lrGwU51Y3VARbF",
+    "title": "Speechless",
+    "artist": "Dan + Shay",
+    "genre": "country",
+    "trend_velocity": 0.72,
+    "vibe": "sad"
+  },
+  {
+    "id": "2vR23BjIzpLMtzsyKrM6Mb",
+    "title": "Saiyyan",
+    "artist": "Kailash Kher;Paresh Kamath;Naresh Kamath",
+    "genre": "indian",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "3UULkHdmLDqBDPmBYltoRE",
+    "title": "Metalingus",
+    "artist": "Alter Bridge",
+    "genre": "alternative",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7om4LRoSct9hiMPo0fPn7m",
+    "title": "Interlude : Shadow",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7z84Fwf1R3Z2BwHCP620CI",
+    "title": "This Is Why",
+    "artist": "Paramore",
+    "genre": "emo",
+    "trend_velocity": 0.8,
+    "vibe": "party"
+  },
+  {
+    "id": "1elhmWW7Bv0MOQj2gAsyoV",
+    "title": "Make You Say",
+    "artist": "Zedd;Maren Morris;BEAUZ",
+    "genre": "electro",
+    "trend_velocity": 0.75,
+    "vibe": "focus"
+  },
+  {
+    "id": "2UC5XnHA1Wn9FjQmbjNca9",
+    "title": "L'aventurier",
+    "artist": "Indochine",
+    "genre": "synth-pop",
+    "trend_velocity": 0.64,
+    "vibe": "party"
+  },
+  {
+    "id": "7lrqvdivAYRGEiO8JFP31G",
+    "title": "Boy With Luv (Feat. Halsey)",
+    "artist": "BTS;Halsey",
+    "genre": "k-pop",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "1PckUlxKqWQs3RlWXVBLw3",
+    "title": "About Damn Time",
+    "artist": "Lizzo",
+    "genre": "hip-hop",
+    "trend_velocity": 0.89,
+    "vibe": "party"
+  },
+  {
+    "id": "2dXsILW8gzkosqleHAvl0v",
+    "title": "For Whom The Bell Tolls - Remastered",
+    "artist": "Metallica",
+    "genre": "hard-rock",
+    "trend_velocity": 0.73,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5YaskwnGDZFDRipaqzbwQx",
+    "title": "Your Love (9PM)",
+    "artist": "ATB;Topic;A7S",
+    "genre": "trance",
+    "trend_velocity": 0.78,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2PaETSKl3w3IdtLIbDnQXJ",
+    "title": "El aire de la calle",
+    "artist": "Los Delinquentes",
+    "genre": "spanish",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "1FBi1YWCAxlRmfuUbMINqO",
+    "title": "Runaway",
+    "artist": "Lil Peep",
+    "genre": "emo",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "5mEqD00bdFcsiVd0MfvEeF",
+    "title": "Dream lantern",
+    "artist": "RADWIMPS",
+    "genre": "emo",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3gVhsZtseYtY1fMuyYq06F",
+    "title": "Sonne",
+    "artist": "Rammstein",
+    "genre": "alt-rock",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "55Fpeuuc2sbQiy74eA1gTt",
+    "title": "Wolf in Sheep's Clothing",
+    "artist": "Set It Off;William Beckett",
+    "genre": "punk",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "0s26En1JoJhVj32vizElpA",
+    "title": "Feelings",
+    "artist": "Lauv",
+    "genre": "electro",
+    "trend_velocity": 0.72,
+    "vibe": "sad"
+  },
+  {
+    "id": "2xlV2CuWgpPyE9e0GquKDN",
+    "title": "Someone To Stay",
+    "artist": "Vancouver Sleep Clinic",
+    "genre": "indie-pop",
+    "trend_velocity": 0.72,
+    "vibe": "sad"
+  },
+  {
+    "id": "2VGQ342iuqj6aSaYbyBQVJ",
+    "title": "Prayer Of The Refugee",
+    "artist": "Rise Against",
+    "genre": "hardcore",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "14fIlfcmFPlj4V2IazeJ25",
+    "title": "Take It",
+    "artist": "Dom Dolla",
+    "genre": "groove",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "48CKzGWOC65n8a8kdANJV8",
+    "title": "Only Love Can Hurt Like This - Slowed Down Version",
+    "artist": "Paloma Faith",
+    "genre": "british",
+    "trend_velocity": 0.77,
+    "vibe": "hyped"
+  },
+  {
+    "id": "12homE4JpBey5cckgoepR7",
+    "title": "To Be Alone With You",
+    "artist": "Sufjan Stevens",
+    "genre": "songwriter",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "3BbD2sqk7P7Rc9V0KF9o4s",
+    "title": "My Humps",
+    "artist": "Joshwa;Lee Foss",
+    "genre": "groove",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "15JINEqzVMv3SvJTAXAKED",
+    "title": "Love The Way You Lie",
+    "artist": "Eminem;Rihanna",
+    "genre": "hip-hop",
+    "trend_velocity": 0.83,
+    "vibe": "party"
+  },
+  {
+    "id": "0j3p1p06deJ7f9xmJ9yG22",
+    "title": "Back In The U.S.S.R. - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "psych-rock",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6ZOBP3NvffbU4SZcrnt1k6",
+    "title": "Kryptonite",
+    "artist": "3 Doors Down",
+    "genre": "metal",
+    "trend_velocity": 0.8,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5srKMwXoeyrRnyTnNbpgIW",
+    "title": "People I Don't Like",
+    "artist": "UPSAHL",
+    "genre": "indie-pop",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "5cepAtqnEQ6yVG6088zMMu",
+    "title": "Coraz\u00f3n (feat. Nego do Borel)",
+    "artist": "Maluma;Nego do Borel",
+    "genre": "reggae",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "1v5cgIyffYtfEx0swttdoE",
+    "title": "Bring Da Ruckus (feat. RZA, Ghostface Killah, Raekwon & Inspectah Deck)",
+    "artist": "Wu-Tang Clan;RZA;Ghostface Killah;Raekwon;Inspectah Deck",
+    "genre": "hardcore",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "64dLd6rVqDLtkXFYrEUHIU",
+    "title": "New Gold (feat. Tame Impala and Bootie Brown)",
+    "artist": "Gorillaz;Tame Impala;Bootie Brown",
+    "genre": "alternative",
+    "trend_velocity": 0.82,
+    "vibe": "hyped"
+  },
+  {
+    "id": "48QmG1dfvMuYLxMPt7KSRA",
+    "title": "No Lie",
+    "artist": "Sean Paul;Dua Lipa",
+    "genre": "dance",
+    "trend_velocity": 0.83,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1d6zb2JQZt9LpxOwU1E3y4",
+    "title": "Handful",
+    "artist": "Red Hot Chili Peppers",
+    "genre": "funk",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "5tAa8Uaqr4VvA3693mbIhU",
+    "title": "Ruin My Life",
+    "artist": "Zara Larsson",
+    "genre": "edm",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "3kuxr8U3QynLzyW82p5hYR",
+    "title": "Aas Paas Khuda",
+    "artist": "Rahat Fateh Ali Khan",
+    "genre": "pop-film",
+    "trend_velocity": 0.61,
+    "vibe": "party"
+  },
+  {
+    "id": "0LxeKwg9t7HOnyfv4bTALT",
+    "title": "Suck It and See",
+    "artist": "Arctic Monkeys",
+    "genre": "garage",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "00KfIFi2TpAaQGPbRbFbKJ",
+    "title": "IN MY REMAINS",
+    "artist": "Linkin Park",
+    "genre": "alternative",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4BP3uh0hFLFRb5cjsgLqDh",
+    "title": "Fortunate Son",
+    "artist": "Creedence Clearwater Revival",
+    "genre": "country",
+    "trend_velocity": 0.82,
+    "vibe": "focus"
+  },
+  {
+    "id": "1WOz8NwADXFxRADQFVftxp",
+    "title": "Jawani",
+    "artist": "Arjan Dhillon",
+    "genre": "pop",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "3P4Lsg2MNqG8XLXZJUo4GT",
+    "title": "Sway - Sped Up Version",
+    "artist": "Michael Bubl\u00e9",
+    "genre": "j-pop",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "71Udwiv5GsZghU6XQ5LXQj",
+    "title": "Jaat Da Muqabala",
+    "artist": "Sidhu Moose Wala",
+    "genre": "hip-hop",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "0Gl5s8IhMmQE5YQwM8Qx1J",
+    "title": "Never Enough",
+    "artist": "Loren Allred",
+    "genre": "show-tunes",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "6nLvaCZFR1wEzW3sIKpsnr",
+    "title": "Valerie - Live At BBC Radio 1 Live Lounge, London / 2007",
+    "artist": "Amy Winehouse",
+    "genre": "soul",
+    "trend_velocity": 0.75,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0cJPLFrlV7TTCyPLupHzcH",
+    "title": "Won't Get Fooled Again - Original Album Version",
+    "artist": "The Who",
+    "genre": "hard-rock",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3RFL9hE5cBocBsjD5XLJLQ",
+    "title": "Mixed Nuts",
+    "artist": "Official HIGE DANdism",
+    "genre": "j-pop",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "7Lvxcrbzuz1mNCPkFakS9K",
+    "title": "Ek Raat",
+    "artist": "Vilen",
+    "genre": "pop",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "2eB7JqIY4hTTSz31h6bjwR",
+    "title": "Through The Fire And Flames",
+    "artist": "DragonForce",
+    "genre": "metal",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4uUG5RXrOk84mYEfFvj3cK",
+    "title": "I'm Good (Blue)",
+    "artist": "David Guetta;Bebe Rexha",
+    "genre": "dance",
+    "trend_velocity": 0.98,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3jxNbVmugKWFFc3YAVl0sD",
+    "title": "Aabaad Barbaad",
+    "artist": "Pritam;Arijit Singh",
+    "genre": "indian",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "5pV61B6b5kcy1ysaPL8iON",
+    "title": "Kadhal Yen Kadhal",
+    "artist": "Dhanush;Selvaraghavan",
+    "genre": "pop-film",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "2ez6qvOTHKeI3ss80NGqnI",
+    "title": "Trampoline (with ZAYN)",
+    "artist": "SHAED;ZAYN",
+    "genre": "electro",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5ioieZofgvXQK70RFhVohl",
+    "title": "Attentat",
+    "artist": "PLK;OBOY",
+    "genre": "french",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "4CiqKccFFYGmFPz7HVTjfW",
+    "title": "Euphor",
+    "artist": "Novo Amor;Ed Tullett;Lowswimmer",
+    "genre": "ambient",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "1TfqLAPs4K3s2rJMoCokcS",
+    "title": "Sweet Dreams (Are Made of This) - Remastered",
+    "artist": "Eurythmics;Annie Lennox;Dave Stewart",
+    "genre": "rock",
+    "trend_velocity": 0.82,
+    "vibe": "party"
+  },
+  {
+    "id": "6oLejuhWNQf76ydBbtLrT9",
+    "title": "YELLOW",
+    "artist": "Yoh kamiyama",
+    "genre": "j-pop",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "38jy6kRlPt8z1GUS9WXeNh",
+    "title": "93 Million Miles",
+    "artist": "Jason Mraz",
+    "genre": "acoustic",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4PkJ7c9y1CwpuVOiJODnCZ",
+    "title": "Someday",
+    "artist": "Nickelback",
+    "genre": "metal",
+    "trend_velocity": 0.71,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6pPCkAzVYapjObH73BWu9t",
+    "title": "Father",
+    "artist": "Sabaton",
+    "genre": "swedish",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1KHKeIouP04dDtl0EetgED",
+    "title": "The Downfall Of Us All",
+    "artist": "A Day To Remember",
+    "genre": "metalcore",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "35UUpTmrcFXNIVIN26ujXl",
+    "title": "Relaci\u00f3n - Remix",
+    "artist": "Sech;Daddy Yankee;J Balvin;ROSAL\u00cdA;Farruko",
+    "genre": "reggaeton",
+    "trend_velocity": 0.76,
+    "vibe": "party"
+  },
+  {
+    "id": "56fkAaSu91c1E2k43wGPFC",
+    "title": "Psycho!",
+    "artist": "MASN",
+    "genre": "sad",
+    "trend_velocity": 0.68,
+    "vibe": "sad"
+  },
+  {
+    "id": "2vzWylXWogTG11HR0frews",
+    "title": "I Can't Carry This Anymore",
+    "artist": "Anson Seabra",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.65,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4ofwffwvvnbSkrMSCKQDaC",
+    "title": "Shotgun",
+    "artist": "George Ezra",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.78,
+    "vibe": "party"
+  },
+  {
+    "id": "6hu4zxEVl8vhbZwDlqNqK6",
+    "title": "City of Gods",
+    "artist": "Fivio Foreign;Kanye West;Alicia Keys",
+    "genre": "r-n-b",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4SSnFejRGlZikf02HLewEF",
+    "title": "bury a friend",
+    "artist": "Billie Eilish",
+    "genre": "electro",
+    "trend_velocity": 0.76,
+    "vibe": "sad"
+  },
+  {
+    "id": "500mvzh7TRZ0YdnVeHhj8b",
+    "title": "Light It Up - Remix",
+    "artist": "Major Lazer;Nyla;Fuse ODG",
+    "genre": "house",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "0VzBKgimNRMauaqzT2rEnS",
+    "title": "Go Down Deh (feat. Shaggy and Sean Paul)",
+    "artist": "Spice;Shaggy;Sean Paul",
+    "genre": "j-dance",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1eT2CjXwFXNx6oY5ydvzKU",
+    "title": "Hey Jude",
+    "artist": "The Beatles",
+    "genre": "british",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "3M2bD9SMYnJIPdrTKUnBd3",
+    "title": "I Know It's Over - 2011 Remaster",
+    "artist": "The Smiths",
+    "genre": "punk",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5sG3G54H21hNfd5etlheoe",
+    "title": "Satellite",
+    "artist": "Rise Against",
+    "genre": "hardcore",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1HOMkjp0nHMaTnfAkslCQj",
+    "title": "My Sharona",
+    "artist": "The Knack",
+    "genre": "power-pop",
+    "trend_velocity": 0.75,
+    "vibe": "focus"
+  },
+  {
+    "id": "2ov8L95QD25TLpZAZPYWXL",
+    "title": "Mr. Crowley",
+    "artist": "Ozzy Osbourne",
+    "genre": "hard-rock",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3iLBFgaQJ94iarMgzrTuWb",
+    "title": "I Don\u2019t Think That I Like Her",
+    "artist": "Charlie Puth",
+    "genre": "dance",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "20O2mCvJkmrZ5RNED9tbpu",
+    "title": "Falling Slowly",
+    "artist": "Vwillz",
+    "genre": "sad",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "1IyHPt3b6BrhdMwNyk0VM0",
+    "title": "Hey Man, Nice Shot - Remastered Version",
+    "artist": "Filter",
+    "genre": "grunge",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "4CbKVDZkYKdv69I4bCaKUq",
+    "title": "Hero",
+    "artist": "Skillet",
+    "genre": "metal",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "6i4Qi1mJxXjqNIL9HfJhRs",
+    "title": "Civil War",
+    "artist": "Guns N' Roses",
+    "genre": "hard-rock",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2LMq1O0NiqGhPOlXo3McYQ",
+    "title": "Icky Thump",
+    "artist": "The White Stripes",
+    "genre": "punk",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "2Co0IjcLTSHMtodwD4gzfg",
+    "title": "I Bet on Losing Dogs",
+    "artist": "Mitski",
+    "genre": "indie-pop",
+    "trend_velocity": 0.75,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3GXSywNvYLAVUCtjMHkKDh",
+    "title": "E. Coli (feat. Earl Sweatshirt)",
+    "artist": "The Alchemist;Earl Sweatshirt",
+    "genre": "hardcore",
+    "trend_velocity": 0.72,
+    "vibe": "focus"
+  },
+  {
+    "id": "0HAqq2GcQKyi3s87GuN7jU",
+    "title": "Amoeba",
+    "artist": "Clairo",
+    "genre": "indie-pop",
+    "trend_velocity": 0.74,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "65jrjEhWfAvysKfnojk1i0",
+    "title": "Under the Boardwalk",
+    "artist": "The Drifters",
+    "genre": "rock-n-roll",
+    "trend_velocity": 0.68,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4BJyt25nburVwbnESDeIc7",
+    "title": "So Cold - Remix",
+    "artist": "Breaking Benjamin",
+    "genre": "grunge",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7gMOe0gXYcELUoVugfMmHP",
+    "title": "You May Be Right",
+    "artist": "Billy Joel",
+    "genre": "piano",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "7jEyX4bqaCSdMN4D4JNnVj",
+    "title": "Mama",
+    "artist": "Jonas Blue;William Singe",
+    "genre": "dance",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0lG6QM1jjbbX5UUn3DPmrZ",
+    "title": "Lost Control",
+    "artist": "Alan Walker;Sorana",
+    "genre": "electro",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "63WuQOXohQIxOxIFA2K7bR",
+    "title": "SUPERMODEL",
+    "artist": "M\u00e5neskin",
+    "genre": "indie",
+    "trend_velocity": 0.83,
+    "vibe": "party"
+  },
+  {
+    "id": "1YrnDTqvcnUKxAIeXyaEmU",
+    "title": "How Soon Is Now? - 2011 Remaster",
+    "artist": "The Smiths",
+    "genre": "punk",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "4F6dlpCLyi8jWWFEjdxCQ0",
+    "title": "Moments - Ben B\u00f6hmer & Nils Hoffmann Remix",
+    "artist": "Kidnap;Leo Stannard;Ben B\u00f6hmer;Nils Hoffmann",
+    "genre": "house",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "1SssFw74DdHVjRa6ADggdD",
+    "title": "Sweat (A La La La La Long)",
+    "artist": "Inner Circle",
+    "genre": "reggae",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "38zwkK6TtTjIW9tpYBfZ3D",
+    "title": "Paradise",
+    "artist": "George Ezra",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "1louJpMmzEicAn7lzDalPW",
+    "title": "No Promises (feat. Demi Lovato)",
+    "artist": "Cheat Codes;Demi Lovato",
+    "genre": "edm",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "5b7u3idwfY2LyqMQlCwscm",
+    "title": "Kaun Tujhe (From \"M.S.Dhoni - The Untold Story\")",
+    "artist": "Palak Muchhal",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "6alUOXeJ3T6vi8dkN8QSbi",
+    "title": "Rishte Naate - From \"De Dana Dan\"",
+    "artist": "Rahat Fateh Ali Khan;Suzanne D'Mello",
+    "genre": "pop-film",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "0CA3RxBx2xSQXPfpmUBK1v",
+    "title": "Just Like You",
+    "artist": "Three Days Grace",
+    "genre": "grunge",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1fEGtTZjrjJW8eUeewnNJR",
+    "title": "Flightless Bird, American Mouth",
+    "artist": "Iron & Wine",
+    "genre": "indie-pop",
+    "trend_velocity": 0.69,
+    "vibe": "sad"
+  },
+  {
+    "id": "7vd1j4IDTU0koES9M8dvBQ",
+    "title": "Kiss The Rain",
+    "artist": "Yiruma",
+    "genre": "piano",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "4mzP5mHkRvGxdhdGdAH7EJ",
+    "title": "Give Me Your Forever",
+    "artist": "Zack Tabudlo",
+    "genre": "acoustic",
+    "trend_velocity": 0.74,
+    "vibe": "sad"
+  },
+  {
+    "id": "7wdwIaXUuzlu1grzWMFRJm",
+    "title": "Mary On A Cross",
+    "artist": "Ghost",
+    "genre": "hard-rock",
+    "trend_velocity": 0.75,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3UULkHdmLDqBDPmBYltoRE",
+    "title": "Metalingus",
+    "artist": "Alter Bridge",
+    "genre": "grunge",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5mqzhMuUpvnMfwNz6iepmO",
+    "title": "Welcome to the Party (with French Montana & Lil Pump, feat. Zhavia Ward) - from Deadpool 2",
+    "artist": "Diplo;French Montana;Lil Pump;Zhavia",
+    "genre": "electro",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1l0arEkM2grgUYMim5SggS",
+    "title": "OK",
+    "artist": "Rammstein",
+    "genre": "industrial",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3CgZCQyuyxHRMWB9BTwmni",
+    "title": "Swim Good",
+    "artist": "Frank Ocean",
+    "genre": "soul",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "15Vuw407y6UWIPUfGrpJ1e",
+    "title": "Genda Phool",
+    "artist": "Rekha Bhardwaj",
+    "genre": "pop-film",
+    "trend_velocity": 0.61,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4yMbbysldl7E3WgiaugnwM",
+    "title": "Bekhayali",
+    "artist": "Sachet Tandon",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "26AYR77170U49cMcXB7aRV",
+    "title": "Feeling This",
+    "artist": "blink-182",
+    "genre": "punk-rock",
+    "trend_velocity": 0.71,
+    "vibe": "party"
+  },
+  {
+    "id": "7b4yGtR0rujvLi5EBfKKJ2",
+    "title": "Take Me Home Tonight",
+    "artist": "Eddie Money",
+    "genre": "hard-rock",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "078fJxqEUz0LvbHSM6AoXJ",
+    "title": "SUPER BOARD",
+    "artist": "Stray Kids",
+    "genre": "k-pop",
+    "trend_velocity": 0.73,
+    "vibe": "hyped"
+  },
+  {
+    "id": "05NYcsjJwOYq4jIiKPVj9p",
+    "title": "Hard To Handle",
+    "artist": "The Black Crowes",
+    "genre": "j-pop",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "1sIIlVrnPhrvmTrHtzM7tV",
+    "title": "\u70b9\u63cf\u306e\u5504",
+    "artist": "Mrs. GREEN APPLE;Sonoko Inoue",
+    "genre": "j-pop",
+    "trend_velocity": 0.72,
+    "vibe": "focus"
+  },
+  {
+    "id": "2B4GHvToeLTOBB4QLzW3Ni",
+    "title": "Pepas",
+    "artist": "Farruko",
+    "genre": "reggae",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6UbfuPifNmblRiaE8vQ08U",
+    "title": "Love & War - Yellow Claw G-Funk Remix",
+    "artist": "Yellow Claw;Yade Lauren",
+    "genre": "electronic",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "7CAbF0By0Fpnbiu6Xn5ZF7",
+    "title": "Kingslayer (feat. BABYMETAL)",
+    "artist": "Bring Me The Horizon;BABYMETAL",
+    "genre": "metal",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2hPJcTRIOEqCWTMpYQZNnr",
+    "title": "Typa Girl",
+    "artist": "BLACKPINK",
+    "genre": "k-pop",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "22QO6gby3fhNRkNVAFxp5v",
+    "title": "Agua Salada",
+    "artist": "Marc Segu\u00ed",
+    "genre": "spanish",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "7sRXhReWmJF5pqyg3uUTES",
+    "title": "Solamente t\u00fa",
+    "artist": "Pablo Albor\u00e1n",
+    "genre": "spanish",
+    "trend_velocity": 0.71,
+    "vibe": "sad"
+  },
+  {
+    "id": "1YYhDizHx7PnDhAhko6cDS",
+    "title": "Take Me Home, Country Roads",
+    "artist": "John Denver",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.73,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0OlnLZY4cmQzT6ZGttvWBM",
+    "title": "So Far Away (feat. Jamie Scott & Romy Dya)",
+    "artist": "Martin Garrix;David Guetta;Jamie Scott;Romy Dya",
+    "genre": "edm",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "1Dr1fXbc2IxaK1Mu8P8Khz",
+    "title": "When I Come Around",
+    "artist": "Green Day",
+    "genre": "punk",
+    "trend_velocity": 0.76,
+    "vibe": "party"
+  },
+  {
+    "id": "3YXIVMQLRRq2K7kxC7UYx6",
+    "title": "Move Your Body",
+    "artist": "Marshall Jefferson;Solardo",
+    "genre": "chicago-house",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "0rqRkmrlWyuhSUqJKvf8SK",
+    "title": "IOU",
+    "artist": "Five Finger Death Punch",
+    "genre": "groove",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5LyRtsQLhcXmy50VXhQXXS",
+    "title": "Holy Wars...The Punishment Due - Remastered",
+    "artist": "Megadeth",
+    "genre": "metal",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "19YmvsVCetCBeVj6O2mljR",
+    "title": "Still Breathing",
+    "artist": "Green Day",
+    "genre": "punk",
+    "trend_velocity": 0.61,
+    "vibe": "party"
+  },
+  {
+    "id": "7dsImih2L25fa6qjNphBI7",
+    "title": "Turn off the Lights",
+    "artist": "Chris Lake;Alexis Roberts",
+    "genre": "progressive-house",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "6jRq8gaZhMUyy5RclRPcAf",
+    "title": "hot girl bummer",
+    "artist": "blackbear",
+    "genre": "pop",
+    "trend_velocity": 0.8,
+    "vibe": "focus"
+  },
+  {
+    "id": "2PcGqmKToUz0s65q1Acg7d",
+    "title": "SPACESHIP",
+    "artist": "AP Dhillon;Shinda Kahlon;Gminxr",
+    "genre": "hip-hop",
+    "trend_velocity": 0.73,
+    "vibe": "focus"
+  },
+  {
+    "id": "21yCOhgaDMc0KEtxhZHTbI",
+    "title": "blue",
+    "artist": "keshi",
+    "genre": "chill",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "74PyndGWYtfs86n60lAsYW",
+    "title": "Everytime We Touch - Radio Edit",
+    "artist": "Cascada",
+    "genre": "techno",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2gdCsrNrQlMj2EFnsMFUHA",
+    "title": "Wei\u00dfes Rauschen: Baby Schlafhilfe",
+    "artist": "Wei\u00dfes Rauschen HD",
+    "genre": "sleep",
+    "trend_velocity": 0.67,
+    "vibe": "sad"
+  },
+  {
+    "id": "2vR23BjIzpLMtzsyKrM6Mb",
+    "title": "Saiyyan",
+    "artist": "Kailash Kher;Paresh Kamath;Naresh Kamath",
+    "genre": "folk",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "7COfe3P7KgfwDwIRB8LIDw",
+    "title": "Mi Gente",
+    "artist": "J Balvin;Willy William",
+    "genre": "reggae",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7txxAtOMwLLnQTpKeBL6bp",
+    "title": "Mother",
+    "artist": "Danzig",
+    "genre": "hard-rock",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7J2gyNghNTzl4EsLhXp01Q",
+    "title": "infinity (888) - feat. Joey Bada$$",
+    "artist": "XXXTENTACION;Joey Bada$$",
+    "genre": "emo",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "1mvZErZBp7WZT3HfGBykao",
+    "title": "Cry for You",
+    "artist": "September",
+    "genre": "swedish",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "0ADG9OgdVTL7fgREP75BrZ",
+    "title": "Ain't My Fault",
+    "artist": "Zara Larsson",
+    "genre": "electro",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1BqnZOkYJbvYLOhN0qPJDm",
+    "title": "Ma Baker",
+    "artist": "Boney M.",
+    "genre": "disco",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "2QjOHCTQ1Jl3zawyYOpxh6",
+    "title": "Sweater Weather",
+    "artist": "The Neighbourhood",
+    "genre": "alternative",
+    "trend_velocity": 0.93,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4LnHfZGEitmIVS17wndaUI",
+    "title": "Raise a Hallelujah (Studio Version)",
+    "artist": "Bethel Music;Jonathan David Helser;Melissa Helser",
+    "genre": "ambient",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4JLcAU2xY90qTkTSNM1lUa",
+    "title": "Bang Bang (My Baby Shot Me Down)",
+    "artist": "Nancy Sinatra",
+    "genre": "folk",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "45HQ2LUH4ZruF1KmAnGLbq",
+    "title": "Lights",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "3FLJR1N1dxOYEpZCsTX8p6",
+    "title": "Nazm Nazm feat. Ayushmann Khurana",
+    "artist": "Ayushmann Khurrana",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "6McnQuTA2dpArD3QTrD8A7",
+    "title": "sometimes",
+    "artist": "Camylio",
+    "genre": "songwriter",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "5GjPQ0eI7AgmOnADn1EO6Q",
+    "title": "Eleanor Rigby - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "british",
+    "trend_velocity": 0.69,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "1cdbkpZ3q1KYZDNSrOpdkb",
+    "title": "Ice Cream (with Selena Gomez)",
+    "artist": "BLACKPINK;Selena Gomez",
+    "genre": "k-pop",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "0ytvsZOerGzUWfHXVT2Sgy",
+    "title": "Eternal Youth",
+    "artist": "R\u016eDE",
+    "genre": "indie",
+    "trend_velocity": 0.71,
+    "vibe": "sad"
+  },
+  {
+    "id": "6EsH66Uto1zwZlDGQ6RokU",
+    "title": "Forbidden Voices",
+    "artist": "Martin Garrix",
+    "genre": "progressive-house",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4Q7Q9bmbY5Lo7YamHngO4O",
+    "title": "Zara Zara",
+    "artist": "Bombay Jayashri",
+    "genre": "pop-film",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0nrWZWkJM62ftQJSI8fDc0",
+    "title": "Diamond Heart",
+    "artist": "Alan Walker;Sophia Somajo",
+    "genre": "electro",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "6jmf4OxSGzdgthZruXtcqu",
+    "title": "Hate Me!",
+    "artist": "MASN",
+    "genre": "sad",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "7JO9xpBP2uwgMMINJkc43y",
+    "title": "Trouble",
+    "artist": "Elvis Presley",
+    "genre": "rock-n-roll",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6GT0oiQdjiYX91qgAMi7Vd",
+    "title": "Nit Nit",
+    "artist": "Jasleen Royal",
+    "genre": "indian",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "66x45Yh9x397PWpxMX0ZDT",
+    "title": "UN DIA (ONE DAY)",
+    "artist": "J Balvin;Dua Lipa;Bad Bunny;Tainy",
+    "genre": "latino",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "4vLBnQtece15fFhqWxZvJP",
+    "title": "Your New Boyfriend",
+    "artist": "Wilbur Soot",
+    "genre": "indie-pop",
+    "trend_velocity": 0.7,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3RkQ3UwOyPqpIiIvGVewuU",
+    "title": "Mr. Tambourine Man",
+    "artist": "Bob Dylan",
+    "genre": "folk",
+    "trend_velocity": 0.64,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5jkFvD4UJrmdoezzT1FRoP",
+    "title": "Rasputin",
+    "artist": "Boney M.",
+    "genre": "disco",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "6JBX1drGsMrTE8JrAYYoou",
+    "title": "Somebody That I Used To Know",
+    "artist": "Mayday Parade;Vic Fuentes",
+    "genre": "punk-rock",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3Q7o2zzvXj7QiSCumjBpvu",
+    "title": "AMANTES",
+    "artist": "Becky G;Daviles de Novelda",
+    "genre": "reggaeton",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "0qAMjeQFyd1qD0LDiV8gWp",
+    "title": "Black Horse And The Cherry Tree",
+    "artist": "KT Tunstall",
+    "genre": "acoustic",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "07UDTaRYJAsIhUZTyZSUzM",
+    "title": "Ons",
+    "artist": "Huma",
+    "genre": "sleep",
+    "trend_velocity": 0.71,
+    "vibe": "sad"
+  },
+  {
+    "id": "6UcfBPUiBB7ZeQQkwZ8OF5",
+    "title": "KEEP IT TO YOURSELF",
+    "artist": "Clinton Kane",
+    "genre": "songwriter",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "0rRboI6IRuGx56Dq3UdYY4",
+    "title": "Because I Got High",
+    "artist": "Afroman",
+    "genre": "comedy",
+    "trend_velocity": 0.69,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0vB4Vd6PtkJSEnWsmqATnZ",
+    "title": "Nothing's Gonna Change My Love for You",
+    "artist": "George Benson",
+    "genre": "soul",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "0Uon5NsSAkBDx69XYOaQ5P",
+    "title": "Stay",
+    "artist": "Gracie Abrams",
+    "genre": "indie",
+    "trend_velocity": 0.68,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6VNooTY5w9A9wg1YUsEbKB",
+    "title": "Midas",
+    "artist": "Maribou State;Holly Walker",
+    "genre": "electronic",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "0lqgo6rIBS0nVsvppZC3Ay",
+    "title": "Loop",
+    "artist": "Martin Garrix;DallasK;Sasha Alex Sloan",
+    "genre": "edm",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2w6JXokk0F8i241Y8C0Mn6",
+    "title": "Honey, Honey",
+    "artist": "ABBA",
+    "genre": "swedish",
+    "trend_velocity": 0.64,
+    "vibe": "party"
+  },
+  {
+    "id": "1sM0yZDxUhPQhkDh2CLd6l",
+    "title": "Travelin' Man - Remastered",
+    "artist": "Ricky Nelson",
+    "genre": "rock-n-roll",
+    "trend_velocity": 0.61,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "29wJiSQcze8HEmxkUQykyp",
+    "title": "Carrie",
+    "artist": "Europe",
+    "genre": "metal",
+    "trend_velocity": 0.7,
+    "vibe": "sad"
+  },
+  {
+    "id": "2ZMkjvuOQOD9HLplTDjbTA",
+    "title": "XOXO",
+    "artist": "JEON SOMI",
+    "genre": "k-pop",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "7AffKWcNn5Zv7QFgScW2ox",
+    "title": "\u30db\u30bf\u30eb\u30ce\u30d2\u30ab\u30ea",
+    "artist": "Ikimonogakari",
+    "genre": "anime",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1pean7zvZUqcWZaUucH63f",
+    "title": "Thaai Kelavi (From \"Thiruchitrambalam\")",
+    "artist": "Dhanush;Anirudh Ravichander",
+    "genre": "pop-film",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5fOAqQede0xm3pocMD3X8u",
+    "title": "Forever in My Mind",
+    "artist": "COY",
+    "genre": "french",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "1Lim1Py7xBgbAkAys3AGAG",
+    "title": "Lean On",
+    "artist": "Major Lazer;M\u00d8;DJ Snake",
+    "genre": "dance",
+    "trend_velocity": 0.73,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4byiHL0b9mIoCUCjbjI4eA",
+    "title": "Gazab Ka Hai Din (From \"Dil Juunglee\")",
+    "artist": "Jubin Nautiyal;Prakriti Kakar",
+    "genre": "k-pop",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "0fQfJFfngYfG26560HLMLN",
+    "title": "Dynamite",
+    "artist": "Sean Paul;Sia",
+    "genre": "dancehall",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "5pMmWfuL0FTGshYt7HVJ8P",
+    "title": "SOS",
+    "artist": "ABBA",
+    "genre": "swedish",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4ROdFnoZNn2RTmwct0cVpx",
+    "title": "Love Maze",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.71,
+    "vibe": "party"
+  },
+  {
+    "id": "6EbVuwU7EnKeF2hdpViXCH",
+    "title": "Die Young (feat. 347aidan)",
+    "artist": "Sleepy Hallow;347aidan",
+    "genre": "r-n-b",
+    "trend_velocity": 0.81,
+    "vibe": "focus"
+  },
+  {
+    "id": "39m87lOMd5ccENPVvAT7gH",
+    "title": "Bismarck",
+    "artist": "Sabaton",
+    "genre": "metal",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3uL1IBFhg52VcQqOwAG01E",
+    "title": "Mast Magan",
+    "artist": "Arijit Singh;Chinmayi",
+    "genre": "pop-film",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "3T0oPETOdddxJ2xTt2qJe4",
+    "title": "Aaya Na Tu",
+    "artist": "Arjun Kanungo;Momina Mustehsan",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "5YnNWHKCJaJKwbagXDb5Uf",
+    "title": "War Machine",
+    "artist": "AC/DC",
+    "genre": "hard-rock",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7uSLJCDetmdm3tQcoYLyty",
+    "title": "\u65c5\u8def",
+    "artist": "Fujii Kaze",
+    "genre": "j-pop",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "6KtSNVgCmQEvDgIuHoXAkT",
+    "title": "Ik Lamha",
+    "artist": "Azaan Sami Khan",
+    "genre": "pop",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "0Z9UkcT1pnrmLciUJPcMMS",
+    "title": "Gold - 2003 Remaster",
+    "artist": "Spandau Ballet",
+    "genre": "synth-pop",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "3xNIVmBIe839tAsoGe3A4b",
+    "title": "Say Goodbye",
+    "artist": "Monty Datta;Sn\u00f8w",
+    "genre": "sad",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "5sICkBXVmaCQk5aISGR3x1",
+    "title": "Enter Sandman",
+    "artist": "Metallica",
+    "genre": "metal",
+    "trend_velocity": 0.81,
+    "vibe": "party"
+  },
+  {
+    "id": "5aNH8inF5BsbThDeOLs7zs",
+    "title": "Feuer frei!",
+    "artist": "Rammstein",
+    "genre": "industrial",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7D49Iig0avHre9RFSUMkd2",
+    "title": "I Lived",
+    "artist": "OneRepublic",
+    "genre": "piano",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4zXRMjTaeflesB3Ih4eHnJ",
+    "title": "Stand Out Fit In",
+    "artist": "ONE OK ROCK",
+    "genre": "j-rock",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5E8yddtSG3sH4hw2SfwcgW",
+    "title": "Can You Feel the Love Tonight - From \"The Lion King\" / Soundtrack Version",
+    "artist": "Joseph Williams;Sally Dworsky;Nathan Lane;Ernie Sabella;Kristle Edwards",
+    "genre": "disney",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6McnQuTA2dpArD3QTrD8A7",
+    "title": "sometimes",
+    "artist": "Camylio",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "04CHEoMbrLOiX8co3EG5dO",
+    "title": "Thursday's Child Has Far To Go",
+    "artist": "TOMORROW X TOGETHER",
+    "genre": "k-pop",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "33jt3kYWjQzqn3xyYQ5ZEh",
+    "title": "Cheek To Cheek",
+    "artist": "Ella Fitzgerald;Louis Armstrong",
+    "genre": "jazz",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2avKuMN2QXkaG9vvHa2JLt",
+    "title": "Take A Look Around",
+    "artist": "Limp Bizkit",
+    "genre": "funk",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6c0Srq5sb8Bvh2SckSv9gy",
+    "title": "Sonder",
+    "artist": "Modal Colours",
+    "genre": "sleep",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "6nGeLlakfzlBcFdZXteDq7",
+    "title": "Love Story",
+    "artist": "Indila",
+    "genre": "french",
+    "trend_velocity": 0.75,
+    "vibe": "sad"
+  },
+  {
+    "id": "389QX9Q1eUOEZ19vtzzI9O",
+    "title": "While My Guitar Gently Weeps - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "psych-rock",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "3QuJ4TqND9JE7cqAkIrgYr",
+    "title": "Smalltown Boy",
+    "artist": "Marcus Layton;Indiana",
+    "genre": "german",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "5QeUZ1Z4xSCegBXutW3IIt",
+    "title": "000000",
+    "artist": "A.CHAL",
+    "genre": "soul",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "5OQsiBsky2k2kDKy2bX2eT",
+    "title": "Learn to Fly",
+    "artist": "Foo Fighters",
+    "genre": "metal",
+    "trend_velocity": 0.77,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5b1je14Oz92lpIlIMLieWw",
+    "title": "Viaje",
+    "artist": "Farruko",
+    "genre": "latin",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "0b5CzUhyShYuDdtW5J4wm2",
+    "title": "Obsessed (with Charlie Puth & Shenseea)",
+    "artist": "Calvin Harris;Charlie Puth;Shenseea",
+    "genre": "progressive-house",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "7x46YkKAwp3yZpaa72n5Mu",
+    "title": "Stubborn Love",
+    "artist": "The Lumineers",
+    "genre": "folk",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "5awDvzxWfd53SSrsRZ8pXO",
+    "title": "Du hast",
+    "artist": "Rammstein",
+    "genre": "german",
+    "trend_velocity": 0.75,
+    "vibe": "party"
+  },
+  {
+    "id": "4f3nDjgqXurMryYBSp0TZD",
+    "title": "The Beginning",
+    "artist": "ONE OK ROCK",
+    "genre": "j-pop",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "51v7yO07BdGgP6hv0OaDe2",
+    "title": "Romantic Flight - From How To Train Your Dragon Music From The Motion Picture",
+    "artist": "John Powell",
+    "genre": "british",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "1sM0yZDxUhPQhkDh2CLd6l",
+    "title": "Travelin' Man - Remastered",
+    "artist": "Ricky Nelson",
+    "genre": "rockabilly",
+    "trend_velocity": 0.61,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "650OeHTLxZAQmb4aEbGmaA",
+    "title": "Good Goodbye (feat. Pusha T and Stormzy)",
+    "artist": "Linkin Park;Pusha T;Stormzy",
+    "genre": "grunge",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2iNqdCchlUZEgjJbQyZf8T",
+    "title": "Teri Deewani",
+    "artist": "Kailash Kher;Paresh Kamath;Naresh Kamath",
+    "genre": "folk",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "653rxW1E7V52QWh6a7oIdS",
+    "title": "My My My",
+    "artist": "Armand Van Helden",
+    "genre": "garage",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "4wCy7erulqUfFQNVaZBD9b",
+    "title": "Once Upon a Time",
+    "artist": "Anirudh Ravichander",
+    "genre": "hip-hop",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3J9NEWkd9Cx1MwSSvDySkL",
+    "title": "Rock the Night",
+    "artist": "Europe",
+    "genre": "hard-rock",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2zNZ81rcbDUvOmKo0borJr",
+    "title": "Spaceman (feat. FiNCH)",
+    "artist": "Electric Callboy;FiNCH",
+    "genre": "metalcore",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "75CgD6l7K4qMzZrn4CbZqz",
+    "title": "Stars",
+    "artist": "Simply Red",
+    "genre": "british",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "5poevcmYCOZ8uZQnUuOPxC",
+    "title": "Always",
+    "artist": "The Him",
+    "genre": "deep-house",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "4QT3YKobBj4BI7xCYRLr9u",
+    "title": "Just an Illusion",
+    "artist": "Imagination",
+    "genre": "disco",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "2eXSPTZmhkXRGob1hsFdVd",
+    "title": "What You Make It",
+    "artist": "With Confidence",
+    "genre": "emo",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "0pw3p4gf5homOkvOGOJulF",
+    "title": "Tune Jo Na Kaha",
+    "artist": "Pritam;Mohit Chauhan;Sandeep Shrivastava",
+    "genre": "indian",
+    "trend_velocity": 0.68,
+    "vibe": "sad"
+  },
+  {
+    "id": "2vsoD8S1OyrWSVIA43hjaU",
+    "title": "Si Te La Encuentras Por Ah\u00ed",
+    "artist": "Feid",
+    "genre": "reggaeton",
+    "trend_velocity": 0.77,
+    "vibe": "focus"
+  },
+  {
+    "id": "2je56j0xuoTi1gYkLLMlJU",
+    "title": "Get Down On It - Single Version",
+    "artist": "Kool & The Gang",
+    "genre": "disco",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "57bgtoPSgt236HzfBOd8kj",
+    "title": "Thunderstruck",
+    "artist": "AC/DC",
+    "genre": "rock",
+    "trend_velocity": 0.84,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3IEG65Fi7Zm8cQEEG3uJ4H",
+    "title": "Six Days - Remix",
+    "artist": "DJ Shadow;Mos Def",
+    "genre": "electronic",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "79nJj5dMyTsUzKvN5jUXsJ",
+    "title": "I Can't Stop Loving You",
+    "artist": "Ray Charles",
+    "genre": "blues",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "6HlE9t71z9DjGi7KqSyEpA",
+    "title": "Deep End",
+    "artist": "Foushe\u00e9",
+    "genre": "indie",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "1LPGwuFgIzbJoShfDdw7MY",
+    "title": "Youth",
+    "artist": "Glass Animals",
+    "genre": "indie-pop",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "0eEXcw3JLVXcRxYrVYMy68",
+    "title": "Electric Relaxation",
+    "artist": "A Tribe Called Quest",
+    "genre": "hardcore",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "7DByUXWmz1lQau0HLmdg1v",
+    "title": "Lobby",
+    "artist": "Anitta;Missy Elliott",
+    "genre": "pagode",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2QZe2H1f03t5PJWEMg2Mbe",
+    "title": "UGH!",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1Ame8XTX6QHY0l0ahqUhgv",
+    "title": "THE LONELIEST",
+    "artist": "M\u00e5neskin",
+    "genre": "indie",
+    "trend_velocity": 0.85,
+    "vibe": "focus"
+  },
+  {
+    "id": "5qZKuuKGngifO5psg19XdO",
+    "title": "Don't Go To Strangers",
+    "artist": "J.J. Cale",
+    "genre": "blues",
+    "trend_velocity": 0.61,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "7bcy34fBT2ap1L4bfPsl9q",
+    "title": "I Didn't Change My Number",
+    "artist": "Billie Eilish",
+    "genre": "electro",
+    "trend_velocity": 0.75,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4qbEaaJ29p32GI8EWQmm6R",
+    "title": "dumb dumb",
+    "artist": "mazie",
+    "genre": "indie",
+    "trend_velocity": 0.79,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6ZmtxXUXRVjxOhugKkmerC",
+    "title": "Dil Mere",
+    "artist": "The Local Train",
+    "genre": "indie-pop",
+    "trend_velocity": 0.63,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "16gW9O8A4rIMx5OOVlzsSn",
+    "title": "Dear August",
+    "artist": "PJ Harding;Noah Cyrus",
+    "genre": "songwriter",
+    "trend_velocity": 0.69,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0tgVpDi06FyKpA1z0VMD4v",
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "genre": "pop",
+    "trend_velocity": 0.87,
+    "vibe": "sad"
+  },
+  {
+    "id": "64VP3skE86iTvdOlbzuIcO",
+    "title": "Great Balls Of Fire",
+    "artist": "Jerry Lee Lewis",
+    "genre": "rock-n-roll",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "79vEv8zqy9tLYsTxxkXHXq",
+    "title": "Part Of The Band",
+    "artist": "The 1975",
+    "genre": "alt-rock",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "32Gf5A7Hr8RdgggXG0Fdks",
+    "title": "Have You Ever Really Loved A Woman?",
+    "artist": "Bryan Adams",
+    "genre": "songwriter",
+    "trend_velocity": 0.71,
+    "vibe": "sad"
+  },
+  {
+    "id": "1mjWhM7GQTTxJxg2F0iCRS",
+    "title": "Dil Mein Ho Tum (From \"Cheat India\")",
+    "artist": "Armaan Malik;Rochak Kohli;Bappi Lahiri",
+    "genre": "pop-film",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "1smFN2CLqGROu0J0UyvDfL",
+    "title": "Shayad",
+    "artist": "Pritam;Arijit Singh",
+    "genre": "indian",
+    "trend_velocity": 0.74,
+    "vibe": "sad"
+  },
+  {
+    "id": "38rUIlTX93Aoif3WcY1wv6",
+    "title": "DALLA DALLA",
+    "artist": "ITZY",
+    "genre": "k-pop",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "4pR4oQJULf7FDB54TleMyH",
+    "title": "Jireh (My Provider)",
+    "artist": "Limoblaze;Lecrae;Happi",
+    "genre": "afrobeat",
+    "trend_velocity": 0.64,
+    "vibe": "party"
+  },
+  {
+    "id": "2RBkVQwpkDeYytMTQwjyTk",
+    "title": "Baaki Baatein Peene Baad (Shots) (feat. Badshah)",
+    "artist": "Arjun Kanungo;Badshah",
+    "genre": "hip-hop",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0W9Xvd4Qx1aZPxEi94vgRY",
+    "title": "Sound of Madness",
+    "artist": "Shinedown",
+    "genre": "grunge",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "41Fp3VZmyloxKUUcWDUrH2",
+    "title": "Repouso",
+    "artist": "Polysomni",
+    "genre": "sleep",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "0RSGPiykniIg8m7JhiAVv7",
+    "title": "Aisi Raaton",
+    "artist": "Anupam Roy",
+    "genre": "indie-pop",
+    "trend_velocity": 0.62,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3SKzTIl9mW0DadTys9SFo3",
+    "title": "Control",
+    "artist": "Halsey",
+    "genre": "indie",
+    "trend_velocity": 0.72,
+    "vibe": "focus"
+  },
+  {
+    "id": "6IkcTpdDbL4OVg7skLdUyF",
+    "title": "Arrow of Love",
+    "artist": "Electric Callboy",
+    "genre": "metalcore",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "0dOg1ySSI7NkpAe89Zo0b9",
+    "title": "Born in the U.S.A.",
+    "artist": "Bruce Springsteen",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3CeKc83EsgRPItgvlDHo5B",
+    "title": "Head In The Clouds",
+    "artist": "Hayd",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.71,
+    "vibe": "sad"
+  },
+  {
+    "id": "0e3yhVeNaTfKIWQRw9U9sY",
+    "title": "Sacrifice",
+    "artist": "Elton John",
+    "genre": "piano",
+    "trend_velocity": 0.74,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5fwRhPXAvGgzUxW62ZCvEg",
+    "title": "Woh Lamhe Woh Baatein",
+    "artist": "Atif Aslam",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "40KuvsFD0zpUFuCcmt5Xm0",
+    "title": "Ex Bitch",
+    "artist": "XXXTENTACION",
+    "genre": "emo",
+    "trend_velocity": 0.73,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5Eax0qFko2dh7Rl2lYs3bx",
+    "title": "Efecto",
+    "artist": "Bad Bunny",
+    "genre": "latino",
+    "trend_velocity": 0.96,
+    "vibe": "sad"
+  },
+  {
+    "id": "5ARrtxJLVCeTv5TWo1oKgC",
+    "title": "In The Waiting Line",
+    "artist": "Zero 7;Sophie Barker",
+    "genre": "electronic",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "3ovjw5HZZv43SxTwApooCM",
+    "title": "Wind Of Change",
+    "artist": "Scorpions",
+    "genre": "german",
+    "trend_velocity": 0.79,
+    "vibe": "focus"
+  },
+  {
+    "id": "5GXYKnnzBlHvrzBQ5WoxME",
+    "title": "\u9006\u5149 - \u30a6\u30bf from ONE PIECE FILM RED",
+    "artist": "Ado",
+    "genre": "j-pop",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "4Kh6cq3XgOGUK9yXQu7RTq",
+    "title": "overwhelmed - Chri$tian Gate$ remix",
+    "artist": "Royal & the Serpent;Chri$tian Gate$",
+    "genre": "alternative",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "7tbzfR8ZvZzJEzy6v0d6el",
+    "title": "Liggi",
+    "artist": "Ritviz",
+    "genre": "indie-pop",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "4HdzYTQiouB9BVYX7JOrhh",
+    "title": "Jalabulajangu (From \"Don\")",
+    "artist": "Anirudh Ravichander;Rokesh",
+    "genre": "hip-hop",
+    "trend_velocity": 0.71,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3TjliM0xQ3fkza0RpINRrq",
+    "title": "Crimewave",
+    "artist": "Crystal Castles",
+    "genre": "r-n-b",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "4R8BJggjosTswLxtkw8V7P",
+    "title": "No Me Conoce - Remix",
+    "artist": "Jhayco;J Balvin;Bad Bunny",
+    "genre": "reggae",
+    "trend_velocity": 0.82,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4fSar1liXyxCK3lOcWHUE1",
+    "title": "Creo en Mi",
+    "artist": "Natalia Jim\u00e9nez",
+    "genre": "spanish",
+    "trend_velocity": 0.72,
+    "vibe": "focus"
+  },
+  {
+    "id": "014DA3BdnmD3kI5pBogH7c",
+    "title": "C\u1ee9 Chill Th\u00f4i",
+    "artist": "Chillies;Suni H\u1ea1 Linh;Rhymastic",
+    "genre": "indie-pop",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "1O28T70fY6eyL9vygOqCQi",
+    "title": "Midnight Thoughts",
+    "artist": "SadBoyProlific",
+    "genre": "sad",
+    "trend_velocity": 0.64,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0zzVTGyRrWpQu8Fr28NRAv",
+    "title": "OK Not To Be OK",
+    "artist": "Marshmello;Demi Lovato",
+    "genre": "edm",
+    "trend_velocity": 0.75,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5ysBBGHvIGTqgQb5xdL3Lf",
+    "title": "Anymore",
+    "artist": "JEON SOMI",
+    "genre": "k-pop",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "4VrWlk8IQxevMvERoX08iC",
+    "title": "Chandelier",
+    "artist": "Sia",
+    "genre": "dance",
+    "trend_velocity": 0.8,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3wfujdbamR3Z46F4xav7LM",
+    "title": "Drive",
+    "artist": "The Cars",
+    "genre": "power-pop",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "5jjZikDrEd0by1o7V3fO4y",
+    "title": "overwhelmed",
+    "artist": "Royal & the Serpent",
+    "genre": "alternative",
+    "trend_velocity": 0.7,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6Xs7OKt6i0Ddq8B4M5Dgvr",
+    "title": "New Americana",
+    "artist": "Halsey",
+    "genre": "indie-pop",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "09vHbIezp9NP31CZWysk3v",
+    "title": "Najaa (From \"Sooryavanshi\")",
+    "artist": "Tanishk Bagchi;Pav Dharia;Nikhita Gandhi",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "party"
+  },
+  {
+    "id": "1saDM1hv3pTHf9ulsxm5Iy",
+    "title": "Koka",
+    "artist": "Diljit Dosanjh;Sargi Maan",
+    "genre": "pop-film",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "1FkoVC85Ds3mFoK0fVqEqP",
+    "title": "Self Esteem",
+    "artist": "The Offspring",
+    "genre": "punk",
+    "trend_velocity": 0.77,
+    "vibe": "party"
+  },
+  {
+    "id": "3dPQuX8Gs42Y7b454ybpMR",
+    "title": "Seven Nation Army",
+    "artist": "The White Stripes",
+    "genre": "alternative",
+    "trend_velocity": 0.84,
+    "vibe": "sad"
+  },
+  {
+    "id": "1DKyFVzIh1oa1fFnEmTkIl",
+    "title": "Gloria (feat. Van Morrison) - Stereo Version",
+    "artist": "Them;Van Morrison",
+    "genre": "british",
+    "trend_velocity": 0.64,
+    "vibe": "party"
+  },
+  {
+    "id": "0suLngfo7rJoetk7Ub6N8l",
+    "title": "Octopus's Garden - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "psych-rock",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "2iFgHPoa7FNHwgLnjXzu7F",
+    "title": "Puppe",
+    "artist": "Rammstein",
+    "genre": "industrial",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "51mLQ3w7yR7vjdSTFLWaY5",
+    "title": "Ginger (feat. Burna Boy)",
+    "artist": "Wizkid;Burna Boy",
+    "genre": "dancehall",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "4pspYVQGFHLPEFgQPD1J7e",
+    "title": "WANNABE",
+    "artist": "ITZY",
+    "genre": "k-pop",
+    "trend_velocity": 0.74,
+    "vibe": "party"
+  },
+  {
+    "id": "5YdnOm5990Kfq1Jodws98B",
+    "title": "Call It Love",
+    "artist": "Felix Jaehn;Ray Dalton",
+    "genre": "edm",
+    "trend_velocity": 0.77,
+    "vibe": "party"
+  },
+  {
+    "id": "7p30D2KjK2XW7YUvI6nH3o",
+    "title": "\u30aa\u30ec\u30f3\u30b8",
+    "artist": "7!!",
+    "genre": "anime",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "2dCmGcEOQrMQhMMS8Vj7Ca",
+    "title": "Super Freak",
+    "artist": "Rick James",
+    "genre": "funk",
+    "trend_velocity": 0.75,
+    "vibe": "party"
+  },
+  {
+    "id": "6jCGzZn0gFeRlbqdaJhw6T",
+    "title": "Party and Bullshit - 2008 Remaster",
+    "artist": "The Notorious B.I.G.",
+    "genre": "hardcore",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "51Of5p3lKZeOg6itfs4og4",
+    "title": "Lovefool",
+    "artist": "twocolors",
+    "genre": "electro",
+    "trend_velocity": 0.72,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6TGX01ExmdHyOG72fqUU3Q",
+    "title": "Zindagi Kuch Toh Bata (Reprise)",
+    "artist": "Jubin Nautiyal",
+    "genre": "k-pop",
+    "trend_velocity": 0.64,
+    "vibe": "focus"
+  },
+  {
+    "id": "14246VCxRDGZHqlMlqWSz4",
+    "title": "Wave Gods",
+    "artist": "Nas;A$AP Rocky;DJ Premier",
+    "genre": "hardcore",
+    "trend_velocity": 0.61,
+    "vibe": "party"
+  },
+  {
+    "id": "7wW9scVNLYFLsmBb1yAUmS",
+    "title": "Blue Eyes",
+    "artist": "Yo Yo Honey Singh",
+    "genre": "hip-hop",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "2xXNLutYAOELYVObYb1C1S",
+    "title": "As the World Caves In",
+    "artist": "Sarah Cothran",
+    "genre": "songwriter",
+    "trend_velocity": 0.76,
+    "vibe": "sad"
+  },
+  {
+    "id": "0eV3PB3T0OxW4feG1DlOjQ",
+    "title": "Hearts on Fire",
+    "artist": "HammerFall",
+    "genre": "goth",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7zwddyEol0Hg5K8HQd3srX",
+    "title": "La Caoba",
+    "artist": "Sayulita",
+    "genre": "sleep",
+    "trend_velocity": 0.66,
+    "vibe": "sad"
+  },
+  {
+    "id": "4eaynYNbGdL9F90LGLcUsU",
+    "title": "Kill For Your Love",
+    "artist": "Labrinth",
+    "genre": "indie",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6PrB4KpvuoYWtwjPC5a44S",
+    "title": "Balader",
+    "artist": "Soolking;Niska",
+    "genre": "french",
+    "trend_velocity": 0.79,
+    "vibe": "party"
+  },
+  {
+    "id": "1j2LuIf7mv15ZVug1Xy5qz",
+    "title": "Your Love Is King",
+    "artist": "Sade",
+    "genre": "british",
+    "trend_velocity": 0.65,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3omvXShuRPM3zbDpWYqf5g",
+    "title": "MORE & MORE",
+    "artist": "TWICE",
+    "genre": "k-pop",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6HguG9HRb1Ke1bhihfE4m8",
+    "title": "Sincerity Is Scary",
+    "artist": "The 1975",
+    "genre": "alt-rock",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "2nekCvC9XRXQckWNnkIp2l",
+    "title": "Harvest Moon",
+    "artist": "Neil Young",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.68,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3gFQOMoUwlR6aUZj81gCzu",
+    "title": "One Summer Day",
+    "artist": "Joe Hisaishi",
+    "genre": "anime",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "2N0oWy78RT70bW10QfIVHT",
+    "title": "Top Boy",
+    "artist": "AP Dhillon",
+    "genre": "hip-hop",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "2E43WFS4rRc09za2r2GmZl",
+    "title": "My Songs Know What You Did In The Dark (Light Em Up)",
+    "artist": "Fall Out Boy",
+    "genre": "emo",
+    "trend_velocity": 0.73,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1xaTREM89RbIxkcjlpf4Uw",
+    "title": "Heaven Knows I'm Miserable Now - 2011 Remaster",
+    "artist": "The Smiths",
+    "genre": "punk-rock",
+    "trend_velocity": 0.77,
+    "vibe": "party"
+  },
+  {
+    "id": "79CUrU5o2KAVDTNm4x3eGU",
+    "title": "Firestarter",
+    "artist": "The Prodigy",
+    "genre": "breakbeat",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5mFMb5OHI3cN0UjITVztCj",
+    "title": "Rumour Has It",
+    "artist": "Adele",
+    "genre": "soul",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5G1sTBGbZT5o4PNRc75RKI",
+    "title": "Lonely Boy",
+    "artist": "The Black Keys",
+    "genre": "punk-rock",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "2pyjbGTpJCPjMYwCbdymiF",
+    "title": "Dazed & Confused",
+    "artist": "Ruel",
+    "genre": "alternative",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "5BuUke8soY1IIEeJK4eNkk",
+    "title": "Sineway",
+    "artist": "Boreal Embla",
+    "genre": "sleep",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "1LzNfuep1bnAUR9skqdHCK",
+    "title": "Fade Into You",
+    "artist": "Mazzy Star",
+    "genre": "alternative",
+    "trend_velocity": 0.79,
+    "vibe": "sad"
+  },
+  {
+    "id": "1MqzIgGsHP4cNjPboevsfq",
+    "title": "Tourner Dans Le Vide",
+    "artist": "Indila",
+    "genre": "french",
+    "trend_velocity": 0.78,
+    "vibe": "focus"
+  },
+  {
+    "id": "0U0ldCRmgCqhVvD6ksG63j",
+    "title": "Nightcall",
+    "artist": "Kavinsky",
+    "genre": "electro",
+    "trend_velocity": 0.73,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6gi7qsHSH2JWZsTRHndxqm",
+    "title": "Rain (from The Suicide Squad)",
+    "artist": "grandson;Jessie Reyez",
+    "genre": "alt-rock",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "3D6c6ALN1czsDf9wwZIGmh",
+    "title": "Main Royaan",
+    "artist": "Tanveer Evan;Yasser Desai;Rajat Nagpal",
+    "genre": "pop",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "2xiOdusRnZezQok1RgLNeS",
+    "title": "You Should Be Dancing - Edit / From \"Saturday Night Fever\" Soundtrack",
+    "artist": "Bee Gees",
+    "genre": "disco",
+    "trend_velocity": 0.69,
+    "vibe": "party"
+  },
+  {
+    "id": "1fEGtTZjrjJW8eUeewnNJR",
+    "title": "Flightless Bird, American Mouth",
+    "artist": "Iron & Wine",
+    "genre": "folk",
+    "trend_velocity": 0.69,
+    "vibe": "sad"
+  },
+  {
+    "id": "6kls8cSlUyHW2BUOkDJIZE",
+    "title": "Hate Me (with Juice WRLD)",
+    "artist": "Ellie Goulding;Juice WRLD",
+    "genre": "dance",
+    "trend_velocity": 0.74,
+    "vibe": "party"
+  },
+  {
+    "id": "1fNwwml8UcKvhfM6YEVIRh",
+    "title": "What if\u2026",
+    "artist": "j-hope",
+    "genre": "k-pop",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0SsYlkXxZ5vkWOTsKxMfMz",
+    "title": "Lonesome Town",
+    "artist": "Ricky Nelson",
+    "genre": "r-n-b",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "5fdhThPDe6jQQDqCyWrdAn",
+    "title": "Jolene",
+    "artist": "Dolly Parton",
+    "genre": "country",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "2b2HutIDmoeBnnKRWDLAtV",
+    "title": "Phir Mohabbat",
+    "artist": "Mohammed Irfan;Arijit Singh;Saim Bhat",
+    "genre": "pop-film",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "0UvddYrJK4x5OWfxpSAZNj",
+    "title": "Escape (feat. Hayla) - John Summit Remix",
+    "artist": "deadmau5;Kaskade;John Summit;Kx5;Hayla",
+    "genre": "electronic",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6Fnvi5QnVkTskSzeRvvQds",
+    "title": "Telepathy",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "75FEaRjZTKLhTrFGsfMUXR",
+    "title": "Running Up That Hill (A Deal With God)",
+    "artist": "Kate Bush",
+    "genre": "rock",
+    "trend_velocity": 0.9,
+    "vibe": "focus"
+  },
+  {
+    "id": "6YbhspuOar1D9WSSnfe7ds",
+    "title": "Young, Wild & Free (feat. Bruno Mars)",
+    "artist": "Snoop Dogg;Wiz Khalifa;Bruno Mars",
+    "genre": "funk",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "2vzWylXWogTG11HR0frews",
+    "title": "I Can't Carry This Anymore",
+    "artist": "Anson Seabra",
+    "genre": "songwriter",
+    "trend_velocity": 0.65,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4crczEC1PpoD8TsDsmoWNI",
+    "title": "Goodbye",
+    "artist": "Imanbek;Goodboys",
+    "genre": "house",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3LEgGAl9zLcQWGTp7ptqtQ",
+    "title": "Don\u2019t Wake Me Up",
+    "artist": "Jonas Blue;Why Don't We",
+    "genre": "edm",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6Z8oU8xMOie24Cflh2Sw6p",
+    "title": "Venmegam",
+    "artist": "Yuvan Shankar Raja;Hariharan",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4DpNNXFMMxQEKl7r0ykkWA",
+    "title": "Play Date",
+    "artist": "Melanie Martinez",
+    "genre": "pop",
+    "trend_velocity": 0.79,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7es56D0QedGMsK39wl2yFX",
+    "title": "Happier Than Ever",
+    "artist": "ASTN",
+    "genre": "soul",
+    "trend_velocity": 0.76,
+    "vibe": "sad"
+  },
+  {
+    "id": "0jDWRUbxSn8zQlwFbeLHwo",
+    "title": "Evacuate The Dancefloor",
+    "artist": "Cascada",
+    "genre": "techno",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "0YLSjVxSb5FT1Bo8Tnxr8j",
+    "title": "Baaraat",
+    "artist": "Ritviz;Nucleya",
+    "genre": "edm",
+    "trend_velocity": 0.66,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2KKLuHN6zDxVnWtFKO8vo4",
+    "title": "Wasting Love - 2015 Remaster",
+    "artist": "Iron Maiden",
+    "genre": "hard-rock",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "6YYVzVapUF3UnZQ0igasl3",
+    "title": "Allah Waariyan",
+    "artist": "Shafqat Amanat Ali",
+    "genre": "pop-film",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "4m0q0xQ2BNl9SCAGKyfiGZ",
+    "title": "Somebody Else",
+    "artist": "The 1975",
+    "genre": "alternative",
+    "trend_velocity": 0.73,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5x9RZg7HfXGY3JayXL3seF",
+    "title": "Cats In The Cradle",
+    "artist": "Ugly Kid Joe",
+    "genre": "hard-rock",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "7fYE7BT9Na8XpALQwuhIwX",
+    "title": "Champagne",
+    "artist": "Diljit Dosanjh",
+    "genre": "pop-film",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "0Ult84lvFuqNvbyXwyRQ58",
+    "title": "I Miss You (feat. Julia Michaels)",
+    "artist": "Clean Bandit;Julia Michaels",
+    "genre": "house",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "6I0KEvFfWszVJiCy5hum4V",
+    "title": "Let's Fall in Love for the Night",
+    "artist": "FINNEAS",
+    "genre": "indie-pop",
+    "trend_velocity": 0.67,
+    "vibe": "sad"
+  },
+  {
+    "id": "5nP6bZZpeT9hbtvePmy9ko",
+    "title": "Moody Blue",
+    "artist": "Elvis Presley",
+    "genre": "rockabilly",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "1wsZ0cp5He4Wm4yohNjwIs",
+    "title": "idfc - Tarro Remix",
+    "artist": "blackbear;Tarro",
+    "genre": "electro",
+    "trend_velocity": 0.64,
+    "vibe": "focus"
+  },
+  {
+    "id": "5y8d8RHvxb0KiTa9Nq0xWp",
+    "title": "Morning Has Broken - Remastered 2021",
+    "artist": "Yusuf / Cat Stevens",
+    "genre": "british",
+    "trend_velocity": 0.69,
+    "vibe": "sad"
+  },
+  {
+    "id": "7JVpb6CY3I1JwQCIEgw9XT",
+    "title": "Ainak",
+    "artist": "Gulab Sidhu;Sukh Lotey",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "5W83ErFkO3aKAIS1WMi6u0",
+    "title": "Secreto",
+    "artist": "Anuel AA;KAROL G",
+    "genre": "reggaeton",
+    "trend_velocity": 0.75,
+    "vibe": "party"
+  },
+  {
+    "id": "4RVtBlHFKj51Ipvpfv5ER4",
+    "title": "Drown (feat. Clinton Kane)",
+    "artist": "Martin Garrix;Clinton Kane",
+    "genre": "progressive-house",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4vpeKl0vMGdAXpZiQB2Dtd",
+    "title": "White Rabbit",
+    "artist": "Jefferson Airplane",
+    "genre": "folk",
+    "trend_velocity": 0.72,
+    "vibe": "sad"
+  },
+  {
+    "id": "2ej1A2Ze6P2EOW7KfIosZR",
+    "title": "Feather (feat. Cise Starr & Akin from CYNE)",
+    "artist": "Nujabes;Cise Star;Akin Yai",
+    "genre": "chill",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "5nP6bZZpeT9hbtvePmy9ko",
+    "title": "Moody Blue",
+    "artist": "Elvis Presley",
+    "genre": "rock-n-roll",
+    "trend_velocity": 0.62,
+    "vibe": "party"
+  },
+  {
+    "id": "4kfjA6WfgKBt7I7YKuDCkU",
+    "title": "Blue Jeans",
+    "artist": "GANGGA",
+    "genre": "songwriter",
+    "trend_velocity": 0.74,
+    "vibe": "sad"
+  },
+  {
+    "id": "7c1Dar0pIAW7w5TzaGjt9t",
+    "title": "Jane Says",
+    "artist": "Jane's Addiction",
+    "genre": "grunge",
+    "trend_velocity": 0.66,
+    "vibe": "focus"
+  },
+  {
+    "id": "0bBd6K5X4W7t9GyXcaVOA7",
+    "title": "Sigue",
+    "artist": "J Balvin;Ed Sheeran",
+    "genre": "reggaeton",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "0JBhoxPKHJc1ZeJrjSt0VO",
+    "title": "Tera Ghata",
+    "artist": "Gajendra Verma",
+    "genre": "pop",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "39m87lOMd5ccENPVvAT7gH",
+    "title": "Bismarck",
+    "artist": "Sabaton",
+    "genre": "swedish",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0wPKDeY4fZXT6k9bzV0kx0",
+    "title": "That's Hilarious",
+    "artist": "Charlie Puth",
+    "genre": "dance",
+    "trend_velocity": 0.72,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2MqQtML6652d7oIgrdumKH",
+    "title": "Viaje a ning\u00fan lado (con Carin Leon)",
+    "artist": "Pablo Albor\u00e1n;Carin Leon",
+    "genre": "spanish",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "3IpEJ86hrMfUcoXCk9U4h3",
+    "title": "Kangal Irandal",
+    "artist": "James Vasanthan;Bellie Raj;Deepa Miriam",
+    "genre": "pop-film",
+    "trend_velocity": 0.65,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6IwKcFdiRQZOWeYNhUiWIv",
+    "title": "No One",
+    "artist": "Alicia Keys",
+    "genre": "soul",
+    "trend_velocity": 0.78,
+    "vibe": "focus"
+  },
+  {
+    "id": "6wqJeItl3Vc3az4ZicSQAB",
+    "title": "Before I Forget",
+    "artist": "Slipknot",
+    "genre": "alternative",
+    "trend_velocity": 0.77,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5NEGfbKMcNuEWOzpWufScA",
+    "title": "Yaanji",
+    "artist": "Anirudh Ravichander;Shakthisree Gopalan",
+    "genre": "hip-hop",
+    "trend_velocity": 0.62,
+    "vibe": "focus"
+  },
+  {
+    "id": "68osIGtVjM7QWVe6pazLHj",
+    "title": "Shadow Moses",
+    "artist": "Bring Me The Horizon",
+    "genre": "metalcore",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3Ye7vnZdrO2Gq5IyyH3cOp",
+    "title": "Giftig",
+    "artist": "Rammstein",
+    "genre": "industrial",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4wzjNqjKAKDU82e8uMhzmr",
+    "title": "Face Down",
+    "artist": "The Red Jumpsuit Apparatus",
+    "genre": "punk",
+    "trend_velocity": 0.76,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5teOR8KU4XNWY2WlVUDiIR",
+    "title": "85%",
+    "artist": "Loote;gnash",
+    "genre": "house",
+    "trend_velocity": 0.63,
+    "vibe": "focus"
+  },
+  {
+    "id": "3bNv3VuUOKgrf5hu3YcuRo",
+    "title": "Someone Like You",
+    "artist": "Adele",
+    "genre": "british",
+    "trend_velocity": 0.81,
+    "vibe": "sad"
+  },
+  {
+    "id": "0bVtevEgtDIeRjCJbK3Lmv",
+    "title": "Welcome To The Jungle",
+    "artist": "Guns N' Roses",
+    "genre": "metal",
+    "trend_velocity": 0.8,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2BydLQAh7CUIFvSEqAMc4x",
+    "title": "If You Want Me to Stay",
+    "artist": "Sly & The Family Stone",
+    "genre": "psych-rock",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2mKvEIvd912eg3FZ8WamMS",
+    "title": "Bitch I'm Back",
+    "artist": "Sidhu Moose Wala",
+    "genre": "hip-hop",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "2oaK4JLVnmRGIO9ytBE1bt",
+    "title": "Dark Necessities",
+    "artist": "Red Hot Chili Peppers",
+    "genre": "alt-rock",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2W779g2UrRZtVdf3FcEOO1",
+    "title": "In My Mind",
+    "artist": "Lyn Lapid",
+    "genre": "indie",
+    "trend_velocity": 0.73,
+    "vibe": "sad"
+  },
+  {
+    "id": "6X6Ow0iioCrYQSK1QDHQbC",
+    "title": "The Age Of Love - Charlotte de Witte & Enrico Sangiuliano Remix",
+    "artist": "Age Of Love;Charlotte de Witte;Enrico Sangiuliano",
+    "genre": "trance",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2JPLbjOn0wPCngEot2STUS",
+    "title": "Yonaguni",
+    "artist": "Bad Bunny",
+    "genre": "latino",
+    "trend_velocity": 0.87,
+    "vibe": "focus"
+  },
+  {
+    "id": "3zLTPuucd3e6TxZnu2dlVS",
+    "title": "Bagatelle No. 25 in A Minor, WoO 59 \"F\u00fcr Elise\"",
+    "artist": "Ludwig van Beethoven;Igor Levit",
+    "genre": "classical",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "5mEqD00bdFcsiVd0MfvEeF",
+    "title": "Dream lantern",
+    "artist": "RADWIMPS",
+    "genre": "j-pop",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4255amV4enzl28KAn16rUO",
+    "title": "Are You With Me",
+    "artist": "Lost Frequencies",
+    "genre": "house",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "4MyPLcBTpqfXZJKcUhMXOg",
+    "title": "Set You Free",
+    "artist": "Lucas & Steve;Laura White",
+    "genre": "progressive-house",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1LNlfvPQmB0cqYJQQskZ8x",
+    "title": "MOMMAE",
+    "artist": "Jay Park;Ugly Duck",
+    "genre": "k-pop",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "7pKfPomDEeI4TPT6EOYjn9",
+    "title": "Imagine - Remastered 2010",
+    "artist": "John Lennon",
+    "genre": "rock",
+    "trend_velocity": 0.77,
+    "vibe": "sad"
+  },
+  {
+    "id": "1ot6jEe4w4hYnsOPjd3xKQ",
+    "title": "I'm So Excited",
+    "artist": "The Pointer Sisters",
+    "genre": "disco",
+    "trend_velocity": 0.72,
+    "vibe": "party"
+  },
+  {
+    "id": "7dNxxkapvf5eRkw24PHSpy",
+    "title": "damn",
+    "artist": "Fujii Kaze",
+    "genre": "j-pop",
+    "trend_velocity": 0.67,
+    "vibe": "party"
+  },
+  {
+    "id": "2GjMaJ7DacMIkgoe8oMXGg",
+    "title": "Close To Me",
+    "artist": "Ellie Goulding;Diplo;Swae Lee",
+    "genre": "edm",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1is8gU4RVcN4J8xItxWoOY",
+    "title": "I GUESS I'M IN LOVE",
+    "artist": "Clinton Kane",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.77,
+    "vibe": "sad"
+  },
+  {
+    "id": "5GWrhVfgP4szBtCOXbSki8",
+    "title": "Eddie",
+    "artist": "Red Hot Chili Peppers",
+    "genre": "metal",
+    "trend_velocity": 0.71,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5ORPYXJKlpHWIdceavSGrL",
+    "title": "\u9065\u304b\u5f7c\u65b9",
+    "artist": "ASIAN KUNG-FU GENERATION",
+    "genre": "punk-rock",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6lbLn5iL2NBJnbib7bTXMn",
+    "title": "Dr\u00e6m Girl",
+    "artist": "No Vacation",
+    "genre": "garage",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0yc6Gst2xkRu0eMLeRMGCX",
+    "title": "Apocalypse",
+    "artist": "Cigarettes After Sex",
+    "genre": "pop",
+    "trend_velocity": 0.84,
+    "vibe": "sad"
+  },
+  {
+    "id": "08kSDRN3ZUB5V5ba2Rt5KB",
+    "title": "Call on Me (with SG Lewis)",
+    "artist": "Tove Lo;SG Lewis",
+    "genre": "synth-pop",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "04xV6DzDzE7TgWQKBGaC5E",
+    "title": "Ground Zero",
+    "artist": "Parkway Drive",
+    "genre": "metalcore",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4gvea7UlDkAvsJBPZAd4oB",
+    "title": "The Boys Of Summer",
+    "artist": "Don Henley",
+    "genre": "songwriter",
+    "trend_velocity": 0.77,
+    "vibe": "focus"
+  },
+  {
+    "id": "3k3NWokhRRkEPhCzPmV8TW",
+    "title": "Ojitos Lindos",
+    "artist": "Bad Bunny;Bomba Est\u00e9reo",
+    "genre": "latin",
+    "trend_velocity": 0.95,
+    "vibe": "focus"
+  },
+  {
+    "id": "2WTHLEVjfefbGoW7F3dXIg",
+    "title": "Girls",
+    "artist": "aespa",
+    "genre": "k-pop",
+    "trend_velocity": 0.78,
+    "vibe": "party"
+  },
+  {
+    "id": "6A8NfypDHuwiLWbo4a1yca",
+    "title": "New Genesis",
+    "artist": "Ado",
+    "genre": "j-pop",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0uTEaevJy8TUD8MgzuEOc5",
+    "title": "Astronaut In The Ocean",
+    "artist": "Arem Ozguc;Arman Aydin;Jordan Rys",
+    "genre": "turkish",
+    "trend_velocity": 0.68,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1OYOLWqKmhkFIx2KC9ek1a",
+    "title": "Colors of the Wind - From \"Pocahontas\" / Soundtrack Version",
+    "artist": "Judy Kuhn",
+    "genre": "show-tunes",
+    "trend_velocity": 0.65,
+    "vibe": "sad"
+  },
+  {
+    "id": "1hQia6rxgfM1ly2hE3StWp",
+    "title": "Ishq Wala Love",
+    "artist": "Vishal-Shekhar;Salim Merchant;Neeti Mohan;Shekhar Ravjiani",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "13lZDbwonGhOflQLQIfdtZ",
+    "title": "We're Going to Be Friends",
+    "artist": "The White Stripes",
+    "genre": "garage",
+    "trend_velocity": 0.67,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4e9hUiLsN4mx61ARosFi7p",
+    "title": "The Spirit Of Radio",
+    "artist": "Rush",
+    "genre": "hard-rock",
+    "trend_velocity": 0.66,
+    "vibe": "party"
+  },
+  {
+    "id": "5y8d8RHvxb0KiTa9Nq0xWp",
+    "title": "Morning Has Broken - Remastered 2021",
+    "artist": "Yusuf / Cat Stevens",
+    "genre": "folk",
+    "trend_velocity": 0.69,
+    "vibe": "sad"
+  },
+  {
+    "id": "6jTZGXH1cOQM3jhh07ZE1y",
+    "title": "Down By The Bay",
+    "artist": "Raffi",
+    "genre": "children",
+    "trend_velocity": 0.61,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "4ASOMWcJUrwEpjJy4GEijz",
+    "title": "California Dreamin' (feat. High Jinx)",
+    "artist": "Chris Lorenzo;High Jinx",
+    "genre": "groove",
+    "trend_velocity": 0.74,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3NfxSdJnVdon1axzloJgba",
+    "title": "I Say a Little Prayer",
+    "artist": "Aretha Franklin",
+    "genre": "jazz",
+    "trend_velocity": 0.75,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "66deoxrDAEK7Qg1p0Vioxe",
+    "title": "Love Brought Weight",
+    "artist": "Old Sea Brigade",
+    "genre": "folk",
+    "trend_velocity": 0.64,
+    "vibe": "sad"
+  },
+  {
+    "id": "4KcH1ZRV2W1q7Flq0QqC76",
+    "title": "Blitzkrieg Bop - 2016 Remaster",
+    "artist": "Ramones",
+    "genre": "ska",
+    "trend_velocity": 0.73,
+    "vibe": "party"
+  },
+  {
+    "id": "2cUzIBGMvx2BZ2Q1fzjdl1",
+    "title": "NUNU NANA",
+    "artist": "Jessi",
+    "genre": "k-pop",
+    "trend_velocity": 0.68,
+    "vibe": "focus"
+  },
+  {
+    "id": "5XsoDbDt98b0FkFLOhsJuS",
+    "title": "Lat Lag Gayee",
+    "artist": "Benny Dayal;Shalmali Kholgade;Pritam",
+    "genre": "pop-film",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "0oukMLKedsqQ3ltnI2daRO",
+    "title": "Haaye Oye (feat. Ash King)",
+    "artist": "QARAN;Ash King",
+    "genre": "pop",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5GCz9BOkt17aI6ZOR3EiUl",
+    "title": "Desabafo / Deixa Eu Dizer",
+    "artist": "Marcelo D2;Claudia",
+    "genre": "r-n-b",
+    "trend_velocity": 0.65,
+    "vibe": "party"
+  },
+  {
+    "id": "0e8nrvls4Qqv5Rfa2UhqmO",
+    "title": "THATS WHAT I WANT",
+    "artist": "Lil Nas X",
+    "genre": "hip-hop",
+    "trend_velocity": 0.87,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1foMv2HQwfQ2vntFf9HFeG",
+    "title": "Rhinestone Eyes",
+    "artist": "Gorillaz",
+    "genre": "alternative",
+    "trend_velocity": 0.8,
+    "vibe": "party"
+  },
+  {
+    "id": "3gE4eQH3K83Sght0ZLvuBK",
+    "title": "MIA",
+    "artist": "Bad Bunny;Drake",
+    "genre": "latino",
+    "trend_velocity": 0.65,
+    "vibe": "focus"
+  },
+  {
+    "id": "119c93MHjrDLJTApCVGpvx",
+    "title": "C.R.E.A.M. (Cash Rules Everything Around Me) (feat. Method Man, Raekwon, Inspectah Deck & Buddha Monk)",
+    "artist": "Wu-Tang Clan;Method Man;Raekwon;Inspectah Deck;Buddha Monk",
+    "genre": "hardcore",
+    "trend_velocity": 0.75,
+    "vibe": "focus"
+  },
+  {
+    "id": "4b2tcjrG1qUkSdsqEFP2dB",
+    "title": "Sun Is Shining",
+    "artist": "Axwell /\\ Ingrosso;Axwell;Sebastian Ingrosso",
+    "genre": "edm",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "63aj87TQG6F3RVO5nbG2VQ",
+    "title": "In Da Getto",
+    "artist": "J Balvin;Skrillex",
+    "genre": "latino",
+    "trend_velocity": 0.75,
+    "vibe": "party"
+  },
+  {
+    "id": "4pTkDIlpFNoeWbahu8pVXW",
+    "title": "Shootout",
+    "artist": "Izzamuzzic;Julien Marchal",
+    "genre": "electronic",
+    "trend_velocity": 0.78,
+    "vibe": "focus"
+  },
+  {
+    "id": "7ycWLEP1GsNjVvcjawXz3z",
+    "title": "Praise The Lord (Da Shine) (feat. Skepta)",
+    "artist": "A$AP Rocky;Skepta",
+    "genre": "hip-hop",
+    "trend_velocity": 0.82,
+    "vibe": "focus"
+  },
+  {
+    "id": "0qRE2t4scDRFsBgBXsQIH9",
+    "title": "Todo Estaba Bien",
+    "artist": "Carlos Sadness;Manuel Medrano",
+    "genre": "spanish",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "64BbK9SFKH2jk86U3dGj2P",
+    "title": "Otherside",
+    "artist": "Red Hot Chili Peppers",
+    "genre": "funk",
+    "trend_velocity": 0.8,
+    "vibe": "hyped"
+  },
+  {
+    "id": "6qS40yL7kXVoChI8SSCQIQ",
+    "title": "Ykwim",
+    "artist": "Karan Aujla;KR$NA;Mehar Vaani",
+    "genre": "hip-hop",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "6vjvewW34Y3UiGQtJokGlY",
+    "title": "Walk with Me In Hell",
+    "artist": "Lamb of God",
+    "genre": "groove",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4381FmKZc1uT2zzhBiknH7",
+    "title": "Adheeraa (From \"Cobra\")",
+    "artist": "A.R. Rahman;Vagu Mazan;Thoughtsfornow",
+    "genre": "pop",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4pt5fDVTg5GhEvEtlz9dKk",
+    "title": "I WANNA BE YOUR SLAVE",
+    "artist": "M\u00e5neskin",
+    "genre": "rock",
+    "trend_velocity": 0.83,
+    "vibe": "focus"
+  },
+  {
+    "id": "3vSn1frPgFcRXrjWOfhMLl",
+    "title": "Be My Lover",
+    "artist": "La Bouche",
+    "genre": "german",
+    "trend_velocity": 0.68,
+    "vibe": "party"
+  },
+  {
+    "id": "2GXXZFUxYg2LvG8SR0byOE",
+    "title": "Jeena Jeena",
+    "artist": "Atif Aslam",
+    "genre": "pop-film",
+    "trend_velocity": 0.72,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "0EfsDEYaSjGYd66Pr881nq",
+    "title": "Cry Baby",
+    "artist": "The Neighbourhood",
+    "genre": "alt-rock",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "1Eolhana7nKHYpcYpdVcT5",
+    "title": "Little Wing",
+    "artist": "Jimi Hendrix",
+    "genre": "metal",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "51NFxnQvaosfDDutk0tams",
+    "title": "bellyache",
+    "artist": "Billie Eilish",
+    "genre": "electro",
+    "trend_velocity": 0.79,
+    "vibe": "focus"
+  },
+  {
+    "id": "6tPA07JAS9p9mEOVhLdFJp",
+    "title": "The Wheels on the Bus",
+    "artist": "The Little Sunshine Kids",
+    "genre": "children",
+    "trend_velocity": 0.66,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "3YfS47QufnLDFA71FUsgCM",
+    "title": "The Sound of Silence",
+    "artist": "Simon & Garfunkel",
+    "genre": "folk",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "6Tt9PBM6oWGwVnxyzuM84j",
+    "title": "jaded",
+    "artist": "sadeyes",
+    "genre": "sad",
+    "trend_velocity": 0.62,
+    "vibe": "sad"
+  },
+  {
+    "id": "0XwRlvv3KlOu4HWlOH34XG",
+    "title": "Lover",
+    "artist": "Diljit Dosanjh",
+    "genre": "pop-film",
+    "trend_velocity": 0.71,
+    "vibe": "focus"
+  },
+  {
+    "id": "7DvR34weBiIehUpND2sN6O",
+    "title": "Mind",
+    "artist": "From Alfie",
+    "genre": "sleep",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "5377z0OljWvRR7CdSQrJxP",
+    "title": "The Woods",
+    "artist": "Hollow Coves",
+    "genre": "folk",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "6C1RD7YQVvt3YQj0CmuTeu",
+    "title": "Diles",
+    "artist": "Bad Bunny;Ozuna;Farruko;Arcangel;\u00d1engo Flow;DJ Luian;Mambo Kingz",
+    "genre": "reggaeton",
+    "trend_velocity": 0.83,
+    "vibe": "focus"
+  },
+  {
+    "id": "0PpNBEXkjalflGCMMsBV5B",
+    "title": "Jamais Vu",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.61,
+    "vibe": "sad"
+  },
+  {
+    "id": "3UDmHZcBTQp8Iu8droNtUl",
+    "title": "Revolution - Remastered 2009",
+    "artist": "The Beatles",
+    "genre": "psych-rock",
+    "trend_velocity": 0.63,
+    "vibe": "party"
+  },
+  {
+    "id": "34x6hEJgGAOQvmlMql5Ige",
+    "title": "Danger Zone - From \"Top Gun\" Original Soundtrack",
+    "artist": "Kenny Loggins",
+    "genre": "rock",
+    "trend_velocity": 0.77,
+    "vibe": "party"
+  },
+  {
+    "id": "2hLXUbsOU9cDb9RFva9FYr",
+    "title": "MEMORIAS",
+    "artist": "Mora;Jhayco",
+    "genre": "latino",
+    "trend_velocity": 0.85,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1AM8QdDFZMq6SrrqUnuQ9P",
+    "title": "Feeling Good",
+    "artist": "Michael Bubl\u00e9",
+    "genre": "jazz",
+    "trend_velocity": 0.73,
+    "vibe": "focus"
+  },
+  {
+    "id": "1EC0JRoSi9YL5zExd3Euc3",
+    "title": "No Puedo Vivir Sin Ti",
+    "artist": "Los Ronaldos",
+    "genre": "spanish",
+    "trend_velocity": 0.63,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1UqhkbzB1kuFwt2iy4h29Q",
+    "title": "Cough Syrup",
+    "artist": "Young the Giant",
+    "genre": "alt-rock",
+    "trend_velocity": 0.71,
+    "vibe": "hyped"
+  },
+  {
+    "id": "71qKWIBggc7poNXclWN53M",
+    "title": "I'll Bite Your Soul",
+    "artist": "SHRK;Shiloh Dynasty",
+    "genre": "chill",
+    "trend_velocity": 0.69,
+    "vibe": "sad"
+  },
+  {
+    "id": "6q4aoWgTQ8td2AvqQXuFqm",
+    "title": "Take A Picture",
+    "artist": "Filter",
+    "genre": "grunge",
+    "trend_velocity": 0.66,
+    "vibe": "hyped"
+  },
+  {
+    "id": "39LJCSHy7nB1akjmhMQ7Y7",
+    "title": "Pain",
+    "artist": "Josh A",
+    "genre": "emo",
+    "trend_velocity": 0.74,
+    "vibe": "focus"
+  },
+  {
+    "id": "54iSfkh69fxhnSNrgvTEBp",
+    "title": "Worst of You",
+    "artist": "Maisie Peters",
+    "genre": "indie-pop",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "44XjoNvtwevktFKjvVe1vH",
+    "title": "Andrea",
+    "artist": "Bad Bunny;Buscabulla",
+    "genre": "reggaeton",
+    "trend_velocity": 0.86,
+    "vibe": "focus"
+  },
+  {
+    "id": "7thzIJfxiZNZaPFA5OR9s1",
+    "title": "Flowers In Your Hair",
+    "artist": "The Lumineers",
+    "genre": "folk",
+    "trend_velocity": 0.64,
+    "vibe": "focus"
+  },
+  {
+    "id": "1QEEqeFIZktqIpPI4jSVSF",
+    "title": "More Than a Feeling",
+    "artist": "Boston",
+    "genre": "hard-rock",
+    "trend_velocity": 0.79,
+    "vibe": "focus"
+  },
+  {
+    "id": "6KWcq5p0wsz97N3eoRUSH6",
+    "title": "I Really Wish I Hated You",
+    "artist": "blink-182",
+    "genre": "punk",
+    "trend_velocity": 0.64,
+    "vibe": "party"
+  },
+  {
+    "id": "5ckJAMv3Ixm6orTgfkmtbf",
+    "title": "Shubhaarambh",
+    "artist": "Amit Trivedi;Shruti Pathak;Divya Kumar",
+    "genre": "pop-film",
+    "trend_velocity": 0.61,
+    "vibe": "focus"
+  },
+  {
+    "id": "4RVtBlHFKj51Ipvpfv5ER4",
+    "title": "Drown (feat. Clinton Kane)",
+    "artist": "Martin Garrix;Clinton Kane",
+    "genre": "house",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "1WKLxJpDqkQ9x1qEDNutoX",
+    "title": "2 Baddies",
+    "artist": "NCT 127",
+    "genre": "k-pop",
+    "trend_velocity": 0.69,
+    "vibe": "hyped"
+  },
+  {
+    "id": "3FCto7hnn1shUyZL42YgfO",
+    "title": "Piano Man",
+    "artist": "Billy Joel",
+    "genre": "piano",
+    "trend_velocity": 0.66,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "6gCVA6ja6g0foIsWv0RuSZ",
+    "title": "ATWA",
+    "artist": "System Of A Down",
+    "genre": "metal",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2qgXrzJsry4KgYoJCpuaul",
+    "title": "Choo Lo",
+    "artist": "The Local Train",
+    "genre": "hip-hop",
+    "trend_velocity": 0.67,
+    "vibe": "focus"
+  },
+  {
+    "id": "2P5yIMu2DNeMXTyOANKS6k",
+    "title": "Nobody",
+    "artist": "Mitski",
+    "genre": "indie",
+    "trend_velocity": 0.78,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5amAJIEdIVtWYEi4wGp7Fn",
+    "title": "City of Angels",
+    "artist": "Em Beihold",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.63,
+    "vibe": "sad"
+  },
+  {
+    "id": "23l1kVpqMVREiwU1YAlcr4",
+    "title": "I Guess That's Why They Call It The Blues",
+    "artist": "Elton John",
+    "genre": "piano",
+    "trend_velocity": 0.7,
+    "vibe": "focus"
+  },
+  {
+    "id": "2D9WT9MeG07a26kKU9IGEb",
+    "title": "Trip to Valhalla",
+    "artist": "Dr. Peacock",
+    "genre": "hardcore",
+    "trend_velocity": 0.64,
+    "vibe": "hyped"
+  },
+  {
+    "id": "4C6Uex2ILwJi9sZXRdmqXp",
+    "title": "Super Freaky Girl",
+    "artist": "Nicki Minaj",
+    "genre": "hip-hop",
+    "trend_velocity": 0.92,
+    "vibe": "party"
+  },
+  {
+    "id": "1JSTJqkT5qHq8MDJnJbRE1",
+    "title": "Every Breath You Take",
+    "artist": "The Police",
+    "genre": "rock",
+    "trend_velocity": 0.86,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "10SRMwb9EuVS1K9rYsBfHQ",
+    "title": "Yet To Come",
+    "artist": "BTS",
+    "genre": "k-pop",
+    "trend_velocity": 0.85,
+    "vibe": "party"
+  },
+  {
+    "id": "1Ly7xppUgLEZ4iwxRAR9Sf",
+    "title": "Getting Along",
+    "artist": "Royal Republic",
+    "genre": "garage",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "0S3gpZzlT9Hb7CCSV2owX7",
+    "title": "Mama, I'm Coming Home",
+    "artist": "Ozzy Osbourne",
+    "genre": "hard-rock",
+    "trend_velocity": 0.69,
+    "vibe": "focus"
+  },
+  {
+    "id": "2hT9vWmKp6uduKzmalqeMA",
+    "title": "The One",
+    "artist": "Jane Good;Samuel Miller",
+    "genre": "french",
+    "trend_velocity": 0.64,
+    "vibe": "focus"
+  },
+  {
+    "id": "4f3nDjgqXurMryYBSp0TZD",
+    "title": "The Beginning",
+    "artist": "ONE OK ROCK",
+    "genre": "emo",
+    "trend_velocity": 0.62,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5knuzwU65gJK7IF5yJsuaW",
+    "title": "Rockabye (feat. Sean Paul & Anne-Marie)",
+    "artist": "Clean Bandit;Sean Paul;Anne-Marie",
+    "genre": "dance",
+    "trend_velocity": 0.75,
+    "vibe": "party"
+  },
+  {
+    "id": "1uM8TxVMxmiwP8b6pZxUeQ",
+    "title": "Cold World",
+    "artist": "Eric Reprid",
+    "genre": "sad",
+    "trend_velocity": 0.61,
+    "vibe": "hyped"
+  },
+  {
+    "id": "7CHi4DtfK4heMlQaudCuHK",
+    "title": "Lose Control",
+    "artist": "MEDUZA;Becky Hill;Goodboys",
+    "genre": "electro",
+    "trend_velocity": 0.78,
+    "vibe": "focus"
+  },
+  {
+    "id": "17lu4tymfnhmcIDlzBbtAb",
+    "title": "For Those About to Rock (We Salute You)",
+    "artist": "AC/DC",
+    "genre": "hard-rock",
+    "trend_velocity": 0.67,
+    "vibe": "hyped"
+  },
+  {
+    "id": "5Odq8ohlgIbQKMZivbWkEo",
+    "title": "Left and Right (Feat. Jung Kook of BTS)",
+    "artist": "Charlie Puth;Jung Kook;BTS",
+    "genre": "dance",
+    "trend_velocity": 0.75,
+    "vibe": "focus"
+  },
+  {
+    "id": "5PmtPTXrLqgqQfqngsUqZp",
+    "title": "summer&cigarettes",
+    "artist": "sammy rash",
+    "genre": "singer-songwriter",
+    "trend_velocity": 0.64,
+    "vibe": "relaxed"
+  },
+  {
+    "id": "2OYtcqflvzQwh3cMPmTHs4",
+    "title": "There\u2019s Fear In Letting Go",
+    "artist": "I Prevail",
+    "genre": "metalcore",
+    "trend_velocity": 0.65,
+    "vibe": "hyped"
+  },
+  {
+    "id": "2W779g2UrRZtVdf3FcEOO1",
+    "title": "In My Mind",
+    "artist": "Lyn Lapid",
+    "genre": "songwriter",
+    "trend_velocity": 0.73,
+    "vibe": "sad"
+  },
+  {
+    "id": "3f5lA8nnc4YYF1qf78WpHw",
+    "title": "Ella Quiere Beber - Remix",
+    "artist": "Anuel AA;Romeo Santos",
+    "genre": "reggaeton",
+    "trend_velocity": 0.76,
+    "vibe": "focus"
+  },
+  {
+    "id": "1GL7vwDnPqCnJ2xGNxNLwG",
+    "title": "These Nights",
+    "artist": "Loud Luxury;KIDDO",
+    "genre": "edm",
+    "trend_velocity": 0.7,
+    "vibe": "hyped"
+  }
+]
