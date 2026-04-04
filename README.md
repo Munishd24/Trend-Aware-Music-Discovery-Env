@@ -22,33 +22,33 @@ pinned: false
 
 ## 📖 What Is This?
 
-This environment simulates an **AI-powered music recommendation engine** — the kind that powers real streaming platforms like Spotify. An LLM agent observes a listener's taste profile and a live catalog of trending songs, then must recommend the right track to maximize engagement.
+This environment simulates an **AI-powered sequential recommendation pipeline** — the core infrastructure driving retention at scale on modern streaming platforms. An LLM agent observes a listener’s engagement profile and a live catalog of trending tracks, then must surface the optimal content to maximize session retention metrics.
 
-The challenge is non-trivial: song trends decay over time, the user's mood is **hidden** (POMDP), and the global musical zeitgeist shifts every episode. The agent must balance exploitation (safe genre matches) against exploration (discovering new genres the user might love) — all within a strict 10-step budget.
+The optimization problem is non-trivial: trend signals decay over time, user affinity state is **partially observable** (POMDP), and the global content zeitgeist shifts every episode. The agent must balance exploitation (high-confidence genre alignment) against exploration (identifying latent segment interests) — all within a strict 10-step decision horizon.
 
-This is **sequential user retention optimization** — a real, high-value business problem for any content platform.
+This is **sequential user retention optimization** — a high-value, production-grade problem for any content platform operating at scale.
 
 ---
 
 ## ✨ Key Features
 
 ### 1. Real Spotify Dataset (1,000 Tracks)
-Powered by the [HuggingFace Spotify Tracks Dataset](https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset). A pre-processing pipeline (`scripts/build_catalog.py`) filters for popularity > 60, maps audio features (energy, valence) to simulation variables, and generates a lightweight `server/catalog.json` for fast, latency-safe episode resets.
+Powered by the [HuggingFace Spotify Tracks Dataset](https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset). A pre-processing pipeline (`scripts/build_catalog.py`) filters for popularity > 60, derives audio-feature-based segment tags (energy × valence → vibe), and generates a lightweight `server/catalog.json` for low-latency, production-safe episode resets without runtime CSV parsing.
 
-### 2. Hidden Mood State (POMDP)
-The user's current mood is **never revealed** in the observation. Agents must infer it by reading the behavioral signal in `last_3_reactions`. Recommending a song that matches the hidden mood earns a bonus. This makes the task a true Partially Observable Markov Decision Process.
+### 2. Hidden Affinity State (POMDP)
+The user’s current mood state is **never surfaced in the observation schema**. Agents must infer it via behavioral signal analysis in `last_3_reactions`. Aligning a recommendation to the inferred latent state earns a reward bonus. This constitutes a genuine Partially Observable Markov Decision Process — not a toy variant.
 
-### 3. Global Viral Mood (Serendipity Multiplier)
-Each episode begins with a randomly sampled `global_mood_trend` (e.g., `"party"`, `"hyped"`, `"sad"`). If an agent correctly recommends a song whose vibe matches **both** the user's hidden mood AND the global trend simultaneously, they unlock a massive `+1.0` serendipity retention multiplier. This simulates real-world viral discovery loops.
+### 3. Global Viral Trend Signal (Serendipity Multiplier)
+Each episode samples a `global_mood_trend` representing the macro-level content consumption pattern across the platform. When an agent surfaces a track whose vibe aligns with **both** the user’s inferred sentiment AND the global trend simultaneously, a `+1.0` serendipity retention multiplier activates — simulating the viral discovery loops that drive outsized engagement on real platforms.
 
-### 4. Success-Gated Diversity Bonus (Anti-Reward-Hacking)
-Agents receive an `exploration_budget` of 2 attempts per episode to try a song from a **new genre** outside the user's known taste. The `+1.0` diversity bonus is awarded **only if** the user reacts positively (shared, saved, or added to playlist). A negative reaction wastes the attempt with no reward — preventing random genre-guessing exploits.
+### 4. Success-Gated Diversity Bonus (Anti-Overfitting Mechanism)
+Agents receive an `exploration_budget` of 2 attempts per episode to surface content from an **unrepresented genre segment**. The `+1.0` diversity bonus is granted **only upon confirmed positive engagement** (shared, saved, or added to playlist). Neutral or negative reactions consume the budget without reward — preventing stochastic genre-sampling exploits common in naive RL baselines.
 
 ### 5. Premium Interactive Dashboard
-A zero-click, auto-loading Gradio UI built in a Spotify-inspired dark glassmorphism style. On page load, the environment initializes instantly — judges see a live populated state without clicking anything. The activity history shows 🔥 badges for shares and 💎 indicators for serendipity combos.
+A zero-click, auto-initializing Gradio interface styled after a professional streaming platform UI (dark glassmorphism, Outfit typography). The environment loads a live populated state on page open. The engagement log surfaces 🔥 indicators for high-engagement events and 💎 badges for serendipity multiplier activations, giving evaluators immediate visual insight into agent behavior.
 
-### 6. Robust Autograder Inference Script
-The `inference.py` script runs the LLM agent (Qwen2.5-72B-Instruct by default) across all 3 tasks with a strict 10-second per-call timeout. LLM responses are parsed via a 3-tier fallback chain (JSON → Regex → Heuristic Baseline), ensuring `success=true` even under API failure. Logs follow the mandatory `[START]`/`[STEP]`/`[END]` format exactly.
+### 6. Production-Grade Autograder Integration
+The `inference.py` evaluation script executes the LLM agent (Qwen2.5-72B-Instruct by default) across all 3 task segments with a strict 10-second per-inference timeout. A 3-tier response parsing cascade (JSON → Regex → Heuristic Baseline) guarantees `success=true` under degraded API conditions. Stdout logging follows the mandatory `[START]`/`[STEP]`/`[END]` specification exactly, with accurate `error=` field reporting.
 
 ---
 
@@ -144,10 +144,10 @@ discovery_bonus  = steps where trend_age_days < 3 AND reaction in {shared, saved
 ## 🎯 Task Difficulties
 
 | Difficulty | Scenario | Key Challenge | Score Target |
-|---|---|---|---|
-| **Easy** | User loves anime. 10 fresh songs (< 3 days old). | Basic genre + trend matching | 0.80+ |
-| **Medium** | Mixed catalog aging out. Mood shifts 25% chance/step. | POMDP mood inference under uncertainty | 0.45–0.65 |
-| **Hard** | Cold-start user with no genre history. 20 diverse songs. | Exploration from scratch in 10 steps | 0.20–0.40 |
+|---|---|---||---|
+| **Easy** | High-intent user with strong niche media affinity (Anime/Soundtrack segment). 10 high-velocity tracks, all < 3 days old. | Genre alignment and trend freshness exploitation | 0.80+ |
+| **Medium** | Mixed catalog with aging trend signals. User affinity state shifts stochastically (25% drift probability per step). | Latent mood inference under partial observability | 0.45–0.65 |
+| **Hard** | Cold-start session: zero prior genre or media signal. 20 tracks across all segments with heterogeneous trend ages. | Segment discovery via strategic exploration within 10 steps | 0.20–0.40 |
 
 ---
 
