@@ -191,7 +191,8 @@ class MusicDiscoveryEnvironment(Environment):
         if song.get("genre") not in getattr(self, "_session_genres", []):
             self._session_genres.append(song.get("genre"))
 
-        final_reward = round(base_reward * trend_age_bonus + taste_bonus + diversity_bonus, 2)
+        raw_reward = round(base_reward * trend_age_bonus + taste_bonus + diversity_bonus, 2)
+        final_reward = max(-1.0, min(1.0, raw_reward))
 
         self._session_engagement.append({
             "step": self._state.step_count, "song_id": song_id,
