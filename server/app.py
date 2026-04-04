@@ -104,15 +104,12 @@ if os.environ.get("ENABLE_WEB_INTERFACE", "").lower() == "true":
         print(f"⚠️  Gradio UI not loaded: {e}")
 
 
-def main(host: str = "0.0.0.0", port: int = 7860):
+def main():
+    """Entry point for the OpenEnv validator."""
     import uvicorn
-    uvicorn.run(app, host=host, port=port)
+    uvicorn.run("server.app:app", host="0.0.0.0", port=7860, reload=False)
 
 
 if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--port", type=int, default=7860)
-    args = parser.parse_args()
-    main(port=args.port)
+    main()
 
