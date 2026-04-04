@@ -26,41 +26,37 @@ def get_llm_action(obs_dict, model_name):
     # Construct the user prompt
     user_prompt = f"OBSERVATION STATE:\n{json.dumps(obs_dict, indent=2)}\n\nRespond only with JSON."
     
+    response = openai_client.chat.completions.create(
+        model=model_name,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt}
+        ],
+        temperature=0.1,
+        timeout=10  # Hard 10s cap — prevents 20-min runtime breach
+    )
+    content = response.choices[0].message.content.strip()
+    
+    # Robust parsing step 1
     try:
-        response = openai_client.chat.completions.create(
-            model=model_name,
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt}
-            ],
-            temperature=0.1
-        )
-        content = response.choices[0].message.content.strip()
+        data = json.loads(content)
+        if "song_id" in data:
+            return data["song_id"]
+    except json.JSONDecodeError:
+        pass
         
-        # Robust parsing step 1
+    # Robust parsing step 2: regex
+    match = re.search(r'\{.*"song_id"\s*:\s*"[^"]+".*\}', content, re.DOTALL)
+    if match:
         try:
-            data = json.loads(content)
+            data = json.loads(match.group(0))
             if "song_id" in data:
                 return data["song_id"]
         except json.JSONDecodeError:
             pass
-            
-        # Robust parsing step 2: regex
-        match = re.search(r'\{.*"song_id"\s*:\s*"[^"]+".*\}', content, re.DOTALL)
-        if match:
-            try:
-                data = json.loads(match.group(0))
-                if "song_id" in data:
-                    return data["song_id"]
-            except json.JSONDecodeError:
-                pass
-                
-    except Exception as e:
-        pass
-        
-    # Fallback if all fail or API errors
-    fallback_res = baseline_agent(obs_dict)
-    return fallback_res["song_id"]
+    
+    # LLM responded but output was unparseable — treat as error
+    raise ValueError(f"LLM returned unparseable output: {content[:80]}")
 
 def run_evaluation():
     for task_name in ["easy", "medium", "hard"]:
@@ -77,8 +73,14 @@ def run_evaluation():
             step_num += 1
             obs_dict = obs.model_dump()
             
-            # Fetch action
-            song_id = get_llm_action(obs_dict, MODEL_NAME)
+            # Fetch action — accurately track whether LLM succeeded or fallback fired
+            error_msg = "null"
+            try:
+                song_id = get_llm_action(obs_dict, MODEL_NAME)
+            except Exception:
+                error_msg = "api_error"
+                song_id = baseline_agent(obs_dict)["song_id"]
+
             action = MusicDiscoveryAction(song_id=song_id)
             
             # Step environment
@@ -87,9 +89,9 @@ def run_evaluation():
             done = obs.done
             rewards.append(reward)
             
-            # Logging rules
+            # Logging rules — exact spec format
             is_done_str = "true" if done else "false"
-            print(f'[STEP] step={step_num} action={{"song_id": "{song_id}"}} reward={reward:.2f} done={is_done_str} error=null')
+            print(f'[STEP] step={step_num} action={{"song_id": "{song_id}"}} reward={reward:.2f} done={is_done_str} error={error_msg}')
             
         # END log
         rewards_str = ",".join([f"{r:.2f}" for r in rewards])
