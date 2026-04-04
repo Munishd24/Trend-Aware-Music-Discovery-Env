@@ -15,6 +15,8 @@ observation_schema:
   recommended_history: array
   last_3_reactions: array
   global_mood_trend: string
+  session_genres: array
+  exploration_budget: integer
 tasks:
   - name: easy
     difficulty: 0.2
