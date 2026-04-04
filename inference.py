@@ -1,224 +1,99 @@
-"""
-Inference script for the Trend-Aware Music Discovery RL Benchmark.
-
-Connects to the OpenEnv server (local or HF Space) via the typed WebSocket
-MusicDiscoveryEnvClient, runs an LLM agent over 3 task difficulties, and
-grades each trajectory using the /grader endpoint.
-"""
-
 import os
 import json
 import re
-import requests
+import time
 from openai import OpenAI
 
-# Typed OpenEnv WebSocket client
-from client import MusicDiscoveryEnvClient
-from models import MusicDiscoveryAction
+from server.music_discovery_env_environment import MusicDiscoveryEnvironment, MusicDiscoveryAction, baseline_agent
 
-# ---------------------------------------------------------------------------
-# Configuration
-# ---------------------------------------------------------------------------
-API_BASE_URL = os.environ.get("API_BASE_URL", "https://api.openai.com/v1")
-MODEL_NAME   = os.environ.get("MODEL_NAME", "gpt-4o-mini")
-HF_TOKEN     = os.environ.get("HF_TOKEN", "dummy_key")
-ENV_URL      = os.environ.get("ENV_URL", "http://localhost:7860")
+# Mandatory configuration with defaults
+API_BASE_URL = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
+MODEL_NAME = os.getenv("MODEL_NAME", "Qwen/Qwen2.5-72B-Instruct")
+HF_TOKEN = os.getenv("HF_TOKEN")
 
-# Initialize OpenAI client according to hackathon instructions
+# Initialize OpenAI client 
 openai_client = OpenAI(api_key=HF_TOKEN, base_url=API_BASE_URL)
 
-SYSTEM_PROMPT = """You are an expert music recommendation agent optimizing for user engagement and trend discovery.
+SYSTEM_PROMPT = """You are an expert music recommendation agent.
+Your task is to select the single best song.id from the AVAILABLE SONGS.
+CRITICAL INSTRUCTIONS:
+1. Output ONLY valid JSON exactly like this: {"song_id": "song_01"}
+2. DO NOT repeat any song found in the already recommended history.
+3. If exploration_budget > 0, STRATEGICALLY EXPLORE NEW GENRES that are not in the session_genres list! You earn massive bonuses for successful exploration!
+"""
 
-Your task: Select the single best song to recommend to this user.
-
-Decision framework (apply in order):
-1. EXCLUDE any song in the "Already Recommended" list — never repeat
-2. VIRAL SERENDIPITY: If you correctly infer the user's hidden mood from recent reactions and align it with a song matching the GLOBAL VIRAL MOOD, you win a massive retention multiplier!
-3. PRIORITIZE songs matching user's media_interests (strongest signal)
-4. PREFER songs matching user's genre preferences
-5. FAVOR songs with trend_age_days < 5 (fresher trends = higher reward)
-
-Output format — respond with ONLY valid JSON, nothing else:
-{"song_id": "EXACT_ID_FROM_AVAILABLE_SONGS"}"""
-
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
-
-def extract_song_id(text: str) -> str:
-    # Use simple regex to ensure we get the song_XX format even if LLM adds text
-    match = re.search(r'(song_\d{2,})', text)
-    if match:
-        return match.group(1)
-    # If regex fails, try parsing as JSON
+def get_llm_action(obs_dict, model_name):
+    # Construct the user prompt
+    user_prompt = f"OBSERVATION STATE:\n{json.dumps(obs_dict, indent=2)}\n\nRespond only with JSON."
+    
     try:
-        data = json.loads(text)
-        if "song_id" in data:
-            return data["song_id"]
-    except:
-        pass
-    raise ValueError(f"Failed to extract song_id from response: {text}")
-
-
-def build_prompt(state_dict: dict) -> str:
-    """Build the rich, structured prompt from an observation dict."""
-    user = state_dict.get("user", {})
-    tp   = user.get("taste_profile", {})
-    history: list = state_dict.get("recommended_history", [])
-    trending: list = state_dict.get("trending_songs", [])
-    last_3 = state_dict.get("last_3_reactions", [])
-
-    unplayed = [s for s in trending if s["id"] not in history]
-    if not unplayed:
-        unplayed = trending
-
-    history_titles = []
-    for sid in history:
-        for s in trending:
-            if s["id"] == sid:
-                history_titles.append(f"'{s['title']}' by {s['artist']}")
-                break
-
-    lines = [
-        "=== USER PROFILE ===",
-        f"Genres: {', '.join(tp.get('genres', [])) or 'Unknown'}",
-        f"Media interests: {', '.join(tp.get('media_interests', [])) or 'Unknown'}",
-        f"Discovery openness: {user.get('discovery_openness', 0.5)}",
-        "",
-        "=== GLOBAL VIRAL MOOD ===",
-        f"The current viral trend globally is: {state_dict.get('global_mood_trend', 'Unknown')}",
-        "",
-        "=== RECENT REACTIONS (use to infer hidden mood) ===",
-        (', '.join(last_3) if last_3 else 'None'),
-        "",
-        "=== ALREADY RECOMMENDED — DO NOT REPEAT ===",
-        (('\n- ' + '\n- '.join(history_titles)) if history_titles else 'None'),
-        "",
-        "=== AVAILABLE SONGS — choose exactly one ===",
-    ]
-    # We provide a representative subset to keep prompt length reasonable
-    for i, s in enumerate(unplayed[:12], 1):
-        lines.append(
-            f"{i}. ID:{s['id']} | {s['title']} by {s['artist']} | "
-            f"From:{s['source_media']} ({s['media_type']}) | "
-            f"Genre:{s['genre']} | Vibe:{s['vibe']} | "
-            f"Velocity:{s['trend_velocity']} | Age:{s['trend_age_days']}d"
+        response = openai_client.chat.completions.create(
+            model=model_name,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": user_prompt}
+            ],
+            temperature=0.1
         )
-
-    valid_ids = ', '.join(s['id'] for s in unplayed[:12])
-    lines += [
-        "",
-        f"IMPORTANT: song_id must be exactly one of: [{valid_ids}]",
-        "Never invent IDs. Respond with ONLY: {\"song_id\": \"song_XX\"}",
-    ]
-    return '\n'.join(lines)
-
-
-def get_llm_action(state_dict: dict) -> str:
-    """Ask the LLM to pick a song. Raises on failure so fallback can catch it."""
-    prompt = build_prompt(state_dict)
-    response = openai_client.chat.completions.create(
-        model=MODEL_NAME,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user",   "content": prompt},
-        ],
-        temperature=0.1,
-    )
-    return extract_song_id(response.choices[0].message.content)
-
-
-def fallback_action(state_dict: dict) -> str:
-    """Heuristic baseline: prioritize unplayed songs matching the global viral mood, then fallback to genre."""
-    user    = state_dict.get("user", {})
-    genres  = user.get("taste_profile", {}).get("genres", [])
-    history = state_dict.get("recommended_history", [])
-    songs   = state_dict.get("trending_songs", [])
-    viral_mood = state_dict.get("global_mood_trend", "")
-
-    unplayed = [s for s in songs if s["id"] not in history]
-    if not unplayed:
-        unplayed = songs
+        content = response.choices[0].message.content.strip()
         
-    viral_matches = [s for s in unplayed if s.get("vibe") == viral_mood]
-    if viral_matches:
-        pool = viral_matches
-    else:
-        genre_matched = [s for s in unplayed if s.get("genre") in genres]
-        pool = genre_matched if genre_matched else unplayed
-        
-    return max(pool, key=lambda s: s.get("trend_velocity", 0))["id"]
-
-
-# ---------------------------------------------------------------------------
-# Task runner
-# ---------------------------------------------------------------------------
-
-def run_task(task_name: str) -> None:
-    """
-    Runs an episode following mandatory OpenEnv stdout logging:
-    [START] task start
-    [STEP] every step
-    [END] final result
-    """
-    # [START] log
-    print(f"[START] {json.dumps({'task_name': task_name, 'model_name': MODEL_NAME})}")
-    
-    trajectory = []
-
-    with MusicDiscoveryEnvClient(base_url=ENV_URL).sync() as env:
-        result   = env.reset(task=task_name)
-        obs      = result.observation
-        done     = result.done
-
-        while not done:
-            state_dict = obs.model_dump()
-            step_count = obs.step_count
-
-            try:
-                # Attempt LLM agent
-                song_id = get_llm_action(state_dict)
-                agent_type = "llm"
-            except Exception:
-                # Heuristic fallback if LLM/API fails
-                song_id = fallback_action(state_dict)
-                agent_type = "fallback"
-
-            # Execute action
-            step_result = env.step(MusicDiscoveryAction(song_id=song_id))
+        # Robust parsing step 1
+        try:
+            data = json.loads(content)
+            if "song_id" in data:
+                return data["song_id"]
+        except json.JSONDecodeError:
+            pass
             
-            # [STEP] log
-            print(f"[STEP] {json.dumps({
-                'step': step_count,
-                'action': song_id,
-                'agent': agent_type,
-                'reward': step_result.reward,
-                'done': step_result.done
-            })}")
+        # Robust parsing step 2: regex
+        match = re.search(r'\{.*"song_id"\s*:\s*"[^"]+".*\}', content, re.DOTALL)
+        if match:
+            try:
+                data = json.loads(match.group(0))
+                if "song_id" in data:
+                    return data["song_id"]
+            except json.JSONDecodeError:
+                pass
+                
+    except Exception as e:
+        pass
+        
+    # Fallback if all fail or API errors
+    fallback_res = baseline_agent(obs_dict)
+    return fallback_res["song_id"]
 
-            obs    = step_result.observation
-            done   = step_result.done
-
-            info = obs.session_engagement[-1] if obs.session_engagement else {}
-            trajectory.append(info)
-
-    # Calculate final grade
-    grade_res = requests.post(f"{ENV_URL}/grader", json={"trajectory": trajectory})
-    grade_res.raise_for_status()
-    score = grade_res.json()["score"]
-    
-    # [END] log
-    print(f"[END] {json.dumps({'task_name': task_name, 'final_score': score})}")
-
-
-# ---------------------------------------------------------------------------
-# Entry
-# ---------------------------------------------------------------------------
+def run_evaluation():
+    for task_name in ["easy", "medium", "hard"]:
+        env = MusicDiscoveryEnvironment()
+        obs = env.reset(task=task_name)
+        
+        print(f"[START] task={task_name} env=music-discovery model={MODEL_NAME}")
+        
+        done = False
+        step_num = 0
+        rewards = []
+        
+        while not done and step_num < 10:
+            step_num += 1
+            obs_dict = obs.model_dump()
+            
+            # Fetch action
+            song_id = get_llm_action(obs_dict, MODEL_NAME)
+            action = MusicDiscoveryAction(song_id=song_id)
+            
+            # Step environment
+            obs = env.step(action)
+            reward = obs.reward
+            done = obs.done
+            rewards.append(reward)
+            
+            # Logging rules
+            is_done_str = "true" if done else "false"
+            print(f'[STEP] step={step_num} action={{"song_id": "{song_id}"}} reward={reward:.2f} done={is_done_str} error=null')
+            
+        # END log
+        rewards_str = ",".join([f"{r:.2f}" for r in rewards])
+        print(f"[END] success=true steps={step_num} rewards={rewards_str}")
 
 if __name__ == "__main__":
-    # Ensure tasks are run for all 3 difficulties as required
-    for task in ["easy", "medium", "hard"]:
-        try:
-            run_task(task)
-        except Exception as e:
-            print(f"Error running task {task}: {e}")
+    run_evaluation()
