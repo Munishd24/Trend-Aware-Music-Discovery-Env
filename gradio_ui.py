@@ -88,6 +88,7 @@ def _format_user_card(obs_dict: dict) -> str:
         f"    <div style='font-size: 1.5em; font-weight: 800; color: #fff; text-shadow: 0 0 10px rgba(29,185,84,0.6);'>{mood_emoji} {global_mood.capitalize()}</div>"
         f"  </div>"
         f"  <h3 style='margin: 0 0 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;'>👤 User Profile</h3>"
+        f"  <div style='font-size: 0.85em; font-style: italic; color: #a1a1aa; margin-bottom: 10px;'>Current Mood: Hidden (POMDP) — Infer from reactions.</div>"
         f"  <div style='display: flex; gap: 8px;'><span style='color: #9ca3af; min-width: 80px;'>Genres</span> <span style='font-weight: 600; color: #fff;'>{genres}</span></div>"
         f"  <div style='display: flex; gap: 8px;'><span style='color: #9ca3af; min-width: 80px;'>Media</span> <span style='font-weight: 600; color: #fff;'>{media}</span></div>"
         f"  <div style='display: flex; gap: 8px; align-items: center;'><span style='color: #9ca3af; min-width: 80px;'>Openness</span> <div style='height: 6px; width: 100px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden;'><div style='height: 100%; width: {int(openness*100)}%; background: #1ed760; box-shadow: 0 0 8px #1ed760;'></div></div><span style='font-size: 0.85em; margin-left: 6px; color: #1ed760; font-weight: bold;'>{openness:.1f}</span></div>"
@@ -106,8 +107,15 @@ def _format_trajectory(traj: list) -> str:
     
     html = '<div style="display: flex; flex-direction: column; gap: 12px;">'
     for t in reversed(traj):
-        emoji = REACTION_EMOJI.get(t.get("reaction", ""), t.get("reaction", ""))
+        reaction = t.get("reaction", "")
+        emoji = str(REACTION_EMOJI.get(reaction, reaction))
         reward = t.get("reward", 0)
+        
+        if reward >= 1.5:
+            emoji += " 💎"
+        elif reaction in ("shared", "saved"):
+            emoji += " 🔥"
+            
         color = "#1ed760" if reward > 0.5 else ("#facc15" if reward > 0 else "#ef4444")
         bg_rgb = "29, 185, 84" if reward > 0.5 else ("250, 204, 21" if reward > 0 else "239, 68, 68")
         html += f'''
@@ -139,7 +147,9 @@ def reset_env(task: str):
     _done = False
     obs_dict = _obs.model_dump()
 
-    song_ids = [s["id"] for s in obs_dict.get("trending_songs", [])]
+    avail = [(f"{s['title']} - {s['artist']} [{s['source_media']}]", s["id"]) 
+             for s in obs_dict.get("trending_songs", [])]
+             
     user_card = _format_user_card(obs_dict)
     song_table = _format_song_table(obs_dict.get("trending_songs", []), [])
     traj_log = _format_trajectory([])
@@ -150,7 +160,7 @@ def reset_env(task: str):
         song_table,
         traj_log,
         status,
-        gr.Dropdown(choices=song_ids, value=song_ids[0] if song_ids else None),
+        gr.Dropdown(choices=avail, value=avail[0][1] if avail else None),
         "",  # grade
     )
 
@@ -189,7 +199,8 @@ def step_env(song_id: str):
     else:
         grade_str = ""
 
-    avail = [s["id"] for s in obs_dict.get("trending_songs", [])
+    avail = [(f"{s['title']} - {s['artist']} [{s['source_media']}]", s["id"])
+             for s in obs_dict.get("trending_songs", [])
              if s["id"] not in obs_dict.get("recommended_history", [])]
 
     return (
@@ -198,7 +209,7 @@ def step_env(song_id: str):
                            obs_dict.get("recommended_history", [])),
         _format_trajectory(_trajectory),
         status,
-        gr.Dropdown(choices=avail, value=avail[0] if avail else None),
+        gr.Dropdown(choices=avail, value=avail[0][1] if avail else None),
         grade_str,
     )
 
@@ -224,7 +235,8 @@ def run_baseline_demo(task: str):
     final = grade(_trajectory)
     status = f"🤖 Baseline agent completed **{task.upper()}** task — Grade: **{final:.2f}**"
 
-    avail = [s["id"] for s in obs_dict.get("trending_songs", [])
+    avail = [(f"{s['title']} - {s['artist']} [{s['source_media']}]", s["id"])
+             for s in obs_dict.get("trending_songs", [])
              if s["id"] not in obs_dict.get("recommended_history", [])]
 
     return (
@@ -233,7 +245,7 @@ def run_baseline_demo(task: str):
                            obs_dict.get("recommended_history", [])),
         _format_trajectory(_trajectory),
         status,
-        gr.Dropdown(choices=avail, value=avail[0] if avail else None),
+        gr.Dropdown(choices=avail, value=avail[0][1] if avail else None),
         f"## 🤖 Baseline Grade: {final:.2f}",
     )
 
@@ -410,6 +422,8 @@ def create_gradio_app():
         baseline_btn.click(
             fn=run_baseline_demo, inputs=[task_dd], outputs=outputs
         )
+        
+        demo.load(fn=reset_env, inputs=[task_dd], outputs=outputs)
 
     return demo
 
