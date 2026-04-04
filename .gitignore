@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 *.pyo
 *.so
+dataset.csv
+test_baseline.py
