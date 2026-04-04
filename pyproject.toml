@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "music-discovery-env"
+version = "1.0.0"
+description = "Trend-Aware Music Discovery Environment for the Meta PyTorch OpenEnv Hackathon 2026"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Munish D", email = "munishd.work@gmail.com" }
+]
+keywords = ["reinforcement-learning", "openenv", "recommendation", "music", "llm"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "openenv-core>=0.2.2",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.24.0",
+    "pydantic",
+    "openai",
+    "gradio",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["server*"]
+
+[project.urls]
+Homepage = "https://huggingface.co/spaces/munish24/music-discovery-env"
+Repository = "https://github.com/Munishd24/Trend-Aware-Music-Discovery-Env"
