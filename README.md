@@ -144,7 +144,7 @@ discovery_bonus  = steps where trend_age_days < 3 AND reaction in {shared, saved
 ## 🎯 Task Difficulties
 
 | Difficulty | Scenario | Key Challenge | Score Target |
-|---|---|---||---|
+|---|---|---|---|
 | **Easy** | High-intent user with strong niche media affinity (Anime/Soundtrack segment). 10 high-velocity tracks, all < 3 days old. | Genre alignment and trend freshness exploitation | 0.80+ |
 | **Medium** | Mixed catalog with aging trend signals. User affinity state shifts stochastically (25% drift probability per step). | Latent mood inference under partial observability | 0.45–0.65 |
 | **Hard** | Cold-start session: zero prior genre or media signal. 20 tracks across all segments with heterogeneous trend ages. | Segment discovery via strategic exploration within 10 steps | 0.20–0.40 |
