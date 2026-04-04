@@ -78,6 +78,9 @@ class MusicDiscoveryObservation(Observation):
     session_engagement: List    # Full reaction history this episode
     recommended_history: List   # IDs already recommended (never repeat)
     last_3_reactions: List[str] # Last 3 reactions — the only mood signal available
+    global_mood_trend: str      # Dynamic cultural zeitgeist modifier (e.g., "party")
+    session_genres: List[str]   # Genres played this episode (for diversity tracking)
+    exploration_budget: int     # Remaining attempts to trigger the +1.0 diversity bonus
 ```
 
 ### Action (what the agent returns)
@@ -90,21 +93,26 @@ class MusicDiscoveryAction(Action):
 ### Reward Function
 
 ```
-final_reward = base_reaction × trend_freshness_multiplier + taste_bonus
+# Capped to strictly obey hackathon 0.0-1.0 evaluation bounds
+final_reward = max(-1.0, min(1.0, raw_reward))
+
+raw_reward = (base_reaction × trend_freshness_multiplier) + taste_bonus + diversity_bonus
 
 base_reaction:
-  shared            → +1.0
-  saved             → +0.8
+  shared / saved    → +1.0 / +0.8
   added_to_playlist → +0.7
   played_once       → +0.3
   skipped / ignored → -0.2 / -0.3
 
 trend_freshness_multiplier = max(0.5, 1.0 − trend_age_days × 0.05)
-  (songs older than 10 days get a 0.5 cap)
 
 taste_bonus:
   +0.2 if genre matches user's taste_profile.genres
   +0.2 if song vibe matches hidden user mood
+  +1.0 [SERENDIPITY] if song vibe matches BOTH hidden mood AND global_mood_trend
+
+diversity_bonus:
+  +1.0 if genre is NEW to session_genres AND user reaction is highly positive (uses 1 exploration_budget)
 ```
 
 ### Grading Function (`/grader`)
