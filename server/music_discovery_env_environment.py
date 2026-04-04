@@ -83,6 +83,8 @@ class MusicDiscoveryEnvironment(Environment):
         self._session_engagement = []
         self._recommended_history = []
         self._global_mood_trend = ""
+        self._session_genres = []
+        self._exploration_budget = 2
 
     def _get_trending_songs(self, force_media=None, age_range=(0, 5), count=10):
         catalog = self.full_catalog if self.full_catalog else REAL_SONGS_DB
@@ -115,6 +117,8 @@ class MusicDiscoveryEnvironment(Environment):
         self._session_engagement = []
         self._recommended_history = []
         self._global_mood_trend = random.choice(MOOD_ROTATION)
+        self._session_genres = []
+        self._exploration_budget = 2
 
         if self.task_config == "easy":
             self._user = {
@@ -174,10 +178,20 @@ class MusicDiscoveryEnvironment(Environment):
         if song["vibe"] == self._user["mood"]:
             taste_bonus += 0.2
             
-        if song["vibe"] == self._user["mood"] == getattr(self, "_global_mood_trend", ""):
+        if song.get("vibe") == self._user["mood"] == getattr(self, "_global_mood_trend", ""):
             taste_bonus += 1.0
 
-        final_reward = round(base_reward * trend_age_bonus + taste_bonus, 2)
+        # Implement new Diversity Logic
+        diversity_bonus = 0.0
+        if getattr(self, "_exploration_budget", 0) > 0 and song.get("genre") not in getattr(self, "_session_genres", []):
+            self._exploration_budget -= 1
+            if reaction in ["shared", "saved", "added_to_playlist"]:
+                diversity_bonus += 1.0
+                
+        if song.get("genre") not in getattr(self, "_session_genres", []):
+            self._session_genres.append(song.get("genre"))
+
+        final_reward = round(base_reward * trend_age_bonus + taste_bonus + diversity_bonus, 2)
 
         self._session_engagement.append({
             "step": self._state.step_count, "song_id": song_id,
@@ -248,6 +262,8 @@ class MusicDiscoveryEnvironment(Environment):
             recommended_history=self._recommended_history,
             last_3_reactions=last_3,
             global_mood_trend=getattr(self, "_global_mood_trend", ""),
+            session_genres=getattr(self, "_session_genres", []),
+            exploration_budget=getattr(self, "_exploration_budget", 0),
             done=done,
             reward=reward,
         )
@@ -277,9 +293,19 @@ def baseline_agent(state_dict):
     if not history:
         history = user.get("listening_history", [])
         
+    session_genres = state_dict.get("session_genres", [])
+    exploration_budget = state_dict.get("exploration_budget", 0)
+        
     unplayed = [s for s in songs if s["id"] not in history]
     if not unplayed:
         unplayed = songs
+
+    # Epsilon-greedy exploration
+    if exploration_budget > 0 and random.random() < 0.2:
+        new_genre_songs = [s for s in unplayed if s.get("genre") not in session_genres]
+        if new_genre_songs:
+            best = max(new_genre_songs, key=lambda s: s.get("trend_velocity", 0.0))
+            return {"song_id": best["id"]}
 
     def heuristic_score(s):
         score_val = 0

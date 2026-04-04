@@ -53,3 +53,5 @@ class MusicDiscoveryObservation(Observation):
     recommended_history: List[str] = Field(default_factory=list)
     last_3_reactions: List[str] = Field(default_factory=list)
     global_mood_trend: str = ""
+    session_genres: List[str] = Field(default_factory=list)
+    exploration_budget: int = 2
