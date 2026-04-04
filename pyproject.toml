@@ -36,4 +36,5 @@ Homepage = "https://huggingface.co/spaces/munish24/music-discovery-env"
 Repository = "https://github.com/Munishd24/Trend-Aware-Music-Discovery-Env"
 
 [project.scripts]
-music-discovery-env = "server.app:main"
+server = "server.app:main"
+
