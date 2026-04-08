@@ -270,6 +270,11 @@ class MusicDiscoveryEnvironment(Environment):
         )
 
 
+def clamp_score(score: float) -> float:
+    """Clamp a score strictly between 0 and 1 with 3-decimal precision."""
+    return round(max(0.01, min(0.99, float(score))), 3)
+
+
 def grade(trajectory):
     if not trajectory:
         score = 0.0
@@ -282,8 +287,7 @@ def grade(trajectory):
             if s.get("trend_age_days", 10) < 3 and s.get("reaction") in ["shared", "saved"]
         ) / len(trajectory)
         score = (engagement_rate * 0.4) + (avg_reward * 0.4) + (discovery_bonus * 0.2)
-    score = round(max(0.01, min(0.99, float(score))), 3)
-    return score
+    return clamp_score(score)
 
 
 def baseline_agent(state_dict):
