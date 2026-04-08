@@ -57,6 +57,7 @@ def grade_endpoint(input_data: dict):
     """Evaluate a completed trajectory and return a 0.0-1.0 score."""
     trajectory = input_data.get("trajectory", [])
     score = grade(trajectory)
+    score = round(max(0.01, min(0.99, float(score))), 3)
     return {"score": score}
 
 
@@ -78,7 +79,9 @@ def run_baseline():
             step_info = obs_dict["session_engagement"][-1] if obs_dict["session_engagement"] else {}
             traj.append(step_info)
             done = obs.done
-        results[task] = grade(traj)
+        score = grade(traj)
+        score = round(max(0.01, min(0.99, float(score))), 3)
+        results[task] = score
     return results
 
 
@@ -112,4 +115,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

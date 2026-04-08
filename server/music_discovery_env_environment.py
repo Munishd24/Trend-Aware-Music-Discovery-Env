@@ -272,15 +272,18 @@ class MusicDiscoveryEnvironment(Environment):
 
 def grade(trajectory):
     if not trajectory:
-        return 0.0
-    positive_steps = [s for s in trajectory if s.get("reward", 0) > 0]
-    engagement_rate = len(positive_steps) / len(trajectory)
-    avg_reward = sum(s.get("reward", 0) for s in trajectory) / len(trajectory)
-    discovery_bonus = sum(
-        1 for s in trajectory
-        if s.get("trend_age_days", 10) < 3 and s.get("reaction") in ["shared", "saved"]
-    ) / len(trajectory)
-    return min(1.0, max(0.0, (engagement_rate * 0.4) + (avg_reward * 0.4) + (discovery_bonus * 0.2)))
+        score = 0.0
+    else:
+        positive_steps = [s for s in trajectory if s.get("reward", 0) > 0]
+        engagement_rate = len(positive_steps) / len(trajectory)
+        avg_reward = sum(s.get("reward", 0) for s in trajectory) / len(trajectory)
+        discovery_bonus = sum(
+            1 for s in trajectory
+            if s.get("trend_age_days", 10) < 3 and s.get("reaction") in ["shared", "saved"]
+        ) / len(trajectory)
+        score = (engagement_rate * 0.4) + (avg_reward * 0.4) + (discovery_bonus * 0.2)
+    score = round(max(0.01, min(0.99, float(score))), 3)
+    return score
 
 
 def baseline_agent(state_dict):
@@ -325,4 +328,3 @@ def baseline_agent(state_dict):
 
     best = max(unplayed, key=heuristic_score)
     return {"song_id": best["id"]}
-
