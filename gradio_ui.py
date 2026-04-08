@@ -15,12 +15,12 @@ import gradio as gr
 
 try:
     from server.music_discovery_env_environment import (
-        MusicDiscoveryEnvironment, grade, baseline_agent, REAL_SONGS_DB
+        MusicDiscoveryEnvironment, grade, baseline_agent, REAL_SONGS_DB, clamp_score
     )
     from models import MusicDiscoveryAction
 except ImportError:
     from .server.music_discovery_env_environment import (
-        MusicDiscoveryEnvironment, grade, baseline_agent, REAL_SONGS_DB
+        MusicDiscoveryEnvironment, grade, baseline_agent, REAL_SONGS_DB, clamp_score
     )
     from .models import MusicDiscoveryAction
 
@@ -175,7 +175,7 @@ def step_env(song_id: str):
             _format_trajectory(_trajectory),
             "⚠️ Episode is done! Reset to start a new one.",
             gr.Dropdown(),
-            f"**Final Grade: {grade(_trajectory):.2f}**",
+            f"**Final Grade: {clamp_score(grade(_trajectory)):.2f}**",
         )
     if not song_id:
         return (gr.Dropdown(),) * 5 + ("Select a song first!",)
@@ -193,7 +193,7 @@ def step_env(song_id: str):
 
     status = f"Step {obs_dict['step_count']}: **{song_id}** → {reaction} (reward: {reward:+.2f})"
     if _done:
-        final = grade(_trajectory)
+        final = clamp_score(grade(_trajectory))
         status += f"\n\n🏁 **Episode complete! Final Grade: {final:.2f}**"
         grade_str = f"## 🏆 Final Grade: {final:.2f}"
     else:
@@ -232,7 +232,7 @@ def run_baseline_demo(task: str):
         if obs_dict.get("session_engagement"):
             _trajectory.append(obs_dict["session_engagement"][-1])
 
-    final = grade(_trajectory)
+    final = clamp_score(grade(_trajectory))
     status = f"🤖 Baseline agent completed **{task.upper()}** task — Grade: **{final:.2f}**"
 
     avail = [(f"{s['title']} - {s['artist']} [{s['source_media']}]", s["id"])

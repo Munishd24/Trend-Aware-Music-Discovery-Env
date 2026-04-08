@@ -22,10 +22,10 @@ except Exception as e:
 
 try:
     from ..models import MusicDiscoveryAction, MusicDiscoveryObservation
-    from .music_discovery_env_environment import MusicDiscoveryEnvironment, grade, baseline_agent
+    from .music_discovery_env_environment import MusicDiscoveryEnvironment, grade, baseline_agent, clamp_score
 except (ImportError, SystemError):
     from models import MusicDiscoveryAction, MusicDiscoveryObservation
-    from server.music_discovery_env_environment import MusicDiscoveryEnvironment, grade, baseline_agent
+    from server.music_discovery_env_environment import MusicDiscoveryEnvironment, grade, baseline_agent, clamp_score
 
 # Create the OpenEnv app (auto-generates /reset, /step, /state, /ws, /health, /web)
 app = create_app(
@@ -56,8 +56,7 @@ def get_tasks():
 def grade_endpoint(input_data: dict):
     """Evaluate a completed trajectory and return a 0.0-1.0 score."""
     trajectory = input_data.get("trajectory", [])
-    score = grade(trajectory)
-    score = round(max(0.01, min(0.99, float(score))), 3)
+    score = clamp_score(grade(trajectory))
     return {"score": score}
 
 
@@ -79,9 +78,7 @@ def run_baseline():
             step_info = obs_dict["session_engagement"][-1] if obs_dict["session_engagement"] else {}
             traj.append(step_info)
             done = obs.done
-        score = grade(traj)
-        score = round(max(0.01, min(0.99, float(score))), 3)
-        results[task] = score
+        results[task] = clamp_score(grade(traj))
     return results
 
 
