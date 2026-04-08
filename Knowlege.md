@@ -43,7 +43,7 @@ Phase 1 — Automated Validation (pass/fail gate):
 - /reset returns valid observation
 - /tasks returns task list
 - /baseline runs without error and returns scores
-- 3+ tasks with graders returning 0.0-1.0
+- 3+ tasks with graders returning scores strictly between 0 and 1
 - Dockerfile builds successfully
 - openenv.yaml is valid
 
@@ -158,7 +158,7 @@ engagement_rate = positive_steps / total_steps
 avg_reward = sum(rewards) / total_steps
 discovery_bonus = steps where trend_age_days < 3 AND reaction in {shared, saved}
 
-Returns float 0.0-1.0
+Returns float strictly between 0 and 1
 
 =============================================================
 SECTION 5 — THREE TASKS

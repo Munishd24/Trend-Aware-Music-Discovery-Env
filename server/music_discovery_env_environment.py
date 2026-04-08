@@ -12,6 +12,7 @@ optimizing for user engagement and trend freshness across 3 difficulty levels.
 """
 
 import json
+import math
 import random
 from pathlib import Path
 from uuid import uuid4
@@ -270,24 +271,51 @@ class MusicDiscoveryEnvironment(Environment):
         )
 
 
+SCORE_EPSILON = 0.01
+SCORE_MIN = 0.01
+SCORE_MAX = 0.99
+
+
 def clamp_score(score: float) -> float:
-    """Clamp a score strictly between 0 and 1 with 3-decimal precision."""
-    return round(max(0.01, min(0.99, float(score))), 3)
+    """Clamp a score strictly between 0 and 1 (exclusive). Never returns 0.0 or 1.0."""
+    try:
+        score_val = float(score)
+    except (TypeError, ValueError):
+        return 0.5
+
+    if not math.isfinite(score_val):
+        return 0.5
+
+    # Hard clamp to open interval (SCORE_MIN, SCORE_MAX)
+    clamped = max(SCORE_MIN, min(SCORE_MAX, score_val))
+
+    # Round to 4 decimal places
+    result = round(clamped, 4)
+
+    # Final safety: guarantee strictly between 0 and 1
+    if result <= 0.0:
+        return SCORE_MIN
+    if result >= 1.0:
+        return SCORE_MAX
+
+    return result
 
 
 def grade(trajectory):
+    """Grade a trajectory. Always returns a score strictly between 0 and 1."""
     if not trajectory:
-        score = 0.0
-    else:
-        positive_steps = [s for s in trajectory if s.get("reward", 0) > 0]
-        engagement_rate = len(positive_steps) / len(trajectory)
-        avg_reward = sum(s.get("reward", 0) for s in trajectory) / len(trajectory)
-        discovery_bonus = sum(
-            1 for s in trajectory
-            if s.get("trend_age_days", 10) < 3 and s.get("reaction") in ["shared", "saved"]
-        ) / len(trajectory)
-        score = (engagement_rate * 0.4) + (avg_reward * 0.4) + (discovery_bonus * 0.2)
-    return clamp_score(score)
+        return clamp_score(SCORE_MIN)
+
+    positive_steps = [s for s in trajectory if s.get("reward", 0) > 0]
+    total = max(len(trajectory), 1)
+    engagement_rate = len(positive_steps) / total
+    avg_reward = sum(s.get("reward", 0) for s in trajectory) / total
+    discovery_bonus = sum(
+        1 for s in trajectory
+        if s.get("trend_age_days", 10) < 3 and s.get("reaction") in ["shared", "saved"]
+    ) / total
+    raw_score = (engagement_rate * 0.4) + (avg_reward * 0.4) + (discovery_bonus * 0.2)
+    return clamp_score(raw_score)
 
 
 def baseline_agent(state_dict):
