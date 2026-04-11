@@ -171,25 +171,29 @@ class MusicDiscoveryEnvironment(Environment):
 
         self._recommended_history.append(song_id)
         reaction, base_reward = self._simulate_reaction(song)
-        trend_age_bonus = max(0.5, 1.0 - song["trend_age_days"] * 0.05)
+        trend_age_bonus = max(0.5, 1.0 - song.get("trend_age_days", 0) * 0.05)
 
+        # Calculate bonuses
         taste_bonus = 0.0
-        if song["genre"] in self._user["taste_profile"]["genres"]:
+        if song.get("genre") in self._user.get("taste_profile", {}).get("genres", []):
             taste_bonus += 0.2
-        if song["vibe"] == self._user["mood"]:
+        if song.get("vibe") == self._user.get("mood"):
             taste_bonus += 0.2
             
-        if song.get("vibe") == self._user["mood"] == getattr(self, "_global_mood_trend", ""):
+        if self._is_serendipity(song):
+            # Serendipity multiplier: adds 1.0 per README, but effectively guarantees max reward
             taste_bonus += 1.0
 
-        # Implement new Diversity Logic
+        # Diversity tracking and budget
         diversity_bonus = 0.0
-        if getattr(self, "_exploration_budget", 0) > 0 and song.get("genre") not in getattr(self, "_session_genres", []):
+        is_new_genre = song.get("genre") not in self._session_genres
+        
+        if self._exploration_budget > 0 and is_new_genre:
             self._exploration_budget -= 1
             if reaction in ["shared", "saved", "added_to_playlist"]:
                 diversity_bonus += 1.0
                 
-        if song.get("genre") not in getattr(self, "_session_genres", []):
+        if is_new_genre:
             self._session_genres.append(song.get("genre"))
 
         raw_reward = round(base_reward * trend_age_bonus + taste_bonus + diversity_bonus, 2)
@@ -205,20 +209,28 @@ class MusicDiscoveryEnvironment(Environment):
         done = self._state.step_count >= self.max_steps
         return self._build_observation(reward=final_reward, done=done)
 
-    def _simulate_reaction(self, song):
-        score = 0
-        if song["genre"] in self._user["taste_profile"]["genres"]:
-            score += 3
-        if song["media_type"] in self._user["taste_profile"]["media_interests"]:
-            score += 3
-        if song["vibe"] == self._user["mood"]:
-            score += 2
+    def _is_serendipity(self, song: dict) -> bool:
+        """Check if the song aligns with both the user's hidden mood and the global trend."""
+        vibe = song.get("vibe")
+        return bool(vibe and vibe == self._user.get("mood") == self._global_mood_trend)
+
+    def _simulate_reaction(self, song: dict):
+        score = 0.0
+        genres = self._user.get("taste_profile", {}).get("genres", [])
+        media_interests = self._user.get("taste_profile", {}).get("media_interests", [])
+
+        if song.get("genre") in genres:
+            score += 3.0
+        if song.get("media_type") in media_interests:
+            score += 3.0
+        if song.get("vibe") == self._user.get("mood"):
+            score += 2.0
             
-        if song["vibe"] == self._user["mood"] == getattr(self, "_global_mood_trend", ""):
-            score += 4
+        if self._is_serendipity(song):
+            score += 4.0
             self._user["discovery_openness"] = min(1.0, self._user["discovery_openness"] + 0.15)
             
-        score += max(0, 5 - song["trend_age_days"]) * 0.5
+        score += max(0.0, 5.0 - song.get("trend_age_days", 0)) * 0.5
 
         if not self._user["taste_profile"]["genres"]:
             score += random.random() * 5 * self._user["discovery_openness"]
