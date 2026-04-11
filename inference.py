@@ -4,7 +4,13 @@ import re
 import time
 from openai import OpenAI
 
-from server.music_discovery_env_environment import MusicDiscoveryEnvironment, MusicDiscoveryAction, baseline_agent
+from server.music_discovery_env_environment import (
+    MusicDiscoveryEnvironment,
+    MusicDiscoveryAction,
+    baseline_agent,
+    grade,
+    clamp_score,
+)
 
 # Mandatory configuration with defaults
 API_BASE_URL = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
@@ -68,6 +74,7 @@ def run_evaluation():
         done = False
         step_num = 0
         rewards = []
+        trajectory = []
         
         while not done and step_num < 10:
             step_num += 1
@@ -89,13 +96,24 @@ def run_evaluation():
             done = obs.done
             rewards.append(reward)
             
+            # Collect trajectory for grading
+            obs_dict_after = obs.model_dump()
+            step_info = obs_dict_after["session_engagement"][-1] if obs_dict_after["session_engagement"] else {}
+            trajectory.append(step_info)
+            
             # Logging rules — exact spec format
             is_done_str = "true" if done else "false"
             print(f'[STEP] step={step_num} action={{"song_id": "{song_id}"}} reward={reward:.2f} done={is_done_str} error={error_msg}')
             
-        # END log
+        # Compute the graded score — MUST be strictly between 0 and 1
+        task_score = clamp_score(grade(trajectory))
+        # Absolute safety net: never let 0.0 or 1.0 through
+        if task_score <= 0.0 or task_score >= 1.0:
+            task_score = 0.5
+
+        # END log with score
         rewards_str = ",".join([f"{r:.2f}" for r in rewards])
-        print(f"[END] success=true steps={step_num} rewards={rewards_str}")
+        print(f"[END] success=true steps={step_num} score={task_score:.4f} rewards={rewards_str}")
 
 if __name__ == "__main__":
     run_evaluation()

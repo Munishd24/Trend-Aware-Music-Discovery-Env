@@ -55,3 +55,6 @@ class MusicDiscoveryObservation(Observation):
     global_mood_trend: str = ""
     session_genres: List[str] = Field(default_factory=list)
     exploration_budget: int = 2
+    done: bool = False
+    reward: float = 0.0
+
