@@ -28,7 +28,20 @@ CRITICAL INSTRUCTIONS:
 3. If exploration_budget > 0, STRATEGICALLY EXPLORE NEW GENRES that are not in the session_genres list! You earn massive bonuses for successful exploration!
 """
 
-def get_llm_action(obs_dict, model_name):
+def get_llm_action(obs_dict: dict, model_name: str) -> str:
+    """
+    Query the LLM to get the next best song recommendation based on the current state.
+    
+    Args:
+        obs_dict: The current observation dictionary from the environment.
+        model_name: The name of the LLM model to query.
+        
+    Returns:
+        The selected song_id as a string.
+        
+    Raises:
+        ValueError: If the LLM output cannot be parsed into a valid action.
+    """
     # Construct the user prompt
     user_prompt = f"OBSERVATION STATE:\n{json.dumps(obs_dict, indent=2)}\n\nRespond only with JSON."
     
@@ -64,7 +77,7 @@ def get_llm_action(obs_dict, model_name):
     # LLM responded but output was unparseable — treat as error
     raise ValueError(f"LLM returned unparseable output: {content[:80]}")
 
-def run_evaluation():
+def run_evaluation() -> None:
     for task_name in ["easy", "medium", "hard"]:
         env = MusicDiscoveryEnvironment()
         obs = env.reset(task=task_name)

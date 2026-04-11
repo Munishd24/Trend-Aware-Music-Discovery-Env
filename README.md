@@ -79,6 +79,39 @@ RL/
 
 ## 🎮 Environment Design
 
+### Architecture Diagram
+
+```mermaid
+graph TD
+    %% Define Styles
+    classDef agent fill:#1DB954,stroke:#fff,stroke-width:2px,color:#000,font-weight:bold
+    classDef secret fill:#000000,stroke:#facc15,stroke-width:2px,stroke-dasharray: 5 5,color:#facc15
+    classDef env fill:#191414,stroke:#888,stroke-width:1px,color:#fff
+    classDef reward fill:#3b82f6,stroke:#fff,stroke-width:2px,color:#fff
+    
+    A[🤖 LLM Agent] -->|Action: song_id| E((Environment Step))
+    
+    subgraph OpenEnv Backend
+        E --> V{Validate Input}
+        V --> |Valid| T[Calculate Raw Reward]
+        
+        %% Hidden States
+        H([Hidden State: User Mood]):::secret -.-> |Influences| T
+        G([Global Viral Trend]):::secret -.-> |Multiplies| T
+        
+        T --> C[Clamp Reward -1.0 to 1.0]
+    end
+    
+    C --> R([Reward + done signal]):::reward
+    R --> |Update Session| O[MusicDiscoveryObservation]
+    
+    O --> |last_3_reactions| A
+    O --> |trending_songs| A
+    
+    class A agent
+    class E,V,T,C,O env
+```
+
 ### Observation — What the Agent Sees
 
 ```python
