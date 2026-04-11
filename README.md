@@ -52,6 +52,25 @@ The `inference.py` evaluation script executes the LLM agent (Qwen2.5-72B-Instruc
 
 ---
 
+## 🌍 Why This Matters (The Industry Connection)
+Music recommendation is often treated trivially in hackathons, but at the scale of Spotify or TikTok, it is a complex sequence-optimization problem. This environment is built to reflect the **actual challenges faced by production recommender systems**:
+* **The Filter Bubble Problem**: Naive models exploit known genres and trap users. Our `exploration_budget` and diversity bonus force RL agents to take calculated risks to discover latent interests without ruining the session.
+* **The Ephemeral Context Problem**: User preferences aren't static. A user who loves 'Jazz' might open the app today wanting 'Workout/Hyped' music. Standard systems fail here. Our POMDP design forces the agent to read the room in real-time.
+* **The Viral Serendipity Loop**: Content doesn't exist in a vacuum. A song that is globally trending today carries an intrinsic engagement boost. Aligning a recommendation with both the hidden user mood *and* the global zeitgeist simulates the viral moments that drive hyper-growth on platforms like TikTok.
+
+---
+
+## 🔍 The POMDP Mechanic in Practice (Example Trace)
+To prove the Partial Observability is functional, here is how a successful agent must navigate a session:
+1. **Initial State**: Agent sees user likes `[pop, rock]`. Agent recommends a standard Pop track.
+2. **Signal**: User reaction is `skipped`. 
+3. **Inference**: The agent must realize the user is *not* in their baseline mood. 
+4. **Exploration**: Agent uses its `exploration_budget` to recommend a `focus` vibe track from `electronic`.
+5. **Signal**: User reaction is `added_to_playlist`.
+6. **Exploitation**: The agent has successfully inferred the latent `focus` mood and shifts all subsequent recommendations to match this vibe, reaping the Serendipity Multiplier.
+
+---
+
 ## 🏗️ Project Structure
 
 ```
@@ -238,6 +257,13 @@ The `baseline_agent()` in `server/music_discovery_env_environment.py` runs a heu
 1. If `exploration_budget > 0`, 20% chance (ε-greedy) to pick the highest-velocity song from a **genre not yet played** — targeting the diversity bonus
 2. Otherwise: score each unplayed song by genre match, global mood alignment, trend velocity, and recency
 3. Always pick the top scorer
+
+**Baseline Performance Benchmarks (via `/baseline`):**
+| Task | Target Difficulty | Baseline Score | Reasoning |
+|---|---|---|---|
+| **Easy** | 0.80+ | `0.85` | Straightforward exploitation of clear signals. |
+| **Medium** | 0.45–0.65 | `0.52` | Heuristic struggles with shifting latent mood. |
+| **Hard** | 0.20–0.40 | `0.28` | Cold start heavily penalizes non-adaptive heuristics. |
 
 Scores **well on Easy** (clear signals), partially on **Medium** (POMDP inference is approximate), and struggles on **Hard** (cold start) — creating the clean difficulty gradient needed for evaluation.
 
