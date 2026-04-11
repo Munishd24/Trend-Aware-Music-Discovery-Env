@@ -18,6 +18,11 @@ pinned: false
 
 **Live Demo:** [🚀 Open the Dashboard](https://munish24-music-discovery-env.hf.space/)
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Munishd24/Trend-Aware-Music-Discovery-Env/assets_branch/assets/dashboard.png" alt="Music Discovery Environment Dashboard Preview" width="800"/>
+  <p><em>The Auto-Initializing Evaluation Dashboard representing the RL Sandbox.</em></p>
+</div>
+
 ---
 
 ## 📖 What Is This?
